@@ -1,0 +1,72 @@
+.footer {
+  padding-top: var(--spacer-m);
+  padding-bottom: var(--spacer-m);
+  font-size: var(--text-note);
+  text-align: center;
+  background: #414141;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+.footer a:hover {
+  color: var(--link-hover);
+}
+
+.social-links a{
+  text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 45px;/*centra*/
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 18px;
+}
+
+.social-links .tik{
+  font-weight: bold;
+}
+
+.social-links a:hover{
+  color: #24262b;
+  background-color: #fff;
+}
+
+.copyr{
+  font-family: var(--font-2);
+  text-align: center;
+  font-size: var(--text-base);
+  font-weight: bold;
+}
+
+
+
+/* Size: xs */
+@media (max-width: 500px) {
+  .social-links a{
+      height: 42px;
+      width: 42px;
+      line-height: 42px;
+      font-size: 12px;
+  }
+}
+
+/* Size: xxs */
+@media (max-width: 320px) {
+  .social-links a{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 11px;
+  }
+}

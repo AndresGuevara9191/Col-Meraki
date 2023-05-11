@@ -1,0 +1,68 @@
+html {
+  /*Familias tipograficas*/
+  --font-1: "Raleway", sans-serif;
+  --font-2: "Abril Fatface", sans-serif;
+  --font-3: "Righteous";
+
+  /* Variables tipográficas */
+  /* Escala aplicada */
+    
+  --text-caption: 14px;
+  --text-note: 16px;
+  --text-note-1: 18px;
+  --text-base: 20px;
+  --text-base-1: 22px;
+  --text-subheader: 24px;
+  --text-subheader-1: 36px;
+  --text-title: 48px;
+  --text-title-1: 60px;
+  --text-headline: 72px;
+  --text-headline-1: 84px;
+  --text-display: 96px;
+  --text-display-1: 110px;
+  --text-jumbo: 144px;
+}
+  
+  @media (max-width: 900px) {
+    html {
+      /* Variables tipográficas */
+      --text-caption: 12px;
+      --text-caption-1: 13px;
+      --text-note: 14px;
+      --text-note-1: 15px;
+      --text-base: 16px;
+      --text-base-1: 18px;
+      --text-subheader: 20px;
+      --text-subheader-1: 22px;
+      --text-title: 24px;
+      --text-title-1: 30px;
+      --text-headline: 36px;
+      --text-headline-1: 42px;
+      --text-display: 48px;
+      --text-display-1: 54px;
+      --text-jumbo: 60px;
+      --text-jumbo-1: 72px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    html {
+      /* Variables tipográficas */
+      --text-caption: 10px;
+      --text-caption-1: 11px;
+      --text-note: 12px;
+      --text-note-1: 13px;
+      --text-base: 14px;
+      --text-base-1: 15px;
+      --text-subheader: 16px;
+      --text-subheader-1: 18px;
+      --text-title: 20px;
+      --text-title-1: 24px;
+      --text-headline: 30px;
+      --text-headline-1: 34px;
+      --text-display: 40px;
+      --text-display-1: 44px;
+      --text-jumbo: 50px;
+      --text-jumbo-1: 62px;
+    }
+}

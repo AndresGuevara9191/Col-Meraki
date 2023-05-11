@@ -1,0 +1,290 @@
+/*eliminar al finalizar pagina*/
+.content-full{
+    background: #000;
+}
+
+
+/*LAYOUT*/
+.content-normal-black{
+    background: #222222;
+}
+
+/********/
+
+.inicio-imagen {
+    grid-column:  4 / span 6;
+    text-align: center;
+    margin-bottom: var(--spacer-xl);
+}
+
+.logo-meraki-black{
+    margin-top: var(--spacer-xl);
+    width: 100%;
+    margin-bottom: var(--spacer-xl);
+}
+
+
+.inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+    grid-column: span 4;
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+    padding: 18px;
+    background-color: #F2F2F2;
+}
+
+
+.inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{
+    text-align: center;
+    font-family: var(--font-1);
+    font-weight: bold;
+    font-size: var(--text-subheader);
+    color: #21ADE5;
+    padding-bottom: var(--spacer-m);
+}
+
+.inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
+    text-align: center;
+    font-family: var(--font-2);  
+    font-size: var(--text-note);
+}
+
+.space-inicio{
+  margin-bottom: var(--spacer-xl);
+}
+
+/* Size: md */
+@media (max-width: 900px) {
+
+    .inicio-imagen {
+        grid-column:  3 / span 6;
+        /*text-align: center;
+        margin-bottom: var(--spacer-xl);*/
+    }
+    
+    .logo-meraki-black{
+        /*
+        margin-top: var(--spacer-xl);
+        width: 100%;
+        margin-bottom: var(--spacer-xl);*/
+    }
+    
+    
+    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        padding: 18px;
+        background-color: #F2F2F2;*/
+    }
+
+    .inicio-text-1{
+        grid-column: span 3;
+    }
+
+    .inicio-text-2{
+        position: relative;
+        left: 18%;
+        grid-column: span 3;
+    }
+
+    .inicio-text-3{
+        grid-column: 8 / span 3;
+    }
+    
+    
+    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
+        /*font-size: var(--text-subheader);
+        padding-bottom: var(--spacer-m);*/
+    }
+    
+    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
+        /*text-align: center;
+        font-family: var(--font-2);  
+        font-size: var(--text-note);*/
+    }
+
+    .space-inicio{
+        margin-bottom: var(--spacer-l);
+      }
+}
+
+/* Size: sm */
+@media (max-width: 700px) {
+
+    .space-index-video{
+        margin-top: 70px;
+    }
+  
+    .inicio-imagen {
+        grid-column:  2 / span 6;
+        /*text-align: center;
+        margin-bottom: var(--spacer-xl);*/
+    }
+    
+    .logo-meraki-black{
+        margin-top: var(--spacer-l);
+        /*width: 100%;*/
+        margin-bottom: var(--spacer-l);
+    }
+    
+    
+    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        padding: 18px;
+        background-color: #F2F2F2;*/
+    }
+
+    .inicio-text-1{
+        grid-column: 2 /span 6;
+    }
+
+    .inicio-text-2{
+        margin-top: var(--spacer-l);
+        position: relative;
+        left: 0%;
+        grid-column: 2 / span 6;
+    }
+
+    .inicio-text-3{
+        grid-column: 2 /span 6;
+        margin-top: var(--spacer-l);
+    }
+    
+    
+    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
+        /*font-size: var(--text-subheader);
+        padding-bottom: var(--spacer-m);*/
+    }
+    
+    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
+        /*text-align: center;
+        font-family: var(--font-2);  
+        font-size: var(--text-note);
+        padding-bottom: var(--spacer-l);*/
+    }
+
+    .space-inicio{
+        margin-bottom: var(--spacer-l);
+    }
+
+}
+
+/* Size: xs */
+@media (max-width: 500px) {
+
+    .space-index-video{
+        margin-top: 65px;
+    }
+
+    .inicio-imagen {
+        grid-column:  2 / span 4;
+        /*text-align: center;
+        margin-bottom: var(--spacer-xl);*/
+    }
+    
+    .logo-meraki-black{
+        margin-top: var(--spacer-l);
+        /*width: 100%;*/
+        margin-bottom: var(--spacer-l);
+    }
+    
+    
+    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        padding: 18px;
+        background-color: #F2F2F2;*/
+    }
+
+    .inicio-text-1{
+        grid-column: 2 /span 4;
+    }
+
+    .inicio-text-2{
+        margin-top: var(--spacer-l);
+        position: relative;
+        left: 0%;
+        grid-column: 2 / span 4;
+    }
+
+    .inicio-text-3{
+        grid-column: 2 /span 4;
+        margin-top: var(--spacer-l);
+    }
+    
+    
+    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
+        /*font-size: var(--text-subheader);
+        padding-bottom: var(--spacer-m);*/
+    }
+    
+    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
+        /*text-align: center;
+        font-family: var(--font-2);  
+        font-size: var(--text-note);
+        padding-bottom: var(--spacer-l);*/
+    }
+/*
+    .space-inicio{
+        margin-bottom: var(--spacer-l);
+    }
+*/
+}
+
+/* Size: xxs */
+@media (max-width: 320px) {
+    .inicio-imagen {
+        grid-column:  span 4;
+        /*text-align: center;*/
+        margin-bottom: var(--spacer-l);
+    }
+    
+    .logo-meraki-black{
+        margin-top: var(--spacer-m);
+        /*width: 100%;*/
+        margin-bottom: var(--spacer-m);
+    }
+    
+    
+    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
+        padding: 18px;
+        background-color: #F2F2F2;*/
+    }
+
+    .inicio-text-1{
+        grid-column: span 4;
+    }
+
+    .inicio-text-2{
+        /*margin-top: var(--spacer-l);
+        position: relative;
+        left: 0%;*/
+        grid-column:  span 4;
+    }
+
+    .inicio-text-3{
+        grid-column: span 4;
+        /*margin-top: var(--spacer-l);*/
+    }
+    
+    
+    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
+        font-size: var(--text-base-1);
+        padding-bottom: var(--spacer-s);
+    }
+    
+    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{  
+        font-size: var(--text-note);
+    }
+
+    .space-inicio{
+        margin-bottom: var(--spacer-l);
+    }
+}

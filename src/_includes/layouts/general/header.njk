@@ -1,0 +1,61 @@
+<!--<div class="header">
+
+  <div class="container grid">
+
+    <a href="/" class="header-logo">
+      <img src="/assets/images/meraki-22-logo-white.png" class="header-logo-normal" alt="Meraki">
+      <img src="/assets/images/meraki-22-logo-black.png" class="header-logo-inverso" alt="Meraki">
+    </a>
+
+    <button class="hamburger header-nav-icon" type="button">
+      <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+
+    {% set navPages = collections.all | eleventyNavigation %}
+    <div class="nav">
+      {%- for elemento in navPages %}
+        <a href="{{ elemento.url | url }}"
+          {% if elemento.url == page.url %} class="active"{% endif %}
+        >
+          {{ elemento.title }}
+        </a>
+      {%- endfor %}
+    </div>
+
+  </div>
+
+</div>-->
+
+<div class="header">
+
+  <div class="container grid">
+
+    <a href="/" class="header-logo">
+      <img src="/assets/images/meraki-22-logo-white.png" class="header-logo-normal" alt="Meraki">
+      <img src="/assets/images/meraki-22-logo-black.png" class="header-logo-inverso" alt="Meraki">
+    </a>
+
+     <button class="hamburger hamburger--collapse header-nav-icon" type="button">
+      <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    {% set navPages = collections.all | eleventyNavigation %}
+    <div class="nav">
+      {%- for elemento in navPages %}
+        <a href="{{ elemento.url | url }}"
+          {% if elemento.url == page.url %} class="active"{% endif %}
+          class="text-headline"
+        >
+          {{ elemento.title }}
+        </a>
+      {%- endfor %}
+    </div>
+
+  </div>
+
+</div>
