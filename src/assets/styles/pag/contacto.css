@@ -111,7 +111,8 @@
    text-align: center;
    margin: 20px 10px;
    font-family: var(--font-1);
-   border: 2px solid #3eff37;
+   /*border: 2px solid #3eff37;*/
+   border: 2px solid #a0a0a0;
    background: transparent;
    color: #fff;
    cursor: pointer;
@@ -140,7 +141,6 @@
 
 .contacto-enviar span{
     /*background: #3eff37;*/
-   background: #a0a0a0;
     height: 100%;
     width: 0;
     position: absolute;
