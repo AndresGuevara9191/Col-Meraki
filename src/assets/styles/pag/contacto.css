@@ -139,7 +139,8 @@
 }
 
 .contacto-enviar span{
-    background: #3eff37;
+    /*background: #3eff37;*/
+   background: #a0a0a0;
     height: 100%;
     width: 0;
     position: absolute;
