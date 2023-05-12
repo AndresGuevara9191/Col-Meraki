@@ -157,6 +157,23 @@
     opacity: 1;*/
 }
 
+
+/*gracias*/
+.contact-thank{
+    color: #fff;
+    margin-top: var(--spacer-xl);
+    grid-column: 4 / span 7;
+}
+
+.contact-thank h1{
+    font-size: var(--text-headline);
+}
+
+.contact-thank p{
+    font-size: var(--text-subheader);
+}
+
+
 @media (max-width: 900px) {
     .contacto-form{
         font-size: var(--text-title);
