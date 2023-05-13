@@ -111,8 +111,8 @@
    text-align: center;
    margin: 20px 10px;
    font-family: var(--font-1);
-   /*border: 2px solid #3eff37;*/
-   border: 2px solid #a0a0a0;
+   border: 2px solid #3eff37;
+   /*border: 2px solid #a0a0a0;*/
    background: transparent;
    color: #fff;
    cursor: pointer;
