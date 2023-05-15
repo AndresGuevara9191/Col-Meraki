@@ -39,7 +39,8 @@
     font-family: var(--font-1);
     font-weight: bold;
     font-size: var(--text-subheader);
-    color: #21ADE5;
+    /*color: #21ADE5;*/
+    color: #247D0D;
     padding-bottom: var(--spacer-m);
 }
 
