@@ -65,6 +65,8 @@
 .grup-price-2{
     text-align: center;
     background: #fff;
+    border: solid #a0a0a0 1px;
+    border-radius: 10px;
     padding: 30px;
     height: min-content;
     grid-column: 7 / span 4;
