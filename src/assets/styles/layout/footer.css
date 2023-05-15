@@ -36,11 +36,27 @@
 .social-links .tik{
   font-weight: bold;
 }
-
+/*
 .social-links a:hover{
   color: #24262b;
   background-color: #fff;
+}*/
+
+.footer-facebook:hover{
+  background: #1877f2;
+  color: #fff;
 }
+
+.footer-tiktok:hover{
+  background: linear-gradient(to bottom right, #00F0E8, #FD0251);
+  color: #fff;
+}
+
+.footer-instagram:hover{
+    background: #e4405f;
+    color: #fff;
+}
+
 
 .copyr{
   font-family: var(--font-2);
