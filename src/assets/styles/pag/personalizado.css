@@ -526,12 +526,12 @@
     
     
     .testimo-1{
-        grid-column: 3 / span 4;
+        grid-column: span 4;
     }
     
     .testimo-2{
-        margin-top: var(--spacer-xl);
-        grid-column: 3 / span 4;
+        /*margin-top: var(--spacer-xl);*/
+        grid-column:  span 4;
         /*position: relative;*/
         left: 0%;
     }
