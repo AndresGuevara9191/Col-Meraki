@@ -7,14 +7,15 @@
   color: #fff;
 }
 
+.footer-tiktok img{
+  height: 18px;
+}
+
+
 .footer a {
   text-decoration: none;
   color: inherit;
   margin-left: 20px;
-}
-
-.footer a:hover {
-  color: var(--link-hover);
 }
 
 .social-links a{
@@ -26,32 +27,15 @@
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
-    line-height: 45px;/*centra*/
+    line-height: 45px; /*centra*/
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
     font-size: 18px;
 }
 
-.footer-tiktok img{
-  height: 18px;
-}
-
-.social-links .tik{
-  font-weight: bold;
-}
-/*
-.social-links a:hover{
-  color: #24262b;
-  background-color: #fff;
-}*/
-
 .footer-facebook:hover{
   background: #1877f2;
-  color: #fff;
-}
-
-.footer-tiktok{
   color: #fff;
 }
 
@@ -61,16 +45,16 @@
 }
 
 .footer-instagram:hover{
-    background: #e4405f;
-    color: #fff;
+  background: #e4405f;
+  color: #fff;
 }
 
 
 .copyr{
-  font-family: var(--font-2);
-  text-align: center;
-  font-size: var(--text-base);
-  font-weight: bold;
+font-family: var(--font-2);
+text-align: center;
+font-size: var(--text-base);
+font-weight: bold;
 }
 
 
