@@ -271,17 +271,17 @@
     
     
     .test-price-1{
-        grid-column:  span 2;
+        grid-column:  span 4;
     }
     
     .test-price-2{
-        grid-column: 4 / span 2;
+        grid-column:  span 4;
         /*position: relative;*/
         left: 0%;
     }
     
     .test-price-3{
-        grid-column: 7 / span 2;
+        grid-column: 3 / span 4;
     }
     
     /*.test-price-1 p, .test-price-2 p, .test-price-3 p{
@@ -367,17 +367,17 @@
     
     
     .test-price-1{
-        grid-column:  span 2;
+        grid-column:  2 / span 4;
     }
     
     .test-price-2{
-        grid-column: span 2;
+        grid-column: 2 / span 4;
         /*position: relative;*/
         left: 0%;
     }
     
     .test-price-3{
-        grid-column:  span 2;
+        grid-column: 2 / span 4;
     }
     
     /*.test-price-1 p, .test-price-2 p, .test-price-3 p{
