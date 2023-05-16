@@ -33,6 +33,10 @@
     font-size: 18px;
 }
 
+.footer-tiktok img{
+  height: 18px;
+}
+
 .social-links .tik{
   font-weight: bold;
 }
@@ -44,6 +48,10 @@
 
 .footer-facebook:hover{
   background: #1877f2;
+  color: #fff;
+}
+
+.footer-tiktok{
   color: #fff;
 }
 
