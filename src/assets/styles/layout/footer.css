@@ -83,6 +83,10 @@
       line-height: 42px;
       font-size: 12px;
   }
+
+  .footer-tiktok img{
+    height: 15px;
+  }
 }
 
 /* Size: xxs */
@@ -91,6 +95,10 @@
     height: 40px;
     width: 40px;
     line-height: 40px;
-    font-size: 11px;
+    font-size: 12px;
   }
+  .footer-tiktok img{
+    height: 12px;
+  }
+
 }
