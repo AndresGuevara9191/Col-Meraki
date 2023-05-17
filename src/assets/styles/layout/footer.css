@@ -61,16 +61,16 @@ font-weight: bold;
  /*copy*/
  .svg-wrapper-footer{    
   position: relative;
-  top: 8%;
-  transform: translateY(8%);
+  top: 3%;
+  transform: translateY(3%);
   margin: 0 auto;
   /*width: 320px;*/
 }
 
 .shape-footer{
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -325;
-  stroke-width: 5px;
+  stroke-dasharray: 100 500;
+  stroke-dashoffset: -340;
+  stroke-width: 3px;
   fill: transparent;
   /*stroke: #19f6e8;*/
   stroke: #000;
@@ -81,7 +81,7 @@ font-weight: bold;
 .text-footer{
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 15px;
   letter-spacing: 5px;
   color: #fff;
   top: -48px;
@@ -90,7 +90,7 @@ font-weight: bold;
 }
 
 .svg-wrapper-footer:hover .shape-footer{
-  stroke-width: 5px;
+  stroke-width: 3px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+  stroke-dasharray: 700;
 }
