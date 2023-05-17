@@ -58,32 +58,39 @@ font-size: var(--text-base);
 font-weight: bold;
 }
 
-
-
-/* Size: xs */
-@media (max-width: 500px) {
-  .social-links a{
-      height: 42px;
-      width: 42px;
-      line-height: 42px;
-      font-size: 14px;
-  }
-
-  .footer-tiktok img{
-    height: 15px;
-  }
+ /*copy*/
+ .svg-wrapper-footer{    
+  position: relative;
+  top: 8%;
+  transform: translateY(8%);
+  margin: 0 auto;
+  /*width: 320px;*/
 }
 
-/* Size: xxs */
-@media (max-width: 320px) {
-  .social-links a{
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 12px;
-  }
-  .footer-tiktok img{
-    height: 12px;
-  }
+.shape-footer{
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -325;
+  stroke-width: 8px;
+  fill: transparent;
+  /*stroke: #19f6e8;*/
+  stroke: #000;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
 
+.text-footer{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+  text-align: center;
+}
+
+.svg-wrapper-footer:hover .shape-footer{
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
 }
