@@ -70,7 +70,7 @@ font-weight: bold;
 .shape-footer{
   stroke-dasharray: 140 540;
   stroke-dashoffset: -325;
-  stroke-width: 8px;
+  stroke-width: 5px;
   fill: transparent;
   /*stroke: #19f6e8;*/
   stroke: #000;
