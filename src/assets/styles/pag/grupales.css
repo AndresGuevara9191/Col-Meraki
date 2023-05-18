@@ -79,6 +79,10 @@
     font-family: var(--font-3);
 }
 
+.grup-price-2-1, .grup-price-2-2{
+    border-bottom: 1px solid #a0a0a0;
+}
+
 .price-2-space{
     padding-bottom: var(--spacer-l);
 }
