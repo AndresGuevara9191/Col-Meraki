@@ -31,6 +31,6 @@ if (botonMenu) {
 }
 
 document.querySelectorAll('.nav-item-dropdown > .nav-link').forEach(function(button) {
-  //button.addEventListener('click', activaSubmenu);
-  button.addEventListener('pointerdown', activaSubmenu);
+  button.addEventListener('click', activaSubmenu);
+  //button.addEventListener('pointerdown', activaSubmenu);
 });
