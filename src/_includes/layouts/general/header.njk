@@ -1,34 +1,3 @@
-<!--<div class="header">
-
-  <div class="container grid">
-
-    <a href="/" class="header-logo">
-      <img src="/assets/images/meraki-22-logo-white.png" class="header-logo-normal" alt="Meraki">
-      <img src="/assets/images/meraki-22-logo-black.png" class="header-logo-inverso" alt="Meraki">
-    </a>
-
-    <button class="hamburger header-nav-icon" type="button">
-      <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-      </span>
-    </button>
-
-
-    {% set navPages = collections.all | eleventyNavigation %}
-    <div class="nav">
-      {%- for elemento in navPages %}
-        <a href="{{ elemento.url | url }}"
-          {% if elemento.url == page.url %} class="active"{% endif %}
-        >
-          {{ elemento.title }}
-        </a>
-      {%- endfor %}
-    </div>
-
-  </div>
-
-</div>-->
-
 <div class="header">
 
   <div class="container grid">
@@ -44,16 +13,39 @@
       </span>
     </button>
 
-    {% set navPages = collections.all | eleventyNavigation %}
     <div class="nav">
-      {%- for elemento in navPages %}
-        <a href="{{ elemento.url | url }}"
-          {% if elemento.url == page.url %} class="active"{% endif %}
-          class="text-headline"
-        >
-          {{ elemento.title }}
-        </a>
-      {%- endfor %}
+      <div class="nav-item nav-item-dropdown">
+        <button class="nav-link" type="button" aria-expanded="false">
+          Servicios
+          <span class="nav-caret">▼</span>
+        </button>
+        <div class="submenu">
+          <a href="/Asesorias/"{% if page.url == '/Asesorias/' %} class="active"{% endif %}>
+            <i class="fa-solid fa-user-doctor"></i>
+            Asesorías
+          </a>
+          <a href="/antropometria/"{% if page.url == '/antropometria/' %} class="active"{% endif %}>
+            <i class="fa-solid fa-ruler-combined"></i>
+            Antropometría
+          </a>
+          <a href="/alimentacion/"{% if page.url == '/alimentacion/' %} class="active"{% endif %}>
+            <i class="fa-solid fa-utensils"></i>
+            Alimentación
+          </a>
+          <a href="/grupales/"{% if page.url == '/grupales/' %} class="active"{% endif %}>
+            <i class="fa-solid fa-users"></i>
+            Grupales
+          </a>
+          <a href="/test/"{% if page.url == '/test/' %} class="active"{% endif %}>
+            <i class="fa-solid fa-clipboard-check"></i>
+            Test
+          </a>
+        </div>
+      </div>
+
+      <a href="/entrenemos/" class="text-headline{% if page.url == '/entrenemos/' %} active{% endif %}">Entrenemos</a>
+      <a href="/personalizado/" class="text-headline{% if page.url == '/personalizado/' %} active{% endif %}">Personalizado</a>
+      <a href="/contacto/" class="text-headline{% if page.url == '/contacto/' %} active{% endif %}">Contacto</a>
     </div>
 
   </div>

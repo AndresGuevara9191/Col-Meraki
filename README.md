@@ -1,31 +1,66 @@
-# Domestika 11ty
+# MERAKI - Página web para entrenador personal
 
-A minimal 11ty starting point.
+MERAKI es un sitio web estático desarrollado con Eleventy (11ty) para presentar los servicios de un entrenador personal. El proyecto incluye secciones para la misión, visión, servicios de alimentación, antropometría, asesorías, entrenamientos grupales, entrenamiento personalizado, contacto y una página de agradecimiento.
 
-## Getting Started
+## ¿Qué incluye este proyecto?
 
-Install all dependencies using npm:
+- Sitio web moderno y responsive
+- Páginas informativas para servicios y especialidades
+- Integración de contacto por WhatsApp y formulario
+- Diseño preparado para una marca enfocada en fitness y bienestar
+- Arquitectura basada en Eleventy con plantillas reutilizables
 
+## Requisitos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- Node.js
+- npm
+
+## Instalación
+
+Instala las dependencias del proyecto con:
+
+```bash
+npm install
 ```
-$ npm install
+
+## Desarrollo local
+
+Para iniciar el entorno de desarrollo y ver el sitio en tu navegador, ejecuta:
+
+```bash
+npm run dev
 ```
 
-### To Develop
+La vista previa estará disponible en:
 
-```
-$ npm run dev
-```
-
-You can view the website at the given access URL:
-
-```
-$ light-server is listening at http://localhost:4000
+```text
+http://localhost:4000
 ```
 
-The local url is configured in `.lightserverrc`
+La URL local está configurada en el archivo .lightserverrc.
 
-### To Build
+## Construcción para producción
 
-```
+Para generar la versión lista para publicar, ejecuta:
+
+```bash
 npm run build
 ```
+
+Esto compilará el sitio y dejará los archivos listos en la carpeta dist.
+
+## Estructura principal
+
+- src/: contiene las páginas y contenido del sitio
+- src/_includes/: plantillas, layouts y componentes reutilizables
+- src/assets/: imágenes, videos, estilos y scripts
+
+## Tecnologías utilizadas
+
+- Eleventy (11ty)
+- Nunjucks
+- HTML, CSS y JavaScript
+- Light Server para vista previa local
+

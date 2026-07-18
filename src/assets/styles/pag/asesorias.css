@@ -1,400 +1,680 @@
-.asesorias{
+/*==================================================
+=            SECCIÓN ASESORÍAS
+==================================================*/
+
+.asesorias {
     color: #000;
-    /*background-image: url(/assets/images/fondo-2.png);
-    background-repeat: repeat-y;
-    background-size: contain ;*/
 }
 
-.asesorias h1{
+.asesorias h1 {
     margin-top: var(--spacer-xl);
+    margin-bottom: var(--spacer-xl);
+
     font-family: var(--font-1);
     font-size: var(--text-title);
     font-weight: bold;
+
     text-align: center;
-    color: #000; 
-    margin-bottom: var(--spacer-xl);
+    color: #000;
 }
 
-.h1-green{
+.h1-green {
     color: #247D0D;
 }
 
-.h1-orange{
+.h1-orange {
     color: #FB5B21;
 }
 
-.asesoria-1, .asesoria-2, .asesoria-3{
+
+/*==================================================
+=            TARJETAS DE ASESORÍA
+==================================================*/
+
+.asesoria-1,
+.asesoria-2,
+.asesoria-3 {
     padding: 18px;
-    -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    border: #FB5B21 solid 1px;
+
+    border-radius: 1rem;
+
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0px 2px 19px -1px rgba(0, 0, 0, .75);
+    box-shadow: 0px 2px 19px -1px rgba(0, 0, 0, .75);
 }
 
-.asesoria-1{
-    grid-column: 3 / span 4;
+.asesoria-1 {
+    grid-column: 1 / span 4;
 }
 
-.asesoria-2{
-    grid-column: 7 / span 4;
-    
-}
-
-.asesoria-3{
-    margin-top: var(--spacer-l);
+.asesoria-2 {
     grid-column: 5 / span 4;
 }
 
-.asesorias-text-2{
-    grid-column:  4 / span 6;
-    margin-top: var(--spacer-xl);
-    text-align: center;
+.asesoria-3 {
+    grid-column: 9 / span 4;
 }
 
-.asesoria-1 i, .asesoria-2 i, .asesoria-3 i{
+.asesoria-1 i,
+.asesoria-2 i,
+.asesoria-3 i {
+    color: #247D0D;
     font-size: var(--text-base-1);
     font-weight: bold;
-    /*background-color: #000;*/
-    color: #FB5B21;
-    /*border-radius: 50%;
-    padding: 10px;*/ 
 }
 
-.ase-title{
-    color: #000;
+.ase-title {
     margin-left: 2px;
-    font-weight: bold;
-    font-size: var(--text-base);
+
+    color: #000;
+
     font-family: var(--font-1);
-}
-
-.ase-text, .ase-text, .ase-text{
-    padding-top: 20px;
-    font-size: var(--text-note-1);
-    text-align: justify;  
-    padding-bottom: 20px;
-}
-
-.asesoria-1 p, .asesoria-2 p,.asesoria-3 p{
-    text-align: center;
-    color: #F1F5F5;
-    background-color: #031A30;
-    padding:14px;
-    font-family: var(--font-3);
+    font-size: var(--text-base);
     font-weight: bold;
-    font-size: var(--text-base-1);
 }
 
-.asesorias-text-2 p{
-    color: #F1F5F5;
-    background-color:  #052746;
+.ase-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: justify;
+    font-size: var(--text-note-1);
+}
+
+.asesoria-1 p,
+.asesoria-2 p {
+
+    margin-top: 5rem;
+    padding: 14px;
+
     text-align: center;
-    padding: 10px;
+
+    background: #031A30;
+    color: #F1F5F5;
+
     font-family: var(--font-3);
-    font-size: var(--text-subheader);
-    margin-top: var(--spacer-s);
+    font-size: var(--text-base-1);
+    font-weight: bold;
 }
 
-.space-ase{
-    padding-bottom: var(--spacer-xl);
+.asesoria-3 p {
+    padding: 14px;
+
+    text-align: center;
+
+    background: #031A30;
+    color: #F1F5F5;
+
+    font-family: var(--font-3);
+    font-size: var(--text-base-1);
+    font-weight: bold;
+}
+
+
+/*==================================================
+=            PAQUETES
+==================================================*/
+
+
+
+.asesorias-text-2 {
+    position: relative;
+
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    margin-top: var(--spacer-xl);
+    margin-bottom: var(--spacer-xl);
+
+    background: #031A30;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+
+.paquete-img {
+    width: 45%;
+    overflow: hidden;
+
+    clip-path: polygon(0 0,
+            82% 0,
+            100% 100%,
+            0 100%);
+}
+
+.paquete-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.paquete-info {
+    width: 55%;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+
+.paquete-subtitle {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #39B54A;
+    font-size: var(--text-title);
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.paquete-subtitle::after {
+    content: "";
+
+    display: block;
+
+    width: 300px;
+    height: 2px;
+
+    margin-top: .5rem;
+
+    background: #39B54A;
+}
+
+.paquete-info h2 {
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    font-family: var(--font-1);
+    font-size: var(--text-subheader);
+    line-height: 1.1;
+}
+
+.paquete-info h2 span {
+    color: #39B54A;
+}
+
+
+/*==================================================
+=            PLANES
+==================================================*/
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 0;
+
+    border-bottom: 2px solid rgba(255, 255, 255, .25);
+}
+
+.plan-left {
+    display: flex;
+}
+
+.plan-icon {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+
+    color: white;
+    font-size: 44px;
+
+    flex-shrink: 0;
+}
+
+.plan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.plan-text h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.plan-text p {
+    font-size: 15px;
+    color: #bdbdbd;
+}
+
+.precio {
+    padding: 12px 24px;
+
+    border: 2px solid #39B54A;
+    border-radius: 10px;
+
+    color: #39B54A;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.plan strong {
+    color: white;
+    font-size: 22px;
+}
+
+
+
+@media (max-width:1100px) {
+
+    .plan-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 34px;
+    }
+
+    .plan-text h3 {
+        font-size: 20px;
+    }
+
+    .precio {
+        font-size: 30px;
+        padding: 10px 18px;
+    }
+
 }
 
 
 /* Size: md */
 @media (max-width: 900px) {
-    .asesorias h1{
-        /*margin-top: var(--spacer-xl);
-        margin-bottom: var(--spacer-xl);*/
+    .asesorias h1 {
         font-size: var(--text-title-1);
-        
     }
-    
-    .asesoria-1, .asesoria-2, .asesoria-3{
-        /*padding: 20px;
-        -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        border: #ee964c solid 1px;*/
+
+    .asesoria-1 {
+        grid-column: 1 / span 5;
     }
-    
-    .asesoria-1{
-        grid-column: 2 / span 4;
+
+    .asesoria-2 {
+        grid-column: 6 / span 5;
+
     }
-    
-    .asesoria-2{
-        grid-column: 6 / span 4;
-        
+
+    .asesoria-3 {
+        margin-top: var(--spacer-l);
+        grid-column: 1 / -1;
     }
-    
-    .asesoria-3{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 4 / span 4;
-    }
-    
-    .asesorias-text-2{
-        grid-column:  3 / span 6;
-        /*margin-top: var(--spacer-xl);*/
-    }
-    /*
-    .asesoria-1 i, .asesoria-2 i, .asesoria-3 i{
-        font-size: var(--text-base);
-        background-color: #000;
-        color: #fff;
-        border-radius: 50%;
-        padding: 10px; 
-    }
-    */
-    .ase-title{
-        /*color: #000;*/
+
+    .ase-title {
         margin-left: 5px;
         font-weight: bold;
         font-size: var(--text-subheader);
     }
-    
-    .ase-text, .ase-text, .ase-text{
-        /*padding-top: 20px;
-        text-align: justify;  
-        padding-bottom: 20px;*/
+
+    .ase-text,
+    .ase-text,
+    .ase-text {
         font-size: var(--text-base);
     }
-    
-    
-    .asesoria-1 p, .asesoria-2 p,.asesoria-3 p{
-        /*text-align: center;
-        color: #F1F5F5;
-        background-color: #031A30;
-        padding:14px;
-        font-family: var(--font-3);
-        font-weight: bold;*/
+
+
+    .asesoria-1 p,
+    .asesoria-2 p,
+    .asesoria-3 p {
         font-size: var(--text-base-1);
+        margin-top: 1rem;
     }
-    
-    .asesorias-text-2 p{
-        /*color: #F1F5F5;
-        background-color:  #052746;
-        text-align: center;
-        padding: 10px;
-        font-family: var(--font-3);
-        margin-top: var(--spacer-s);
-        font-size: var(--text-subheader);*/
-        
+
+
+
+    .asesorias-text-2 {
+        grid-column: 1 / -1;
     }
-    /*
-    .space-ase{
-        padding-bottom: var(--spacer-xl);
-    }*/
+
+    .paquete-img {
+        width: 40%;
+    }
+
+    .paquete-info {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .paquete-subtitle {
+        font-size: var(--text-title-1);
+        letter-spacing: 5px;
+    }
+
+    .paquete-subtitle::after {
+        width: 180px;
+    }
+
+    .paquete-info h2 {
+        font-size: var(--text-header);
+        margin-bottom: 20px;
+    }
+
+    .plan {
+        padding: 1.5rem 0;
+    }
+
+    .plan-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 32px;
+    }
+
+    .plan-text {
+        padding: 0 1rem;
+    }
+
+    .plan-text h3 {
+        font-size: 18px;
+    }
+
+    .plan-text p {
+        font-size: 13px;
+    }
+
+    .precio {
+        padding: 10px 18px;
+        font-size: 28px;
+    }
 }
 
 /* Size: sm */
 @media (max-width: 700px) {
-    .asesorias h1{
+    .asesorias h1 {
         margin-top: var(--spacer-2xl);
-        /*margin-bottom: var(--spacer-xl);
-        font-size: var(--text-title-1);*/
     }
-    
-    .asesoria-1, .asesoria-2, .asesoria-3{
-        /*padding: 20px;
-        -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        border: #ee964c solid 1px;*/
-    }
-    
-    .asesoria-1{
+
+    .asesoria-1 {
         grid-column: 2 / span 6;
     }
-    
-    .asesoria-2{
+
+    .asesoria-2 {
         margin-top: var(--spacer-l);
         grid-column: 2 / span 6;
-        
+
     }
-    
-    .asesoria-3{
-        /*margin-top: var(--spacer-l);*/
+
+    .asesoria-3 {
         grid-column: 2 / span 6;
     }
-    
-    .asesorias-text-2{
-        grid-column:  2 / span 6;
-        /*margin-top: var(--spacer-xl);*/
-    }
-    
-    .asesoria-1 i, .asesoria-2 i, .asesoria-3 i{
-        /*font-size: var(--text-base);*/ 
-    }
-    /*
-    .ase-title{
 
-        font-weight: bold;
-        font-size: var(--text-base);
-        font-family: var(--font-1);
+    .asesorias-text-2 {
+        grid-column: 2 / span 6;
+        margin-bottom: var(--spacer-l);
     }
-    
-    .ase-text, .ase-text, .ase-text{
-        padding-top: 20px;
-        text-align: justify;  
-        padding-bottom: 20px;
+
+    .asesorias-text-2 {
+        grid-column: 2 / span 6;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: var(--spacer-l);
     }
-    
-    .asesoria-1 p, .asesoria-2 p,.asesoria-3 p{
-        text-align: center;
-        color: #F1F5F5;
-        background-color: #031A30;
-        padding:14px;
-        font-family: var(--font-3);
-        font-weight: bold;
-        font-size: var(--text-base-1);
+
+    .paquete-img {
+        width: 100%;
+        height: 300px;
+
+        clip-path: none;
     }
-    
-    .asesorias-text-2 p{
-        color: #F1F5F5;
-        background-color:  #052746;
-        text-align: center;
-        padding: 10px;
-        font-family: var(--font-3);
-        font-size: var(--text-subheader);
-        margin-top: var(--spacer-s);
-    }*/
-    
-    .space-ase{
-        padding-bottom: var(--spacer-l);
-    } 
+
+    .paquete-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .paquete-info {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .plan-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .plan-text h3 {
+        font-size: 18px;
+    }
+
+    .plan-text p {
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
 }
 
 /* Size: xs */
 @media (max-width: 500px) {
-    .asesorias h1{
-        /*margin-top: var(--spacer-2xl);*/
+    .asesorias h1 {
         font-size: var(--text-title-1);
         margin-bottom: var(--spacer-l);
     }
-    
-    .asesoria-1, .asesoria-2, .asesoria-3{
-        /*padding: 20px;
-        -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        border: #ee964c solid 1px;*/
+
+    .asesoria-1,
+    .asesoria-2,
+    .asesoria-3 {
+        grid-column: 1 / -1;
     }
-    
-    .asesoria-1{
-        grid-column: 2 / span 4;
-    }
-    
-    .asesoria-2{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 4;
-        
-    }
-    
-    .asesoria-3{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 4;
-    }
-    
-    .asesorias-text-2{
-        grid-column:  2 / span 4;
-        /*margin-top: var(--spacer-xl);*/
-    }
-    
-    .asesoria-1 i, .asesoria-2 i, .asesoria-3 i{
+
+
+    .asesoria-1 i,
+    .asesoria-2 i,
+    .asesoria-3 i {
         font-size: var(--text-subheader);
-        /*background-color: #000;
-        color: #fff;
-        border-radius: 50%;*/ 
     }
-    
-    .ase-title{
-        /*color: #000;*/
+
+    .ase-title {
         margin-left: 4px;
         font-size: var(--text-subheader);
     }
-    
-    .ase-text, .ase-text, .ase-text{
+
+    .ase-text,
+    .ase-text,
+    .ase-text {
         font-size: var(--text-base);
     }
-    
-    .asesoria-1 p, .asesoria-2 p,.asesoria-3 p{
-        padding:10px;
+
+    .asesoria-1 p,
+    .asesoria-2 p,
+    .asesoria-3 p {
+        padding: 10px;
         font-size: var(--text-subheader);
     }
-    
-    .asesorias-text-2 p{
+
+    .asesorias-text-2 p {
         padding: 10px;
         font-size: var(--text-subheader);
         margin-top: var(--spacer-s);
     }
-    /*
-    .space-ase{
-        padding-bottom: var(--spacer-l);
-    }*/
+
+    .asesorias-text-2 {
+        grid-column: 1 / -1;
+
+        flex-direction: column;
+    }
+
+    .paquete-img {
+        height: 300px;
+    }
+
+    .paquete-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .paquete-info {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .paquete-subtitle {
+        font-size: var(--text-header);
+        letter-spacing: 4px;
+    }
+
+    .paquete-subtitle::after {
+        width: 140px;
+    }
+
+    .paquete-info h2 {
+        font-size: var(--text-base-1);
+        margin-bottom: 20px;
+    }
+
+    .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .plan-left {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .plan-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+
+    .plan-text {
+        padding-left: 1rem;
+        text-align: left;
+    }
+
+    .plan-text h3 {
+        font-size: 16px;
+    }
+
+    .plan-text p {
+        font-size: 12px;
+    }
+
+    .precio {
+        font-size: 20px;
+        padding: 6px 12px;
+        flex-shrink: 0;
+    }
 }
 
 /* Size: xxs */
 @media (max-width: 320px) {
+
     .asesorias{
-      padding: 10px;  
+        padding: 10px;
     }
+
     .asesorias h1{
-        word-wrap: break-word;
-        /*margin-top: var(--spacer-xl);*/
-        font-size: var(--text-title);
-        /*margin-bottom: var(--spacer-l);*/
+        font-size: var(--text-title-1);
+        line-height: 1.2;
+        margin-bottom: var(--spacer-l);
     }
-    
-    .asesoria-1, .asesoria-2, .asesoria-3{
-        padding: 15px;
-        
-    }
-    
-    .asesoria-1{
-        grid-column:  span 4;
-    }
-    
-    .asesoria-2{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-        
-    }
-    
-    .asesoria-3{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-    }
-    
+
+    .asesoria-1,
+    .asesoria-2,
+    .asesoria-3,
     .asesorias-text-2{
-        grid-column:  span 4;
-        /*margin-top: var(--spacer-xl);*/
+        grid-column: 1 / -1;
     }
-    
-    .asesoria-1 i, .asesoria-2 i, .asesoria-3 i{
-        font-size: var(--text-subheader); 
+
+    .asesoria-1,
+    .asesoria-2,
+    .asesoria-3{
+        padding: 10px;
     }
-    
+
     .ase-title{
-        word-wrap: break-word;
-        font-size: var(--text-subheader);
+        font-size: var(--text-base);
     }
-    
-    .ase-text, .ase-text, .ase-text{
-        word-wrap: break-word;
+
+    .ase-text{
         font-size: var(--text-note-1);
     }
-    
-    .asesoria-1 p, .asesoria-2 p,.asesoria-3 p{
-        word-wrap: break-word;
-        font-size: var(--text-subheader);
+
+    .asesoria-1 p,
+    .asesoria-2 p,
+    .asesoria-3 p{
+        font-size: var(--text-base);
+        padding: 8px;
     }
-    
-    .asesorias-text-2 p{
-        word-wrap: break-word;
-        font-size: var(--text-subheader);
-        
+
+    .paquete-img{
+        height: 220px;
     }
-    
-    .space-ase{
-        padding-bottom: var(--spacer-m);
+
+    .paquete-info{
+        padding: 18px;
     }
+
+    .paquete-subtitle{
+        font-size: var(--text-base);
+        letter-spacing: 2px;
+    }
+
+    .paquete-subtitle::after{
+        width: 90px;
+    }
+
+    .paquete-info h2{
+        font-size: var(--text-base);
+        margin-bottom: 15px;
+    }
+
+    .plan{
+        gap: .8rem;
+        padding: .8rem 0;
+    }
+
+    .plan-icon{
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .plan-text{
+        padding-left: .8rem;
+    }
+
+    .plan-text h3{
+        font-size: 14px;
+    }
+
+    .plan-text p{
+        font-size: 11px;
+    }
+
+    .precio{
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
 }

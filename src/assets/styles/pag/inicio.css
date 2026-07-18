@@ -10,8 +10,23 @@
 }
 
 /*video*/
-.video-container{
+.showcase {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+}
+
+.video-container {
+    width: 100%;
     text-align: center;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /********/
