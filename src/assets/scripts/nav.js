@@ -14,14 +14,20 @@ function activaSubmenu(event) {
   event.preventDefault();
   const parent = this.closest('.nav-item-dropdown');
 
+  if (!parent) {
+    return;
+  }
+
+  const isOpen = parent.classList.contains('activa');
+
   document.querySelectorAll('.nav-item-dropdown').forEach(function(item) {
     if (item !== parent) {
       item.classList.remove('activa');
     }
   });
 
-  parent.classList.toggle('activa');
-  this.setAttribute('aria-expanded', parent.classList.contains('activa'));
+  parent.classList.toggle('activa', !isOpen);
+  this.setAttribute('aria-expanded', String(!isOpen));
 }
 
 const botonMenu = document.querySelector('.header-nav-icon');
