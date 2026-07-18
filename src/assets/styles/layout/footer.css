@@ -1,24 +1,62 @@
-.footer {
-  padding-top: var(--spacer-m);
-  padding-bottom: var(--spacer-m);
-  font-size: var(--text-note);
-  text-align: center;
-  background: #414141;
-  color: #fff;
+.footer{
+    background:#222;
+    color:#fff;
+    border-top:8px solid #39B54A;
+    padding:2rem 1rem;
+    text-align:center;
 }
 
+.footer .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+}
+
+.footer-logo{
+    width:170px;
+    height:auto;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+}
+
+.social-links a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+
 .footer-tiktok img{
-  height: 18px;
+    width:18px;
+    height:18px;
 }
 
 
 .footer a {
   text-decoration: none;
   color: inherit;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
-.social-links a{
+/*.social-links a{
   text-decoration: none;
     list-style: none;
     display: inline-block;
@@ -27,12 +65,14 @@
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
-    line-height: 45px; /*centra*/
+    line-height: 45px; 
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
     font-size: 18px;
-}
+}*/
+
+
 
 .footer-facebook:hover{
   background: #1877f2;
@@ -51,20 +91,30 @@
 }
 
 
-.copyr{
-font-family: var(--font-2);
-text-align: center;
-font-size: var(--text-base);
-font-weight: bold;
+.footer-text{
+    font-family:var(--font-2);
+    font-size:var(--text-base);
+    color:#d8d8d8;
 }
 
+.copyr{
+    font-family:var(--font-2);
+    font-size:var(--text-note);
+    color:#9d9d9d;
+}
+
+
+
+
+
+
+
  /*copy*/
- .svg-wrapper-footer{    
+ /*.svg-wrapper-footer{    
   position: relative;
   top: 3%;
   transform: translateY(3%);
   margin: 0 auto;
-  /*width: 320px;*/
 }
 
 .shape-footer{
@@ -72,7 +122,6 @@ font-weight: bold;
   stroke-dashoffset: -340;
   stroke-width: 3px;
   fill: transparent;
-  /*stroke: #19f6e8;*/
   stroke: #000;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
@@ -93,4 +142,4 @@ font-weight: bold;
   stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 700;
-}
+}*/
