@@ -1,6 +1,6 @@
 # MERAKI - Página web para entrenador personal
 
-MERAKI es un sitio web estático desarrollado con Eleventy (11ty) para presentar los servicios de un entrenador personal. El proyecto incluye secciones para la misión, visión, servicios de alimentación, antropometría, asesorías, entrenamientos grupales, entrenamiento personalizado, contacto y una página de agradecimiento.
+MERAKI es un sitio web estático desarrollado con Eleventy (11ty) para presentar los servicios de un entrenador personal. El proyecto incluye secciones para la misión, visión, servicios de alimentación, antropometría, asesorías, entrenamientos grupales, entrenamiento personalizado y contacto 
 
 ## ¿Qué incluye este proyecto?
 
@@ -39,6 +39,10 @@ La vista previa estará disponible en:
 http://localhost:4000
 ```
 
+La URL de la página de inicio es:
+
+[Inicio](https://meraki-col.netlify.app/)
+
 La URL local está configurada en el archivo .lightserverrc.
 
 ## Construcción para producción
@@ -63,4 +67,3 @@ Esto compilará el sitio y dejará los archivos listos en la carpeta dist.
 - Nunjucks
 - HTML, CSS y JavaScript
 - Light Server para vista previa local
-
