@@ -1,462 +1,774 @@
-.antropometria{
+.antropometria {
     background: #fff;
 }
 
-.antopo-title h1{
+/*==================================================
+=            TITULO
+==================================================*/
+
+.antopo-title h1 {
     margin-top: var(--spacer-xl);
+    margin-bottom: var(--spacer-xl);
+
     text-align: center;
-    font-size: var(--text-title);
+
     font-family: var(--font-1);
+    font-size: var(--text-title);
     font-weight: bold;
-    margin-bottom: var(--spacer-xl);
 }
 
 
+/*==================================================
+=            GRID SERVICIOS
+==================================================*/
 
-.antopo-volu{
-    grid-column: 2 /span 3;
+.antopo-volu {
+    grid-column: 1 / span 6;
 }
 
-.antopo-adipo{
-    grid-column: span 3;
-    position: relative;
-    left: 18%;
+.antopo-adipo {
+    grid-column: 7 / span 6;
 }
 
-.antopo-postu{
-    grid-column: 9 / span 3;
-}
-
-.antopo-soma{
+.antopo-postu {
+    grid-column: 1 / span 6;
     margin-top: var(--spacer-l);
-    grid-column: 5 / span 3;
-    position: relative;
-    left: 18%;
 }
 
-.antopo-volu, .antopo-adipo, .antopo-postu, .antopo-soma{
-    border: #000 1px solid;
-    border-radius: 15px;
-    background-color: #F5F5F5; 
+.antopo-soma {
+    grid-column: 7 / span 6;
+    margin-top: var(--spacer-l);
 }
 
-.antopo-volu img, .antopo-adipo img, .antopo-postu img, .antopo-soma img{
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+
+/*==================================================
+=            TARJETAS
+==================================================*/
+
+.antopo-volu,
+.antopo-adipo,
+.antopo-postu,
+.antopo-soma {
+
+    display: flex;
+
+    min-height: 260px;
+
+    background: #071C33;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+
+    transition: .3s;
 }
 
-.antopo-volu h2, .antopo-adipo h2, .antopo-postu h2, .antopo-soma h2{
-  font-family: var(--font-1);
-  text-align: center;
-  color: #FB5B21;
-  font-weight: bold;
-  font-size:  var(--text-base-1);
-  padding-top: var(--spacer-l);  
-  padding-bottom: var(--spacer-m);
+.antopo-volu:hover,
+.antopo-adipo:hover,
+.antopo-postu:hover,
+.antopo-soma:hover {
+
+    transform: translateY(-6px);
 }
 
-.antopo-volu p, .antopo-adipo p, .antopo-postu p, .antopo-soma p{
+
+/*==================================================
+=            IMAGEN
+==================================================*/
+
+.antopo-img {
+
+    width: 42%;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+.antopo-img img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .35s;
+}
+
+.antopo-volu:hover img,
+.antopo-adipo:hover img,
+.antopo-postu:hover img,
+.antopo-soma:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/*==================================================
+=            INFORMACIÓN
+==================================================*/
+
+.antopo-info {
+
+    width: 58%;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+}
+
+
+/*==================================================
+=            ICONO
+==================================================*/
+
+.antopo-icon {
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #FB5B21;
+    border-radius: 50%;
+
+    color: #FB5B21;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+/*==================================================
+=            TITULO
+==================================================*/
+
+.antopo-info h2 {
+
+    margin-bottom: 15px;
+
+    color: #FB5B21;
+
+    font-family: var(--font-1);
+    font-size: var(--text-base-1);
+    font-weight: bold;
+}
+
+
+/*==================================================
+=            DESCRIPCIÓN
+==================================================*/
+
+.antopo-descripcion {
+
+    color: #E4E4E4;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-family: var(--font-2);
+
+    margin-bottom: auto;
+}
+
+
+/*==================================================
+=            PRECIO
+==================================================*/
+
+.antopo-precio {
+
+    margin-top: 25px;
+
+    color: #39B54A;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
     font-family: var(--font-3);
-    padding: 5px;
-    text-align: center;
-    font-weight: bolder;
-    /*background: #000;*/
-    color: #000;
-    font-size:  var(--text-subheader);  
-    /*width: 60%;
-    position: relative;
-    left: 20%;*/
 }
 
-.space-ant-1{
+.antopo-precio::before {
+
+    content: "Desde";
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #CFCFCF;
+
+    font-size: 14px;
+
+    font-weight: 400;
+}
+
+
+/*==================================================
+=            ESPACIO
+==================================================*/
+
+.space-ant-1 {
     margin-top: var(--spacer-xl);
 }
 
-.antopo-pa-1{
-    grid-column:  2 / span 3;
-}
 
-.antopo-pa-2{
-    grid-column: span 3;
-    position: relative;
-    left: 17%;
-}
+/*==================================================
+=            PAQUETES (SIN MODIFICAR)
+==================================================*/
 
-.antopo-pa-3{
-    grid-column: 9 / span 3;
-}
+.antopo-paquetes {
 
-.antopo-pa-1 p, .antopo-pa-2 p, .antopo-pa-3 p{
-    padding: 15px;
-    border-radius: 12px;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    font-weight: bold;
-    font-size: var(--text-subheader);
-    font-family: var(--font-3);   
-}
+    grid-column: 1 / -1;
 
-.span-gray{
-    color: #7B7B7B;
-}
+    display: flex;
 
-.space-ant{
+    margin-top: var(--spacer-xl);
     margin-bottom: var(--spacer-xl);
+
+    background: #031A30;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.antopo-paquete-img {
+
+    width: 45%;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0,
+            82% 0,
+            100% 100%,
+            0 100%);
+}
+
+.antopo-paquete-img img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.antopo-paquete-info {
+
+    width: 55%;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
 }
 
 
 /* Size: md */
 @media (max-width: 900px) {
-    .antopo-title h1{
-        /*margin-top: var(--spacer-xl);
-        margin-bottom: var(--spacer-xl);*/
-        font-size: var(--text-title-1);  
+    /*----------- Título -----------*/
+
+    .antopo-title h1 {
+        font-size: var(--text-title-1);
+        margin-bottom: var(--spacer-l);
     }
 
-    .antopo-volu{
-        grid-column: 2 /span 3;
+
+    /*----------- Grid -----------*/
+
+    .antopo-volu {
+        grid-column: 1 / span 5;
     }
 
-    .antopo-adipo{
-        grid-column: 7 / span 3;
-        /*position: relative;*/
-        left: 0%;
+    .antopo-adipo {
+        grid-column: 6 / span 5;
     }
 
-    .antopo-postu{
-        margin-top: var(--spacer-l);
-        grid-column: 2 / span 3;
+    .antopo-postu {
+        grid-column: 1 / span 5;
     }
 
-    .antopo-soma{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 7 / span 3;
-        /*position: relative;*/
-        left: 0%;
+    .antopo-soma {
+        grid-column: 6 / span 5;
     }
 
-    /*.antopo-volu, .antopo-adipo, .antopo-postu, .antopo-soma{
-        border: #000 1px solid;
-        border-radius: 15px;
-        background-color: #F5F5F5; 
-    }*/
 
-    /*.antopo-volu img, .antopo-adipo img, .antopo-postu img, .antopo-soma img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
+    /*----------- Tarjetas -----------*/
 
-    /*.antopo-volu h2, .antopo-adipo h2, .antopo-postu h2, .antopo-soma h2{
-      font-size:  var(--text-subheader);
-      padding-top: var(--spacer-l);  
-      padding-bottom: var(--spacer-m);
-    }*/
+    .antopo-volu,
+    .antopo-adipo,
+    .antopo-postu,
+    .antopo-soma {
 
-    /*.antopo-volu p, .antopo-adipo p, .antopo-postu p, .antopo-soma p{
-        font-family: var(--font-3);
-        padding: 5px;
-
-        font-size:  var(--text-base-1);  
-    }*/
-
-    /*.space-ant-1{
-        margin-top: var(--spacer-xl);
-    }*/
-
-    .antopo-pa-1{
-        grid-column:  span 3;
+        min-height: 220px;
     }
 
-    .antopo-pa-2{
-        grid-column: span 3;
-        /*position: relative;*/
-        left: 18%;
+
+    /*----------- Imagen -----------*/
+
+    .antopo-img {
+        width: 40%;
     }
 
-    .antopo-pa-3{
-        grid-column: 8 / span 3;
+
+    /*----------- Información -----------*/
+
+    .antopo-info {
+        width: 60%;
+        padding: 22px;
     }
 
-    /*.antopo-pa-1 p, .antopo-pa-2 p, .antopo-pa-3 p{
-        border-radius: 15px;
-        background: #fff;
-        color: #000;
-        text-align: center;
-        font-weight: bold;
-        padding: 18%;
-        font-size: var(--text-subheader);
-        font-family: var(--font-3);   
-    }*/
 
-    /*.space-ant{
-        margin-bottom: var(--spacer-xl);
-    }*/
-    
+    /*----------- Icono -----------*/
+
+    .antopo-icon {
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
+    /*----------- Título -----------*/
+
+    .antopo-info h2 {
+
+        font-size: 20px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /*----------- Descripción -----------*/
+
+    .antopo-descripcion {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    /*----------- Precio -----------*/
+
+    .antopo-precio {
+
+        font-size: 26px;
+
+        margin-top: 18px;
+    }
+
+    .antopo-precio::before {
+
+        font-size: 13px;
+    }
+
+
+    /*----------- Paquetes -----------*/
+
+    .antopo-paquete-img {
+
+        width: 40%;
+    }
+
+    .antopo-paquete-info {
+
+        width: 60%;
+        padding: 35px;
+    }
+
+
 }
 
 /* Size: sm */
 @media (max-width: 700px) {
-    .antopo-title h1{
-        margin-top: var(--spacer-2xl);
-        /*margin-bottom: var(--spacer-xl);
-        font-size: var(--text-title-1); */ 
+    /* Título */
+
+    .antopo-title h1 {
+
+        font-size: var(--text-title-1);
+
+        margin-top: var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
-    .antopo-volu{
-        grid-column: 2 /span 3;
+    /*=========================================
+    =            TARJETAS
+    =========================================*/
+
+    .antopo-volu,
+    .antopo-adipo,
+    .antopo-postu,
+    .antopo-soma {
+
+        grid-column: 1 / -1;
+
+        margin-top: 1.5rem;
+
+        min-height: 230px;
     }
 
-    .antopo-adipo{
-        grid-column: 5 / span 3;
-        /*position: relative;
-        left: 0%;*/
+    .antopo-volu {
+        margin-top: 0;
     }
 
-    .antopo-postu{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 3;
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .antopo-img {
+
+        width: 40%;
     }
 
-    .antopo-soma{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 5 / span 3;
-        /*position: relative;
-        left: 0%;*/
+    /*=========================================
+    =            INFORMACIÓN
+    =========================================*/
+
+    .antopo-info {
+
+        width: 60%;
+
+        padding: 25px;
     }
 
-    /*.antopo-volu, .antopo-adipo, .antopo-postu, .antopo-soma{
-        border: #000 1px solid;
-        border-radius: 15px;
-        background-color: #F5F5F5; 
-    }*/
+    /*=========================================
+    =            ICONO
+    =========================================*/
 
-    /*.antopo-volu img, .antopo-adipo img, .antopo-postu img, .antopo-soma img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
+    .antopo-icon {
 
-    /*.antopo-volu h2, .antopo-adipo h2, .antopo-postu h2, .antopo-soma h2{
-      font-size:  var(--text-subheader);
-      padding-top: var(--spacer-l);  
-      padding-bottom: var(--spacer-m);
-    }*/
+        width: 58px;
+        height: 58px;
 
-    /*.antopo-volu p, .antopo-adipo p, .antopo-postu p, .antopo-soma p{
-        font-family: var(--font-3);
-        padding: 5px;
+        font-size: 24px;
 
-        font-size:  var(--text-base-1);  
-    }*/
-
-    .space-ant-1{
-        margin-top: var(--spacer-xl);
+        margin-bottom: 15px;
     }
 
-    .antopo-pa-1{
-        grid-column: span 4;
+    /*=========================================
+    =            TEXTO
+    =========================================*/
+
+    .antopo-info h2 {
+
+        font-size: var(--text-header);
+
+        margin-bottom: 12px;
     }
 
-    .antopo-pa-2{
-        grid-column:  span 4;
-        /*position: relative;*/
-        left: 0%;
+    .antopo-descripcion {
+
+        font-size: 14px;
+
+        line-height: 1.5;
     }
 
-    .antopo-pa-3{
-        grid-column: 3 / span 4;
+    .antopo-precio {
+
+        font-size: 28px;
+
+        margin-top: 20px;
     }
 
-    .antopo-pa-1 p, .antopo-pa-2 p, .antopo-pa-3 p{
-        /*border-radius: 15px;
-        background: #fff;
-        color: #000;
-        text-align: center;
-        font-weight: bold;
-        padding: 7%;
-        font-size: var(--text-subheader);
-        font-family: var(--font-3); */
-        word-wrap: break-word;  
+    .antopo-precio::before {
+
+        font-size: 13px;
     }
 
+    /*=========================================
+    =            PAQUETES
+    =========================================*/
+
+    .antopo-paquetes {
+
+        flex-direction: column;
+    }
+
+    .antopo-paquete-img {
+
+        width: 100%;
+
+        height: 260px;
+
+        clip-path: none;
+    }
+
+    .antopo-paquete-info {
+
+        width: 100%;
+
+        padding: 35px 30px;
+    }
 }
 
 /* Size: xs */
 @media (max-width: 500px) {
+    /*=========================
+      TÍTULO
+    =========================*/
+
     .antopo-title h1{
-        /*margin-top: var(--spacer-2xl);*/
-        margin-bottom: var(--spacer-l);
-        /*font-size: var(--text-title-1); */ 
+        font-size:var(--text-title-1);
+        margin-top:var(--spacer-l);
+        margin-bottom:var(--spacer-l);
+    }
+
+
+    /*=========================
+      GRID
+    =========================*/
+
+    .antopo-volu,
+    .antopo-adipo,
+    .antopo-postu,
+    .antopo-soma{
+
+        grid-column:1 / -1;
+
+        min-height:210px;
+
+        margin-top:1rem;
     }
 
     .antopo-volu{
-        grid-column: 2 /span 4;
+        margin-top:0;
     }
 
-    .antopo-adipo{
-        margin-top: var(--spacer-l);
-        grid-column: 2 / span 4;
-        /*position: relative;
-        left: 0%;*/
+
+    /*=========================
+      IMAGEN
+    =========================*/
+
+    .antopo-img{
+        width:40%;
     }
 
-    .antopo-postu{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 4;
+
+    /*=========================
+      INFORMACIÓN
+    =========================*/
+
+    .antopo-info{
+
+        width:60%;
+
+        padding:20px;
     }
 
-    .antopo-soma{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 4;
-        /*position: relative;
-        left: 0%;*/
+
+    /*=========================
+      ICONO
+    =========================*/
+
+    .antopo-icon{
+
+        width:50px;
+        height:50px;
+
+        font-size:20px;
+
+        margin-bottom:12px;
     }
 
-    /*.antopo-volu, .antopo-adipo, .antopo-postu, .antopo-soma{
-        border: #000 1px solid;
-        border-radius: 15px;
-        background-color: #F5F5F5; 
-    }*/
 
-    /*.antopo-volu img, .antopo-adipo img, .antopo-postu img, .antopo-soma img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
+    /*=========================
+      TEXTOS
+    =========================*/
 
-    .antopo-volu h2, .antopo-adipo h2, .antopo-postu h2, .antopo-soma h2{
-      /*font-size:  var(--text-subheader);*/
-      padding-top: var(--spacer-m);  
-      padding-bottom: var(--spacer-s);
+    .antopo-info h2{
+
+        font-size:18px;
+
+        margin-bottom:10px;
     }
 
-    .antopo-volu p, .antopo-adipo p, .antopo-postu p, .antopo-soma p{
-        /*font-family: var(--font-3);
-        padding: 5px;*/
-        font-size:  var(--text-subheader);  
+    .antopo-descripcion{
+
+        font-size:13px;
+
+        line-height:1.5;
     }
 
-    .space-ant-1{
-        margin-top: var(--spacer-xl);
+    .antopo-precio{
+
+        font-size:26px;
+
+        margin-top:18px;
     }
 
-    .antopo-pa-1{
-        grid-column: 2 / span 4;
+    .antopo-precio::before{
+
+        font-size:12px;
     }
 
-    .antopo-pa-2{
-        grid-column:  2 / span 4;
-        /*position: relative;*/
-        /*left: 0%;*/
+
+    /*=========================
+      PAQUETES
+    =========================*/
+
+    .antopo-paquetes{
+
+        flex-direction:column;
     }
 
-    .antopo-pa-3{
-        grid-column: 2 / span 4;
+    .antopo-paquete-img{
+
+        width:100%;
+        height:240px;
+
+        clip-path:none;
     }
 
-    .antopo-pa-1 p, .antopo-pa-2 p, .antopo-pa-3 p{
-        /*border-radius: 15px;
-        background: #fff;
-        color: #000;
-        text-align: center;
-        font-weight: bold;
-        
-        font-size: var(--text-subheader);
-        font-family: var(--font-3); */  
-        padding: 6%;
-        
+    .antopo-paquete-info{
+
+        width:100%;
+
+        padding:25px;
     }
-    
+
 }
 
 /* Size: xxs */
 @media (max-width: 320px) {
-    .antropometria{
-        padding: 20px;
-    }
+     /*=========================
+      TÍTULO
+    =========================*/
 
     .antopo-title h1{
-        word-wrap: break-word;
-        /*margin-top: var(--spacer-2xl);
-        margin-bottom: var(--spacer-l);*/
-        font-size: var(--text-title);  
+
+        font-size:var(--text-title);
+
+        margin-top:var(--spacer-m);
+        margin-bottom:var(--spacer-m);
     }
 
-    .antopo-volu{
-        grid-column: span 4;
-    }
 
-    .antopo-adipo{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-        /*position: relative;
-        left: 0%;*/
-    }
+    /*=========================
+      TARJETAS
+    =========================*/
 
-    .antopo-postu{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-    }
-
+    .antopo-volu,
+    .antopo-adipo,
+    .antopo-postu,
     .antopo-soma{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-        /*position: relative;
-        left: 0%;*/
+
+        grid-column:1 / -1;
+
+        display:block;
+
+        min-height:auto;
     }
 
-    /*.antopo-volu, .antopo-adipo, .antopo-postu, .antopo-soma{
-        border: #000 1px solid;
-        border-radius: 15px;
-        background-color: #F5F5F5; 
-    }*/
 
-    /*.antopo-volu img, .antopo-adipo img, .antopo-postu img, .antopo-soma img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
+    /*=========================
+      IMAGEN
+    =========================*/
 
-    .antopo-volu h2, .antopo-adipo h2, .antopo-postu h2, .antopo-soma h2{
-      /*font-size:  var(--text-subheader);
-      padding-top: var(--spacer-m);  
-      padding-bottom: var(--spacer-s);*/
-      word-wrap: break-word;
+    .antopo-img{
+
+        width:100%;
+
+        height:180px;
+
+        clip-path:none;
     }
 
-    .antopo-volu p, .antopo-adipo p, .antopo-postu p, .antopo-soma p{
-        /*font-family: var(--font-3);
-        padding: 5px;
-        font-size:  var(--text-subheader);*/
-        word-wrap: break-word;  
+    .antopo-img img{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
     }
 
-    .space-ant-1{
-        margin-top: var(--spacer-l);
+
+    /*=========================
+      INFORMACIÓN
+    =========================*/
+
+    .antopo-info{
+
+        width:100%;
+
+        padding:18px;
+
+        align-items:center;
+
+        text-align:center;
     }
 
-    .antopo-pa-1{
-        grid-column:  span 4;
+
+    /*=========================
+      ICONO
+    =========================*/
+
+    .antopo-icon{
+
+        width:45px;
+        height:45px;
+
+        font-size:18px;
+
+        margin-bottom:10px;
     }
 
-    .antopo-pa-2{
-        grid-column: span 4;
-        /*position: relative;*/
-        /*left: 0%;*/
+
+    /*=========================
+      TEXTOS
+    =========================*/
+
+    .antopo-info h2{
+
+        font-size:16px;
     }
 
-    .antopo-pa-3{
-        grid-column: span 4;
+    .antopo-descripcion{
+
+        font-size:12px;
+
+        line-height:1.45;
     }
 
-    .antopo-pa-1 p, .antopo-pa-2 p, .antopo-pa-3 p{
-        /*border-radius: 15px;
-        background: #fff;
-        color: #000;
-        text-align: center;
-        font-weight: bold;
-        padding: 7%;
-        font-size: var(--text-subheader);
-        font-family: var(--font-3);   */
-        word-wrap: break-word;
+    .antopo-precio{
+
+        font-size:22px;
+    }
+
+    .antopo-precio::before{
+
+        font-size:11px;
+    }
+
+
+    /*=========================
+      PAQUETES
+    =========================*/
+
+    .antopo-paquete-img{
+
+        height:180px;
+    }
+
+    .antopo-paquete-info{
+
+        padding:18px;
     }
 
 }
