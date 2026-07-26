@@ -404,7 +404,7 @@
 
         font-size: var(--text-title-1);
 
-        margin-top: var(--spacer-l);
+        margin-top: var(--spacer-2xl);
         margin-bottom: var(--spacer-l);
     }
 
@@ -526,7 +526,6 @@
 
     .antopo-title h1{
         font-size:var(--text-title-1);
-        margin-top:var(--spacer-l);
         margin-bottom:var(--spacer-l);
     }
 
@@ -654,8 +653,7 @@
     .antopo-title h1{
 
         font-size:var(--text-title);
-
-        margin-top:var(--spacer-m);
+        margin-top:var(--spacer-xl);
         margin-bottom:var(--spacer-m);
     }
 
