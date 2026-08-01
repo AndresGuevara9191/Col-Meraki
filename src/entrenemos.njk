@@ -8,236 +8,503 @@ eleventyNavigation:
 ---
 
 <div class="entre-white">
-  <div class="container grid">    
-    <div class="col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4 entre-h1">
-      <h1>ENTRENEMOS <span class="h1-green">TODOS</span></h1>
+  <div
+    class="container grid">
+    <!-- ========================================= TÍTULO ========================================== -->
+    <div class="col-12 entre-h1">
+      <h1>
+        ENTRENEMOS
+        <span class="h1-green">TODOS</span>
+      </h1>
     </div>
-
-    <div class="col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4 entre-title-h2">
-      <h2>EL RETOÑO</h2>
+    <!-- ========================================= TARJETA ========================================== -->
+    <div
+      class="training-card">
+      <!-- Imagen -->
+      <div class="training-img">
+        <img src="/assets/images/foto-9.jpg" alt="Programa El Retoño">
+      </div>
+      <!-- Información -->
+      <div class="training-info">
+        <div class="training-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h2>EL RETOÑO</h2>
+        <p class="training-description">
+          Programa dirigido a adultos mayores para mejorar la movilidad, la independencia y la calidad de vida mediante actividad
+          física supervisada.
+        </p>
+        <div class="training-details">
+          <div class="training-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Lugar</h3>
+              <p>Villa Mayor</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-users"></i>
+            <div>
+              <h3>Cupos</h3>
+              <p>15 personas</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <h3>Duración</h3>
+              <p>3 meses</p>
+            </div>
+          </div>
+          <div class="training-price">
+            <small>Desde</small>
+            <span>$10.000</span>
+          </div>
+        </div>
+        <button class="training-btn" data-modal="modal-retono">
+          Saber más
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
     </div>
-
-    <div class="entre-line-1"></div>
-
-    <div class="retono">
-      <span class="reto-title">DIRIGIDO A:</span>
-      <span>&nbsp;&nbsp;Hombres y mujeres entre 60 - 75 años, con baja actividad física, patologías osteomusculares y metabólicas que busquen autonomía y disminución de factores de riesgo en salud.</span>
-      <br>
-      <br>
-      <span class="reto-title">OBJETIVO:</span>
-      <span>&nbsp;&nbsp;Controlar y prevenir algunas enfermedades como la artritis, las enfermedades cardíacas, los accidentes cerebrovasculares, la diabetes tipo 2, la osteoporosis.</span>
-      <br>
-      <br>
-      <span class="reto-title">BENEFICIOS:</span>
-      <span>
+    <div class="space-white col-12"></div>
+  </div>
+</div>
+<!-- ========= MODAL EL RETOÑO=========================== -->
+<div id="modal-retono" class="training-modal">
+  <div class="training-modal-content">
+    <button class="training-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="training-modal-title">
+      <div class="training-modal-circle">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <div>
+        <h2>EL RETOÑO</h2>
+        <p>Programa para adultos mayores.</p>
+      </div>
+    </div>
+    <div class="training-modal-grid">
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Dirigido a</h3>
+        <p>
+          Hombres y mujeres entre 60 y 75 años con baja actividad física.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Objetivo</h3>
+        <p>
+          Mejorar autonomía y prevenir enfermedades.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Beneficios</h3>
         <ul>
-          <li>Mejorar su estado de ánimo y reducir los sentimientos de depresión.</li>
-          <li>Conservar y mejorar su fuerza para que pueda mantenerse independiente.</li>
-          <li>Tener más energía para hacer las cosas que quiere hacer y reducir la fatiga.</li>
-          <li>Mejorar su equilibrio y reducir el riesgo de tener caídas y lesiones relacionadas.</li>
-          <li>Reducir los niveles de estrés y ansiedad.</li>
-          <li>Controlar su presión arterial.</li>
-          <li>Posiblemente mejorar o mantener algunos aspectos de la función cognitiva, como su capacidad para cambiar rápidamente entre tareas o planificar una actividad.</li>
+          <li>Mayor equilibrio</li>
+          <li>Menos estrés</li>
+          <li>Más energía</li>
+          <li>Mayor independencia</li>
         </ul>
-      </span>
-      <span class="reto-title">LUGAR:</span>
-      <span>&nbsp;&nbsp;Parque Villa Mayor la Antigua (Frente al CAI Villa Mayor)</span>
-      <br>
-      <br>
-      <span class="reto-title">QUORUM:</span><span>&nbsp;&nbsp;15 Personas</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;VALOR:</span><span>&nbsp;&nbsp;$10.000 por clase</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;DURACIÓN:</span><span>&nbsp;&nbsp;3 meses</span>
-      <br>
-      <br>
-      <span class="reto-title">HORARIOS:</span>
-      <span>
-        <ul>
-          <li>Lunes - Miércoles - Viernes.</li>
-          <li>De 6:00 am a 7:00 am</li>
-          <li>Segundo horario a partir de 8:00 am a 9:00 am</li>
-        </ul>
-      </span>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Horarios</h3>
+        <p>
+          Lunes · Miércoles · Viernes <br><br> 6:00 am - 7:00 am <br> 8:00 am - 9:00 am
+        </p>
+      </div>
     </div>
-
-    <div class="retono-img">
-      <img src="/assets/images/foto-9.jpg" alt="">
+    <div class="training-price-box">
+      <small>Valor por clase</small>
+      <span>$10.000</span>
     </div>
   </div>
-  <div class="space-white col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4"></div>
 </div>
 
-
-
-
+<!-- ========================================= PORCIÓN EXTRA ========================================== -->
 <div class="entre-color-black">
   <div class="container grid">
-    <div class="col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4 black-title-h2">
+    <div class="col-12 black-title-h2">
       <h2>PORCIÓN EXTRA</h2>
     </div>
-
-    <div class="retono">
-      <span class="reto-title">DIRIGIDO A:</span>
-      <span>&nbsp;&nbsp;Hombres y mujeres entre 20- 40 años con problemas de sobre peso, obesidad tipo 1 y patología proinflamatoria crónica debajo grado asociada a otro grupo de enfermedades cardio metabólicas.</span>
-      <br>
-      <br>
-      <span class="reto-title">OBJETIVO:</span>
-      <span>&nbsp;&nbsp;Disminuir los factores de riesgo en salud asociados al sobre peso (hipertensión arterial), colesterol alto, dolor articular, fatiga crónica, hipo apnea obstructiva del sueño.</span>
-      <br>
-      <br>
-      <span class="reto-title">BENEFICIOS:</span>
-      <span>
-        <ul>
-          <li>Mejora tu autoestima</li>
-          <li>Mejora de la respuesta cardiaca (VO2 Máximo)</li>
-          <li>Reduce de los niveles de colesterol en sangre</li>
-          <li>Reducción de los pliegues cutáneos bajando hasta 10 cm en zona media</li>
-          <li>Disminuye hasta 15 kg</li>
-          <li>Aumenta la motivación y la adherencia al nuevo estilo alimentario</li>
-          <li>Mayor vitalidad y energía</li>
-          <li>Disminuye el estrés y mejora el estado de animo</li>
-        </ul>
-      </span>
-      <span class="reto-title">LUGAR:</span>
-      <span>&nbsp;&nbsp;Plaza de eventos Parque Simón Bolívar</span>
-      <br>
-      <br>
-      <span class="reto-title">QUORUM:</span><span>&nbsp;&nbsp;15 – 20 Personas</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;VALOR:</span><span>&nbsp;&nbsp;$12.000 por clase</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;DURACIÓN:</span><span>&nbsp;&nbsp;5 meses</span>
-      <br>
-      <br>
-      <span class="reto-title">HORARIOS:</span>
-      <span>
-        <ul>
-          <li>Jueves - Sábado – Domingo</li>
-          <li>De 7:00 am a 8:00 am</li>
-          <li>Segunda jornada a partir de 9:00 am a 10:00</li>
-        </ul>
-      </span>
+    <div
+      class="training-card">
+      <!-- Imagen -->
+      <div class="training-img">
+        <img src="/assets/images/foto-10.png" alt="Programa Porción Extra">
+      </div>
+      <!-- Información -->
+      <div class="training-info">
+        <div class="training-icon">
+          <i class="fas fa-apple-alt"></i>
+        </div>
+        <h2>PORCIÓN EXTRA</h2>
+        <p class="training-description">
+          Programa dirigido a personas con sobrepeso y obesidad que desean mejorar su composición corporal, disminuir factores de
+          riesgo y adoptar hábitos de vida saludables.
+        </p>
+        <div class="training-details">
+          <div class="training-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Lugar</h3>
+              <p>Parque Simón Bolívar</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-users"></i>
+            <div>
+              <h3>Cupos</h3>
+              <p>15 - 20 personas</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <h3>Duración</h3>
+              <p>5 meses</p>
+            </div>
+          </div>
+          <div class="training-price">
+            <small>Desde</small>
+            <span>$12.000</span>
+          </div>
+        </div>
+        <button class="training-btn" data-modal="modal-porcion">
+          Saber más
+          <i class="fas fa-circle-info"></i>
+        </button>
+      </div>
     </div>
-
-    <div class="retono-img">
-      <img src="/assets/images/foto-10.png" alt="">
-    </div>
-    
   </div>
-  <div class="space-white col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4"></div>
 </div>
-
-
-
-
+<!-- ========================================= MODAL PORCIÓN EXTRA ========================================== -->
+<div id="modal-porcion" class="training-modal">
+  <div class="training-modal-content">
+    <button class="training-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="training-modal-title">
+      <div class="training-modal-circle">
+        <i class="fas fa-apple-alt"></i>
+      </div>
+      <div>
+        <h2>PORCIÓN EXTRA</h2>
+        <p>
+          Programa orientado al control del sobrepeso y la obesidad mediante actividad física y hábitos saludables.
+        </p>
+      </div>
+    </div>
+    <div class="training-modal-grid">
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Dirigido a</h3>
+        <p>
+          Hombres y mujeres entre 20 y 40 años con sobrepeso, obesidad tipo I y enfermedades cardiometabólicas.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Objetivo</h3>
+        <p>
+          Disminuir los factores de riesgo asociados al sobrepeso, hipertensión, colesterol elevado y fatiga crónica.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Mejora la autoestima.</li>
+          <li>Incrementa el VO₂ Máximo.</li>
+          <li>Reduce colesterol.</li>
+          <li>Disminuye grasa corporal.</li>
+          <li>Mayor energía.</li>
+          <li>Reduce el estrés.</li>
+        </ul>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Horarios</h3>
+        <p>
+          Jueves · Sábado · Domingo <br><br> 7:00 am - 8:00 am <br> 9:00 am - 10:00 am
+        </p>
+      </div>
+    </div>
+    <div class="training-price-box">
+      <small>Valor por clase</small>
+      <span>$12.000</span>
+    </div>
+  </div>
+</div>
+<!-- ========================================= EN DECIDÍA ========================================== -->
+<!-- ========================================= EN DECIDÍA ========================================== -->
 <div class="entre-white">
   <div class="container grid">
-    <div class="space-white col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4"></div>
-
-    <div class="col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4 entre-title-h2">
+    <div class="col-12 entre-title-h2">
       <h2>EN DECIDÍA</h2>
     </div>
-
-    <div class="entre-line-1"></div>
-
-    <div class="retono">
-      <span class="reto-title">DIRIGIDO A:</span>
-      <span>&nbsp;&nbsp;Hombres y mujeres entre  15- 50 años sedentarias, con problemas de diabetes, insuficiencias respiratorias, y patologías de hipertensión con variaciones sistólicas elevadas entre 130 a 139 mm Hg y la diastólica de 80 a 89 mm Hg.</span>
-      <br>
-      <br>
-      <span class="reto-title">OBJETIVO:</span>
-      <span>&nbsp;&nbsp;Controlar los niveles de azúcar en sangre, reduce el sobrepeso y mejora la calidad de vida, reduce el riesgo de sufrir un infarto o un accidente vascular cerebral, ayuda a controlar la falta de aliento durante una enfermedad respiratoria causada por COVID-19,  reduce las probabilidades de que se presenten otras afecciones que pueden suponer una sobrecarga para el corazón.</span>
-      <br>
-      <br>
-      <span class="reto-title">BENEFICIOS:</span>
-      <span>
-        <ul>
-          <li>Potenciar su condición física a mejorar su función cerebral.</li>
-          <li>Mejora su condición cardiovascular.</li>
-          <li>Promueve el equilibrio de energía y el control de peso.</li>
-          <li>Mantener nuestro sistema inmune en las mejores condiciones.</li>
-          <li>Regular mejora el estado funcional y la calidad de vida.</li>
-          <li>Estimula el proceso de curación.</li>
-        </ul>
-      </span>
-      <span class="reto-title">LUGAR:</span>
-      <span>&nbsp;&nbsp;Plazoleta Parque Tunal</span>
-      <br>
-      <br>
-      <span class="reto-title">QUORUM:</span><span>&nbsp;&nbsp;15 – 20 Personas</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;VALOR:</span><span>&nbsp;&nbsp;$10.000 por clase</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;DURACIÓN:</span><span>&nbsp;&nbsp;6 meses</span>
-      <br>
-      <br>
-      <span class="reto-title">HORARIOS:</span>
-      <span>
-        <ul>
-          <li>Viernes - Sabado - Domingo</li>
-          <li>De 1:00 pm a 2:00 pm</li>
-          <li>Segunda jornada a partir de 3:00 pm a 4:00 pm</li>
-        </ul>
-      </span>
-    </div>
-
-    <div class="retono-img">
-      <img src="/assets/images/foto-11.jpg" alt="">
+    <div
+      class="training-card">
+      <!-- Imagen -->
+      <div class="training-img">
+        <img src="/assets/images/foto-11.jpg" alt="Programa En Decidía">
+      </div>
+      <!-- Información -->
+      <div class="training-info">
+        <div class="training-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h2>EN DECIDÍA</h2>
+        <p class="training-description">
+          Programa diseñado para personas con diabetes, hipertensión o enfermedades respiratorias, enfocado en mejorar la
+          condición física y disminuir los factores de riesgo asociados.
+        </p>
+        <div class="training-details">
+          <div class="training-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Lugar</h3>
+              <p>Plazoleta Parque Tunal</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-users"></i>
+            <div>
+              <h3>Cupos</h3>
+              <p>15 - 20 personas</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <h3>Duración</h3>
+              <p>6 meses</p>
+            </div>
+          </div>
+          <div class="training-price">
+            <small>Desde</small>
+            <span>$10.000</span>
+          </div>
+        </div>
+        <button class="training-btn" data-modal="modal-decidia">
+          Saber más
+          <i class="fas fa-circle-info"></i>
+        </button>
+      </div>
     </div>
   </div>
-
-  <div class="space-white col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4"></div>
 </div>
-
-
-
+<!-- ========================================= MODAL EN DECIDÍA ========================================== -->
+<div id="modal-decidia" class="training-modal">
+  <div class="training-modal-content">
+    <button class="training-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="training-modal-title">
+      <div class="training-modal-circle">
+        <i class="fas fa-heartbeat"></i>
+      </div>
+      <div>
+        <h2>EN DECIDÍA</h2>
+        <p>
+          Programa orientado al control de enfermedades metabólicas, cardiovasculares y respiratorias mediante ejercicio físico
+          supervisado.
+        </p>
+      </div>
+    </div>
+    <div class="training-modal-grid">
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Dirigido a</h3>
+        <p>
+          Personas entre 15 y 50 años con diabetes, hipertensión, enfermedades respiratorias o estilos de vida sedentarios.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Objetivo</h3>
+        <p>
+          Controlar los niveles de azúcar en sangre, mejorar la calidad de vida y disminuir el riesgo de enfermedades
+          cardiovasculares y respiratorias.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Mejora la condición cardiovascular.</li>
+          <li>Favorece el control del peso.</li>
+          <li>Fortalece el sistema inmune.</li>
+          <li>Mejora la función cerebral.</li>
+          <li>Aumenta la calidad de vida.</li>
+          <li>Favorece la recuperación funcional.</li>
+        </ul>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Horarios</h3>
+        <p>
+          Viernes · Sábado · Domingo <br><br> 1:00 pm - 2:00 pm <br> 3:00 pm - 4:00 pm
+        </p>
+      </div>
+    </div>
+    <div class="training-price-box">
+      <small>Valor por clase</small>
+      <span>$10.000</span>
+    </div>
+  </div>
+</div>
+<!-- ========================================= IMPACTO ========================================== -->
+<!-- ========================================= IMPACTO ========================================== -->
 <div class="entre-color-black">
   <div class="container grid">
-    <div class="col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4 black-title-h2">
+    <div class="col-12 black-title-h2">
       <h2>IMPACTO</h2>
     </div>
-
-    <div class="retono">
-      <span class="reto-title">DIRIGIDO A:</span>
-      <span>&nbsp;&nbsp;Hombres y mujeres entre 15- 80 años que presenten síntomas de lumbalgia, síndrome cruzado anterior, dorsalgia, cifosis, lordosis, escoliosis, dolores frecuentes al adoptar posturas inadecuadas al trabajar, estudiar e incluso al dormir.</span>
-      <br>
-      <br>
-      <span class="reto-title">OBJETIVO:</span>
-      <span>&nbsp;&nbsp;Mejora del rango de movimiento (ROM) y funcionalidad articular, a fin de evitar la perdida de la amplitud del movimiento y la disminución de la habilidad de las personas para realizar las tareas cotidianas como consecuencia de la edad y la mejora del estado global de la salud física, como herramienta útil para el tratamiento y recuperación de lesiones.</span>
-      <br>
-      <br>
-      <span class="reto-title">BENEFICIOS:</span>
-      <span>
-        <ul>
-          <li>Reduce el desgaste anormal de las superficies articulares que podrían llegar a crearnos artritis degenerativa y dolor articular.</li>
-          <li>Reduce la tensión en los ligamentos que mantienen unidas las articulaciones espinales, minimizando la posibilidad de lesiones.</li>
-          <li>Permite que los músculos trabajen más eficientemente, permitiendo que el cuerpo use menos energía y, por lo tanto, prevenir la fatiga muscular.</li>
-          <li>Mantener el equilibrio en ambos lados de la columna vertebral y así sentir menos pesado un lado del cuerpo.</li>
-          <li>Menos estrés, más confianza.</li>
-          <li>Reduce el riesgo de caídas y fracturas</li>
-          <li>Mayor movilidad y facilidad en tener un peso adecuado a nuestra masa corporal.</li>
-          <li>Más energía, menos dolor.</li>
-        </ul>
-      </span>
-      <span class="reto-title">LUGAR:</span>
-      <span>&nbsp;&nbsp;Parque Pablo VI</span>
-      <br>
-      <br>
-      <span class="reto-title">QUORUM:</span><span>&nbsp;&nbsp;15 – 20 Personas</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;VALOR:</span><span>&nbsp;&nbsp;$9.000 por clase</span>
-      <span class="reto-title">&nbsp;&nbsp;&nbsp;&nbsp;DURACIÓN:</span><span>&nbsp;&nbsp;4 meses</span>
-      <br>
-      <br>
-      <span class="reto-title">HORARIOS:</span>
-      <span>
-        <ul>
-          <li>Miércoles - Viernes</li>
-          <li>De 12:00 pm a 1:00 pm</li>
-          <li>Segunda jornada a partir de 7:00 pm a 8:00 pm</li>
-        </ul>
-      </span>
+    <div
+      class="training-card">
+      <!-- Imagen -->
+      <div class="training-img">
+        <img src="/assets/images/foto-12.jpg" alt="Programa Impacto">
+      </div>
+      <!-- Información -->
+      <div class="training-info">
+        <div class="training-icon">
+          <i class="fas fa-person-walking"></i>
+        </div>
+        <h2>IMPACTO</h2>
+        <p class="training-description">
+          Programa orientado a mejorar la postura, la movilidad articular y reducir el dolor musculoesquelético mediante ejercicio
+          terapéutico y funcional.
+        </p>
+        <div class="training-details">
+          <div class="training-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Lugar</h3>
+              <p>Parque Pablo VI</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-users"></i>
+            <div>
+              <h3>Cupos</h3>
+              <p>15 - 20 personas</p>
+            </div>
+          </div>
+          <div class="training-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <h3>Duración</h3>
+              <p>4 meses</p>
+            </div>
+          </div>
+          <div class="training-price">
+            <small>Desde</small>
+            <span>$9.000</span>
+          </div>
+        </div>
+        <button class="training-btn" data-modal="modal-impacto">
+          Saber más
+          <i class="fas fa-circle-info"></i>
+        </button>
+      </div>
     </div>
-
-    <div class="retono-img">
-      <img src="/assets/images/foto-12.jpg" alt="">
-      <p class="retono-img-descr">TOMA CONCIENCIA DE TU POSTURA.</p>
-    </div>
-    
   </div>
-  <div class="space-white col-12 col-md-10 col-sm-8 col-xs-6 col-xxs-4"></div>
+</div>
+<!-- ========================================= MODAL IMPACTO ========================================== -->
+<div id="modal-impacto" class="training-modal">
+  <div class="training-modal-content">
+    <button class="training-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="training-modal-title">
+      <div class="training-modal-circle">
+        <i class="fas fa-person-walking"></i>
+      </div>
+      <div>
+        <h2>IMPACTO</h2>
+        <p>
+          Programa enfocado en mejorar la postura corporal, la movilidad y prevenir lesiones mediante actividad física
+          supervisada.
+        </p>
+      </div>
+    </div>
+    <div class="training-modal-grid">
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Dirigido a</h3>
+        <p>
+          Personas entre 15 y 80 años con lumbalgia, dorsalgia, escoliosis, cifosis, lordosis u otras alteraciones posturales.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Objetivo</h3>
+        <p>
+          Mejorar el rango de movimiento, la funcionalidad articular y favorecer la recuperación física para una mejor calidad de
+          vida.
+        </p>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Reduce el dolor articular.</li>
+          <li>Mejora la postura corporal.</li>
+          <li>Disminuye el riesgo de lesiones.</li>
+          <li>Favorece el equilibrio.</li>
+          <li>Incrementa la movilidad.</li>
+          <li>Más energía y bienestar.</li>
+        </ul>
+      </div>
+      <div class="training-modal-card">
+        <div class="training-modal-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Horarios</h3>
+        <p>
+          Miércoles · Viernes <br><br> 12:00 pm - 1:00 pm <br> 7:00 pm - 8:00 pm
+        </p>
+      </div>
+    </div>
+    <div class="training-price-box">
+      <small>Valor por clase</small>
+      <span>$9.000</span>
+    </div>
+  </div>
 </div>
