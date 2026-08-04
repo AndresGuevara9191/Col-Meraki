@@ -2,53 +2,57 @@ const modal = document.querySelector(".training-modal");
 const openBtn = document.querySelector(".training-btn");
 const closeBtn = document.querySelector(".training-close");
 
-// ==========================================
-// ABRIR MODAL
-// ==========================================
 
-const buttons = document.querySelectorAll(".training-btn");
+//==============================
+// ABRIR MODALES
+//==============================
+
+const buttons = document.querySelectorAll("[data-modal]");
 
 buttons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        const modalId = button.dataset.modal;
+        const modal = document.getElementById(button.dataset.modal);
 
-        const modal = document.getElementById(modalId);
+        if(modal){
 
-        modal.classList.add("active");
+            modal.classList.add("active");
 
-        document.body.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+        }
 
     });
 
 });
 
 
-// ==========================================
-// CERRAR MODAL
-// ==========================================
+//==============================
+// CERRAR MODALES
+//==============================
 
-const modals = document.querySelectorAll(".training-modal");
+document.querySelectorAll(".training-close").forEach(close => {
 
-modals.forEach(modal => {
+    close.addEventListener("click", () => {
 
-    // Botón cerrar
-
-    modal.querySelector(".training-close").addEventListener("click", () => {
-
-        modal.classList.remove("active");
+        close.closest(".training-modal").classList.remove("active");
 
         document.body.style.overflow = "";
 
     });
 
+});
 
-    // Clic fuera del modal
 
-    modal.addEventListener("click", (e) => {
+//==============================
+// CERRAR AL DAR CLICK AFUERA
+//==============================
 
-        if (e.target === modal) {
+document.querySelectorAll(".training-modal").forEach(modal => {
+
+    modal.addEventListener("click", e => {
+
+        if(e.target === modal){
 
             modal.classList.remove("active");
 
@@ -61,15 +65,15 @@ modals.forEach(modal => {
 });
 
 
-// ==========================================
-// ESC
-// ==========================================
+//==============================
+// CERRAR CON ESC
+//==============================
 
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keydown", e => {
 
-    if (e.key === "Escape") {
+    if(e.key === "Escape"){
 
-        document.querySelectorAll(".training-modal").forEach(modal => {
+        document.querySelectorAll(".training-modal.active").forEach(modal => {
 
             modal.classList.remove("active");
 

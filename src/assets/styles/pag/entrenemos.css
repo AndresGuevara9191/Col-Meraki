@@ -27,16 +27,16 @@
     font-weight: bold;
 }
 
-.entre-title-h2 {
+/*.entre-title-h2 {
 
     margin-top: var(--spacer-xl);
 
     margin-bottom: var(--spacer-l);
 
     text-align: center;
-}
+}*/
 
-.entre-title-h2 h2,
+/*.entre-title-h2 h2,
 .black-title-h2 h2 {
 
     font-size: var(--text-subheader-1);
@@ -44,16 +44,16 @@
     font-family: var(--font-1);
 
     font-weight: bold;
-}
+}*/
 
-.black-title-h2 {
+/*/.black-title-h2 {
 
     margin-top: var(--spacer-xl);
 
     margin-bottom: var(--spacer-xl);
 
     text-align: center;
-}
+}*/
 
 .space-white {
 
@@ -66,6 +66,7 @@
 ==================================================*/
 
 .training-card {
+    margin-top: var(--spacer-xl);
 
     grid-column: 2 / span 10;
 
@@ -719,11 +720,11 @@
         font-size: var(--text-title-1);
     }
 
-    .entre-title-h2 h2,
+    /*.entre-title-h2 h2,
     .black-title-h2 h2 {
 
         font-size: var(--text-subheader-2);
-    }
+    }*/
 
 
     /*==================================
@@ -731,7 +732,6 @@
     ==================================*/
 
     .training-card {
-
         grid-column: 1 / span 10;
     }
 
@@ -1138,53 +1138,53 @@
 }
 
 /* Size: xs */
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
     /*=========================
       TARJETA
     =========================*/
 
-    .training-card{
+    .training-card {
 
-        grid-column:1 / span 6;
+        grid-column: 1 / span 6;
 
-        border-radius:18px;
+        border-radius: 18px;
     }
 
-    .training-img{
+    .training-img {
 
-        min-height:260px;
+        min-height: 260px;
     }
 
-    .training-info{
+    .training-info {
 
-        padding:22px 18px;
+        padding: 22px 18px;
     }
 
-    .training-icon{
+    .training-icon {
 
-        width:58px;
-        height:58px;
+        width: 58px;
+        height: 58px;
 
-        font-size:22px;
+        font-size: 22px;
 
-        margin-bottom:16px;
+        margin-bottom: 16px;
     }
 
-    .training-info h2{
+    .training-info h2 {
 
-        font-size:1.5rem;
+        font-size: 1.5rem;
 
-        margin-bottom:12px;
+        margin-bottom: 12px;
     }
 
-    .training-description{
+    .training-description {
 
-        font-size:.92rem;
+        font-size: .92rem;
 
-        line-height:1.7;
+        line-height: 1.7;
 
-        margin-bottom:22px;
+        margin-bottom: 22px;
     }
 
 
@@ -1192,33 +1192,33 @@
       DETALLES
     =========================*/
 
-    .training-details{
+    .training-details {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
-        gap:16px;
+        gap: 16px;
 
-        padding:20px 0;
+        padding: 20px 0;
     }
 
-    .training-detail{
+    .training-detail {
 
-        gap:12px;
+        gap: 12px;
     }
 
-    .training-detail i{
+    .training-detail i {
 
-        font-size:18px;
+        font-size: 18px;
     }
 
-    .training-detail h3{
+    .training-detail h3 {
 
-        font-size:.95rem;
+        font-size: .95rem;
     }
 
-    .training-detail p{
+    .training-detail p {
 
-        font-size:.85rem;
+        font-size: .85rem;
     }
 
 
@@ -1226,34 +1226,34 @@
       FOOTER
     =========================*/
 
-    .training-footer{
+    .training-footer {
 
-        flex-direction:column;
+        flex-direction: column;
 
-        align-items:center;
+        align-items: center;
 
-        gap:20px;
+        gap: 20px;
 
-        text-align:center;
+        text-align: center;
     }
 
-    .training-price{
+    .training-price {
 
-        text-align:center;
+        text-align: center;
     }
 
-    .training-price span{
+    .training-price span {
 
-        font-size:1.7rem;
+        font-size: 1.7rem;
     }
 
-    .training-btn{
+    .training-btn {
 
-        width:100%;
+        width: 100%;
 
-        justify-content:center;
+        justify-content: center;
 
-        padding:14px;
+        padding: 14px;
     }
 
 
@@ -1261,284 +1261,295 @@
       MODAL
     =========================*/
 
-    .training-modal{
+    .training-modal {
 
-        padding:16px;
+        padding: 16px;
     }
 
-    .training-modal-content{
+    .training-modal-content {
 
-        padding:26px 18px;
+        padding: 26px 18px;
 
-        border-radius:18px;
+        border-radius: 18px;
     }
 
-    .training-modal-title{
+    .training-modal-title {
 
-        flex-direction:column;
+        flex-direction: column;
 
-        text-align:center;
+        text-align: center;
 
-        gap:16px;
+        gap: 16px;
     }
 
-    .training-modal-circle{
+    .training-modal-circle {
 
-        width:62px;
-        height:62px;
+        width: 62px;
+        height: 62px;
 
-        font-size:24px;
+        font-size: 24px;
     }
 
-    .training-modal-title h2{
+    .training-modal-title h2 {
 
-        font-size:1.6rem;
+        font-size: 1.6rem;
     }
 
-    .training-modal-title p{
+    .training-modal-title p {
 
-        font-size:.9rem;
+        font-size: .9rem;
     }
 
-    .training-modal-grid{
+    .training-modal-grid {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
-        gap:16px;
+        gap: 16px;
     }
 
-    .training-modal-card{
+    .training-modal-card {
 
-        padding:18px;
+        padding: 18px;
     }
 
-    .training-modal-icon{
+    .training-modal-icon {
 
-        width:52px;
-        height:52px;
+        width: 52px;
+        height: 52px;
 
-        font-size:20px;
+        font-size: 20px;
     }
 
-    .training-modal-card h3{
+    .training-modal-card h3 {
 
-        font-size:1rem;
+        font-size: 1rem;
     }
 
     .training-modal-card p,
-    .training-modal-card li{
+    .training-modal-card li {
 
-        font-size:.88rem;
+        font-size: .88rem;
 
-        line-height:1.7;
+        line-height: 1.7;
     }
 
-    .training-price-box{
+    .training-price-box {
 
-        margin-top:24px;
+        margin-top: 24px;
 
-        padding:18px;
+        padding: 18px;
     }
 
-    .training-price-box span{
+    .training-price-box span {
 
-        font-size:1.8rem;
+        font-size: 1.8rem;
     }
 
 }
+
 /* Size: xxs */
-@media (max-width: 320px) {
+@media (max-width:320px) {
 
     /*=========================
-      TARJETA
-    =========================*/
+=            TARJETA
+=========================*/
 
-    .training-card{
-
-        border-radius:16px;
+    .training-card {
+        grid-column: 1 / span 4;
+        border-radius: 12px;
     }
 
-    .training-img{
+    .training-img {
 
-        min-height:220px;
+        min-height: 180px;
     }
 
-    .training-info{
+    .training-info {
 
-        padding:18px 14px;
+        padding: 14px 12px;
     }
 
-    .training-icon{
+    .training-icon {
 
-        width:52px;
-        height:52px;
+        width: 44px;
+        height: 44px;
 
-        font-size:20px;
+        font-size: 18px;
 
-        margin-bottom:14px;
+        margin-bottom: 12px;
     }
 
-    .training-info h2{
+    .training-info h2 {
 
-        font-size:1.25rem;
+        font-size: 1.05rem;
     }
 
-    .training-description{
+    .training-description {
 
-        font-size:.84rem;
+        font-size: .78rem;
 
-        line-height:1.6;
+        line-height: 1.45;
 
-        margin-bottom:18px;
+        margin-bottom: 16px;
     }
+
 
     /*=========================
-      DETALLES
-    =========================*/
+=            DETALLES
+=========================*/
 
-    .training-details{
+    .training-details {
 
-        gap:16px;
+        grid-template-columns: 1fr;
 
-        padding:18px 0;
+        gap: 12px;
+
+        padding: 14px 0;
     }
 
-    .training-detail{
+    .training-detail {
 
-        gap:10px;
+        gap: 8px;
     }
 
-    .training-detail i{
+    .training-detail i {
 
-        font-size:16px;
+        font-size: 15px;
     }
 
-    .training-detail h3{
+    .training-detail h3 {
 
-        font-size:.8rem;
+        font-size: .78rem;
     }
 
-    .training-detail p{
+    .training-detail p {
 
-        font-size:.75rem;
+        font-size: .72rem;
     }
+
 
     /*=========================
-      PRECIO
-    =========================*/
+=            PRECIO
+=========================*/
 
-    .training-price{
+    .training-price {
 
-        text-align:center;
+        grid-column: auto;
+
+        text-align: center;
     }
 
-    .training-price small{
+    .training-price small {
 
-        font-size:.75rem;
+        font-size: .72rem;
     }
 
-    .training-price span{
+    .training-price span {
 
-        font-size:1.45rem;
+        font-size: 1.25rem;
     }
+
 
     /*=========================
-      BOTÓN
-    =========================*/
+=            BOTON
+=========================*/
 
-    .training-btn{
+    .training-btn {
 
-        width:100%;
+        width: 100%;
 
-        justify-content:center;
+        font-size: .8rem;
 
-        font-size:.85rem;
-
-        padding:12px;
+        padding: 10px;
     }
+
 
     /*=========================
-      MODAL
-    =========================*/
+=            MODAL
+=========================*/
 
-    .training-modal{
+    .training-modal {
 
-        padding:12px;
+        padding: 8px;
     }
 
-    .training-modal-content{
+    .training-modal-content {
 
-        padding:18px;
+        width: 100%;
+
+        padding: 14px;
+
+        border-radius: 14px;
     }
 
-    .training-modal-title{
+    .training-modal-title {
 
-        gap:12px;
+        gap: 10px;
     }
 
-    .training-modal-circle{
+    .training-modal-circle {
 
-        width:50px;
-        height:50px;
+        width: 40px;
+        height: 40px;
 
-        font-size:20px;
+        font-size: 16px;
     }
 
-    .training-modal-title h2{
+    .training-modal-title h2 {
 
-        font-size:1.2rem;
+        font-size: 1rem;
     }
 
-    .training-modal-title p{
+    .training-modal-title p {
 
-        font-size:.8rem;
+        font-size: .72rem;
     }
 
-    .training-modal-card{
+    .training-modal-card {
 
-        padding:18px;
+        padding: 14px;
     }
 
-    .training-modal-icon{
+    .training-modal-icon {
 
-        width:46px;
-        height:46px;
+        width: 40px;
+        height: 40px;
 
-        font-size:18px;
+        font-size: 16px;
     }
 
-    .training-modal-card h3{
+    .training-modal-card h3 {
 
-        font-size:1rem;
+        font-size: .9rem;
     }
 
     .training-modal-card p,
-    .training-modal-card li{
+    .training-modal-card li {
 
-        font-size:.8rem;
+        font-size: .72rem;
 
-        line-height:1.6;
+        line-height: 1.45;
     }
 
-    .training-price-box{
+    .training-price-box {
 
-        padding:18px;
+        padding: 14px;
     }
 
-    .training-price-box span{
+    .training-price-box span {
 
-        font-size:1.8rem;
+        font-size: 1.45rem;
     }
 
-    .training-close{
+    .training-close {
 
-        width:38px;
-        height:38px;
+        width: 32px;
+        height: 32px;
 
-        font-size:16px;
+        font-size: 14px;
 
-        top:12px;
-        right:12px;
+        top: 8px;
+        right: 8px;
     }
 
 }
