@@ -1,11 +1,11 @@
 /*eliminar al finalizar pagina*/
-.content-full{
+.content-full {
     background: #000;
 }
 
 
 /*LAYOUT*/
-.content-normal-black{
+.content-normal-black {
     background: #222222;
 }
 
@@ -32,187 +32,355 @@
 /********/
 
 .inicio-imagen {
-    grid-column:  4 / span 6;
+    grid-column: 4 / span 6;
     text-align: center;
     margin-bottom: var(--spacer-xl);
 }
 
-.logo-meraki-black{
+.logo-meraki-black {
     margin-top: var(--spacer-xl);
     width: 100%;
     margin-bottom: var(--spacer-xl);
 }
 
 
-.inicio-text-1,.inicio-text-2 ,.inicio-text-3{
+/*==================================================
+=            TARJETAS INICIO
+==================================================*/
+
+.inicio-text-1,
+.inicio-text-2,
+.inicio-text-3 {
+
     grid-column: span 4;
-    -webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-    padding: 18px;
-    background-color: #F2F2F2;
+
+    border-radius: 20px;
+
+    padding: 35px 28px;
+
+    transition: .35s;
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .18);
+}
+
+.inicio-text-1:hover,
+.inicio-text-2:hover,
+.inicio-text-3:hover {
+
+    transform: translateY(-8px);
 }
 
 
-.inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{
+/*==================================================
+=            TARJETAS OSCURAS
+==================================================*/
+
+.inicio-card-dark {
+
+    background: #071C33;
+
+    border-top: 5px solid #39B54A;
+
+    color: #fff;
+}
+
+
+/*==================================================
+=            TARJETA CLARA
+==================================================*/
+
+.inicio-card-light {
+
+    background: #F7F7F7;
+
+    border-top: 5px solid #FB5B21;
+
+    color: #222;
+}
+
+
+/*==================================================
+=            ICONOS
+==================================================*/
+
+.inicio-icon,
+.inicio-icon-light {
+
+    width: 68px;
+
+    height: 68px;
+
+    margin: 0 auto 24px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+}
+
+.inicio-icon {
+
+    background: #39B54A;
+
+    color: #fff;
+}
+
+.inicio-icon-light {
+
+    background: #FB5B21;
+
+    color: #fff;
+}
+
+
+/*==================================================
+=            TITULOS
+==================================================*/
+
+.inicio-text-1 h2,
+.inicio-text-2 h2,
+.inicio-text-3 h2 {
+
     text-align: center;
+
     font-family: var(--font-1);
+
+    font-size: 1.8rem;
+
+    margin-bottom: 20px;
+
     font-weight: bold;
-    font-size: var(--text-subheader);
-    /*color: #21ADE5;*/
-    color: #247D0D;
-    padding-bottom: var(--spacer-m);
 }
 
-.inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
+.inicio-card-dark h2 {
+
+    color: #39B54A;
+}
+
+.inicio-card-light h2 {
+
+    color: #FB5B21;
+}
+
+
+/*==================================================
+=            TEXTO
+==================================================*/
+
+.inicio-text-1 p,
+.inicio-text-2 p,
+.inicio-text-3 p {
+
     text-align: center;
-    font-family: var(--font-2);  
-    font-size: var(--text-note);
+
+    font-family: var(--font-2);
+
+    line-height: 1.8;
+
+    font-size: 1rem;
 }
 
-.space-inicio{
-  margin-bottom: var(--spacer-xl);
+.inicio-card-dark p {
+
+    color: #D8D8D8;
+}
+
+.inicio-card-light p {
+
+    color: #555;
+}
+
+.space-inicio {
+    margin-bottom: var(--spacer-xl);
 }
 
 /*WhatsApp*/
-.whatsapp-float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-.whatsapp-float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
-.whatsapp-my-float{
-	margin-top:16px;
+.whatsapp-float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.whatsapp-my-float {
+    margin-top: 16px;
 }
 
 /* Size: md */
 @media (max-width: 900px) {
 
     .inicio-imagen {
-        grid-column:  3 / span 6;
+        grid-column: 3 / span 6;
         /*text-align: center;
         margin-bottom: var(--spacer-xl);*/
     }
-    
-    .logo-meraki-black{
+
+    .logo-meraki-black {
         /*
         margin-top: var(--spacer-xl);
         width: 100%;
         margin-bottom: var(--spacer-xl);*/
     }
-    
-    
-    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
-        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        padding: 18px;
-        background-color: #F2F2F2;*/
+
+    .inicio-text-1 {
+        grid-column: 1 / span 5;
     }
 
-    .inicio-text-1{
-        grid-column: span 3;
+    .inicio-text-2 {
+        grid-column: 6 / span 5;
     }
 
-    .inicio-text-2{
-        position: relative;
-        left: 18%;
-        grid-column: span 3;
+    .inicio-text-3 {
+        grid-column: 3 / span 6;
+
+        margin-top: var(--spacer-l);
     }
 
-    .inicio-text-3{
-        grid-column: 8 / span 3;
-    }
-    
-    
-    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
-        /*font-size: var(--text-subheader);
-        padding-bottom: var(--spacer-m);*/
-    }
-    
-    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
-        /*text-align: center;
-        font-family: var(--font-2);  
-        font-size: var(--text-note);*/
+    /* Ajustes visuales */
+
+    .inicio-text-1,
+    .inicio-text-2,
+    .inicio-text-3 {
+
+        padding: 30px 24px;
     }
 
-    .space-inicio{
+    .inicio-icon,
+    .inicio-icon-light {
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .inicio-text-1 h2,
+    .inicio-text-2 h2,
+    .inicio-text-3 h2 {
+
+        font-size: 1.5rem;
+
+        margin-bottom: 18px;
+    }
+
+    .inicio-text-1 p,
+    .inicio-text-2 p,
+    .inicio-text-3 p {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+    }
+
+
+    .space-inicio {
         margin-bottom: var(--spacer-l);
-      }
+    }
 }
 
 /* Size: sm */
 @media (max-width: 700px) {
 
-    .space-index-video{
+    .space-index-video {
         margin-top: 70px;
     }
-  
+
     .inicio-imagen {
-        grid-column:  2 / span 6;
+        grid-column: 1 / span 8;
         /*text-align: center;
         margin-bottom: var(--spacer-xl);*/
     }
-    
-    .logo-meraki-black{
+
+    .logo-meraki-black {
+        grid-column: 1 / span 8;
         margin-top: var(--spacer-l);
         /*width: 100%;*/
         margin-bottom: var(--spacer-l);
     }
-    
-    
-    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
-        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        padding: 18px;
-        background-color: #F2F2F2;*/
+
+    /*=========================
+  TARJETAS
+=========================*/
+
+    .inicio-text-1,
+    .inicio-text-2,
+    .inicio-text-3 {
+
+        grid-column: 1 / span 8;
+
+        margin-bottom: var(--spacer-l);
+
+        padding: 30px 24px;
     }
 
-    .inicio-text-1{
-        grid-column: 2 /span 6;
+
+    /*=========================
+  ICONOS
+=========================*/
+
+    .inicio-icon,
+    .inicio-icon-light {
+
+        width: 58px;
+        height: 58px;
+
+        font-size: 22px;
+
+        margin-bottom: 18px;
     }
 
-    .inicio-text-2{
-        margin-top: var(--spacer-l);
-        position: relative;
-        left: 0%;
-        grid-column: 2 / span 6;
+
+    /*=========================
+  TITULOS
+=========================*/
+
+    .inicio-text-1 h2,
+    .inicio-text-2 h2,
+    .inicio-text-3 h2 {
+
+        font-size: 1.45rem;
+
+        margin-bottom: 16px;
     }
 
-    .inicio-text-3{
-        grid-column: 2 /span 6;
-        margin-top: var(--spacer-l);
-    }
-    
-    
-    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
-        /*font-size: var(--text-subheader);
-        padding-bottom: var(--spacer-m);*/
-    }
-    
-    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
-        /*text-align: center;
-        font-family: var(--font-2);  
-        font-size: var(--text-note);
-        padding-bottom: var(--spacer-l);*/
+
+    /*=========================
+  TEXTO
+=========================*/
+
+    .inicio-text-1 p,
+    .inicio-text-2 p,
+    .inicio-text-3 p {
+
+        font-size: .9rem;
+
+        line-height: 1.75;
     }
 
-    .space-inicio{
+
+
+    .space-inicio {
         margin-bottom: var(--spacer-l);
     }
 
@@ -221,116 +389,158 @@
 /* Size: xs */
 @media (max-width: 500px) {
 
-    .space-index-video{
+    .space-index-video {
         margin-top: 65px;
     }
 
     .inicio-imagen {
-        grid-column:  2 / span 4;
+        grid-column: 1 / span 6;
         /*text-align: center;
         margin-bottom: var(--spacer-xl);*/
     }
-    
-    .logo-meraki-black{
+
+    .logo-meraki-black {
         margin-top: var(--spacer-l);
-        /*width: 100%;*/
+        grid-column: 1 / span 6;
         margin-bottom: var(--spacer-l);
     }
-    
-    
-    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
-        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        padding: 18px;
-        background-color: #F2F2F2;*/
-    }
 
-    .inicio-text-1{
-        grid-column: 2 /span 4;
-    }
+    /*=========================
+      TARJETAS
+    =========================*/
 
-    .inicio-text-2{
-        margin-top: var(--spacer-l);
-        position: relative;
-        left: 0%;
-        grid-column: 2 / span 4;
-    }
-
+    .inicio-text-1,
+    .inicio-text-2,
     .inicio-text-3{
-        grid-column: 2 /span 4;
-        margin-top: var(--spacer-l);
+
+        grid-column:1 / span 6;
+
+        left:0;
+
+        padding:22px 18px;
+
+        border-radius:18px;
+
+        margin-bottom:var(--spacer-m);
     }
-    
-    
-    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
-        /*font-size: var(--text-subheader);
-        padding-bottom: var(--spacer-m);*/
+
+    /*=========================
+      ICONO
+    =========================*/
+
+    .inicio-icon{
+
+        width:52px;
+        height:52px;
+
+        font-size:20px;
+
+        margin-bottom:16px;
     }
-    
-    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{
-        /*text-align: center;
-        font-family: var(--font-2);  
-        font-size: var(--text-note);
-        padding-bottom: var(--spacer-l);*/
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .inicio-text-1 h2,
+    .inicio-text-2 h2,
+    .inicio-text-3 h2{
+
+        font-size:1.35rem;
+
+        margin-bottom:14px;
     }
-/*
-    .space-inicio{
-        margin-bottom: var(--spacer-l);
+
+    /*=========================
+      TEXTO
+    =========================*/
+
+    .inicio-text-1 p,
+    .inicio-text-2 p,
+    .inicio-text-3 p{
+
+        font-size:.88rem;
+
+        line-height:1.7;
     }
-*/
 }
+    
 
 /* Size: xxs */
 @media (max-width: 320px) {
     .inicio-imagen {
-        grid-column:  span 4;
-        /*text-align: center;*/
+        grid-column: span 4;
+        
         margin-bottom: var(--spacer-l);
     }
-    
-    .logo-meraki-black{
+
+    .logo-meraki-black {
         margin-top: var(--spacer-m);
+        grid-column: span 4;
         /*width: 100%;*/
         margin-bottom: var(--spacer-m);
     }
-    
-    
-    .inicio-text-1,.inicio-text-2 ,.inicio-text-3{
-        /*-webkit-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 19px -1px rgba(0,0,0,0.75);
-        padding: 18px;
-        background-color: #F2F2F2;*/
-    }
 
-    .inicio-text-1{
-        grid-column: span 4;
-    }
 
-    .inicio-text-2{
-        /*margin-top: var(--spacer-l);
-        position: relative;
-        left: 0%;*/
-        grid-column:  span 4;
-    }
+    /*=========================
+      TARJETAS
+    =========================*/
 
+    .inicio-text-1,
+    .inicio-text-2,
     .inicio-text-3{
-        grid-column: span 4;
-        /*margin-top: var(--spacer-l);*/
-    }
-    
-    
-    .inicio-text-1 h2, .inicio-text-2 h2, .inicio-text-3 h2{      
-        font-size: var(--text-base-1);
-        padding-bottom: var(--spacer-s);
-    }
-    
-    .inicio-text-1 p, .inicio-text-2 p, .inicio-text-3 p{  
-        font-size: var(--text-note);
+
+        grid-column:1 / span 4;
+
+        padding:18px 14px;
+
+        border-radius:16px;
+
+        margin-bottom:18px;
     }
 
-    .space-inicio{
+    /*=========================
+      ICONO
+    =========================*/
+
+    .inicio-icon,
+    .inicio-icon-light{
+
+        width:46px;
+        height:46px;
+
+        font-size:18px;
+
+        margin-bottom:14px;
+    }
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .inicio-text-1 h2,
+    .inicio-text-2 h2,
+    .inicio-text-3 h2{
+
+        font-size:1.15rem;
+
+        margin-bottom:12px;
+    }
+
+    /*=========================
+      TEXTO
+    =========================*/
+
+    .inicio-text-1 p,
+    .inicio-text-2 p,
+    .inicio-text-3 p{
+
+        font-size:.82rem;
+
+        line-height:1.65;
+    }
+
+    .space-inicio {
         margin-bottom: var(--spacer-l);
     }
 }
