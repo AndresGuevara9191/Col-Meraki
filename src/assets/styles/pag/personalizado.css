@@ -1,155 +1,692 @@
-.pers-white{
+.pers-white {
     background: #fff;
 }
 
-.perso-title, .perso-title-1{
+
+/*==================================================
+=            TITULO
+==================================================*/
+
+.perso-title {
+
+    grid-column: 2 / span 10;
+
     margin-top: var(--spacer-xl);
+
+    margin-bottom: var(--spacer-xl);
+
     text-align: center;
-    font-size: var(--text-title);
+}
+
+.perso-title h1 {
+
     font-family: var(--font-1);
+
+    font-size: var(--text-title);
+
     font-weight: bold;
+}
+
+
+/*==================================================
+=            TARJETAS
+==================================================*/
+
+.pers-card {
+
+    grid-column: 2 / span 10;
+
+    display: flex;
+
+    background: #071C33;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+
+    transition: .35s;
+
     margin-bottom: var(--spacer-xl);
 }
 
-.per-1, .per-1-1{
-    grid-column: 2 / span 3;
+.pers-card:hover {
+
+    transform: translateY(-8px);
 }
 
-.per-2, .per-2-2{
-    grid-column: span 3;
-    position: relative;
-    left: 18%;
+
+/*==================================================
+=            IMAGEN
+==================================================*/
+
+.pers-img {
+
+    width: 38%;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0,
+            82% 0,
+            100% 100%,
+            0 100%);
 }
 
-.per-3, .per-3-3{
-    grid-column: 9 / span 3;
+.pers-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s;
 }
 
-.per-1, .per-2, .per-3{
-    background: #F2F5F5;
-    border: #000 2px solid;
-    border-radius: 15px;
+.pers-card:hover img {
+
+    transform: scale(1.08);
 }
 
-.per-title img{
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+
+/*==================================================
+=            INFORMACION
+==================================================*/
+
+.pers-info {
+
+    width: 62%;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: #fff;
 }
 
-.per-title h2{
-    padding-top: var(--spacer-l);
-    text-align: center;
-    font-weight: bold;
+
+/*==================================================
+=            ICONO
+==================================================*/
+
+.pers-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #39B54A;
+
+    color: #39B54A;
+
+    font-size: 30px;
+
+    margin-bottom: 22px;
+}
+
+
+/*==================================================
+=            TITULO
+==================================================*/
+
+.pers-info h2 {
+
+    color: #FB5B21;
+
+    font-size: 2rem;
+
     font-family: var(--font-1);
-    font-size: var(--text-subheader);
+
+    margin-bottom: 20px;
 }
 
-.per-ul{
-    padding: 12px;
-    font-size: var(--text-note-1);
+
+/*==================================================
+=            DESCRIPCION
+==================================================*/
+
+.pers-description {
+
+    color: #D8D8D8;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    font-family: var(--font-2);
 }
 
-.price-pack-1, .price-pack-2, .price-pack-3{
-    padding: 3px;
-    text-align: center;
-    color: #d5d5d5;
+
+/*==================================================
+=            DETALLES
+==================================================*/
+
+.pers-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+
+    margin-bottom: 30px;
+}
+
+.pers-detail {
+
+    display: flex;
+
+    gap: 12px;
+}
+
+.pers-detail i {
+
+    color: #39B54A;
+
+    font-size: 20px;
+}
+
+.pers-detail h3 {
+
+    color: #fff;
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+.pers-detail p {
+
+    color: #D8D8D8;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/*==================================================
+=            PRECIO
+==================================================*/
+
+.pers-price {
+
+    text-align: right;
+}
+
+.pers-price small {
+
+    display: block;
+
+    color: #D8D8D8;
+
+    margin-bottom: 6px;
+}
+
+.pers-price span {
+
+    color: #39B54A;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
     font-family: var(--font-3);
-    font-size: var(--text-note-1);
 }
 
-.price-pack-black{
-    border-radius: 10px;
-    background: #202022;
-    padding: 12px;
+
+/*==================================================
+=            BOTON
+==================================================*/
+
+.pers-btn {
+
+    margin-top: auto;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #39B54A;
+
+    color: #fff;
+
+    font-family: var(--font-1);
+
+    cursor: pointer;
+
+    transition: .3s;
 }
 
-.price-money-white{
-    margin-top: var(--spacer-s);
-    border-radius: 10px;
-    background: #d5d5d5;
-    color: #202022;
-    padding: 10px;
-    font-weight: bolder;
-    width: 60%;
-    position: relative;
-    left: 18%;
-    margin-bottom: var(--spacer-m);
+.pers-btn:hover {
+
+    background: #2f9d3f;
+}
+
+.pers-btn i {
+
+    margin-left: 8px;
+}
+
+/*==================================================
+=            PLANES
+==================================================*/
+
+.training-price-box {
+
+    margin-top: 40px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background: #10263F;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.training-price-box h3 {
+
+    text-align: center;
+
+    color: #39B54A;
+
+    font-family: var(--font-1);
+
+    font-size: 1.4rem;
+
+    margin-bottom: 25px;
+}
+
+
+/*==================================================
+=            LISTA PLANES
+==================================================*/
+
+.training-plan-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/*==================================================
+=            PLAN
+==================================================*/
+
+.training-plan {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 24px;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, .05);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    transition: .3s;
+}
+
+.training-plan:hover {
+
+    background: #173A5E;
+
+    transform: translateY(-2px);
+}
+
+
+/*==================================================
+=            TEXTO
+==================================================*/
+
+.training-plan strong {
+
+    display: block;
+
+    color: #fff;
+
+    /*font-family:var(--font-1);*/
+
+    margin-bottom: 6px;
+}
+
+.training-plan span {
+
+    display: block;
+
+    color: #fff;
+
+    font-size: .9rem;
+    font-family: var(--font-2);
+
+    line-height: 1.5;
+}
+
+
+/*==================================================
+=            PRECIO
+==================================================*/
+
+.training-plan h4 {
+
+    margin: 0;
+
+    color: #39B54A;
+
+    font-size: 2rem;
+
+    font-family: var(--font-3);
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.space-ant-1 {
+    grid-column: 2 / span 10;
 }
 
 
 
 /*2*/
-.pers-black{
+.pers-black {
     background: #F2F5F5;
     border-top: solid 2px #D5D5D5;
     border-bottom: solid 2px #D5D5D5;
 }
 
-.per-1-1, .per-2-2, .per-3-3{
-    background: #fff;
-    border: #000 2px solid;
-    border-radius: 15px;
-}
 
 /*3*/
-.partner-1{
-    text-align: center;
-    background: #F2F5F5;
-    grid-column: 2 / span 5;
-    border: solid 2px #D5D5D5;
+/*==================================================
+=            TARJETA PARTNER
+==================================================*/
 
-}
+.partner-card {
 
-.partner-1 h2, .partner-2 h2{
-    font-family: var(--font-1);
-    font-weight: bold;
-    font-size: var(--text-subheader-1);
-    padding-top: var(--spacer-l);
-    padding-bottom: var(--spacer-m);
-}
+    grid-column: 2 / span 10;
 
-.partner-1-inline{
-    /*display: inline-flex;*/
     display: flex;
-    justify-content: space-around;
+
+    align-items: stretch;
+
+    background: #071C33;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+
+    margin-bottom: var(--spacer-xl);
+
+    transition: .35s;
 }
 
-.partner-2{
+.partner-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+/*==================================================
+=            IMAGEN
+==================================================*/
+
+.partner-img {
+
+    flex: 0 0 38%;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0,
+            82% 0,
+            100% 100%,
+            0 100%);
+}
+
+.partner-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: .4s;
+}
+
+.partner-card:hover .partner-img img {
+
+    transform: scale(1.08);
+}
+
+
+/*==================================================
+=            INFORMACIÓN
+==================================================*/
+
+.partner-info {
+
+    flex: 1;
+
+    padding: 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: #fff;
+}
+
+
+/*==================================================
+=            ICONO
+==================================================*/
+
+.partner-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #39B54A;
+
+    color: #fff;
+
+    font-size: 30px;
+
+    margin-bottom: 22px;
+}
+
+
+/*==================================================
+=            TITULO
+==================================================*/
+
+.partner-info h2 {
+
+    color: #FB5B21;
+
+    font-family: var(--font-1);
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+
+/*==================================================
+=            DESCRIPCIÓN
+==================================================*/
+
+.partner-description {
+
+    color: #D8D8D8;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/*==================================================
+=            BLOQUES
+==================================================*/
+
+.partner-box {
+
+    border: 2px solid rgba(57, 181, 74, .45);
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    margin-bottom: 22px;
+
+    background: rgba(255, 255, 255, .03);
+}
+
+.partner-purple {
+
+    border-color: #8C52FF;
+}
+
+
+/*==================================================
+=            TITULO BLOQUE
+==================================================*/
+
+.partner-box h3 {
+
+    color: #39B54A;
+
+    font-family: var(--font-1);
+
+    font-size: 1.35rem;
+
+    margin-bottom: 18px;
+}
+
+.partner-purple h3 {
+
+    color: #8C52FF;
+}
+
+
+/*==================================================
+=            ITEMS
+==================================================*/
+
+.partner-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.partner-item:last-child {
+
+    border: none;
+}
+
+.partner-item span {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #fff;
+
+    font-size: 1rem;
+}
+
+.partner-item i {
+
+    width: 24px;
+
     text-align: center;
-    background: #F2F5F5;
-    grid-column: span 5;
-    border: solid 2px #D5D5D5;
+
+    color: #39B54A;
 }
 
-.parter-span-1, .parter-span-2, .parter-span-3{
-    padding: 15px;
-    border-radius: 10px;
+.partner-purple .partner-item i {
+
+    color: #8C52FF;
+}
+
+.partner-item strong {
+
+    white-space: nowrap;
+
+    color: #fff;
+
     font-family: var(--font-3);
-    font-size: var(--text-base);
+
+    font-size: 1.3rem;
 }
 
-.parter-span-1{
-    background: #4c70e8;
-    margin-bottom: var(--spacer-l);
-}
 
-.parter-span-2{
-    background: #4e9721;
-    margin-bottom: var(--spacer-l);
-}
+/*==================================================
+=            ESPACIO
+==================================================*/
 
-.parter-span-3{
-    background: #5024b9;
-    margin-bottom: var(--spacer-l);
-}
+.partner-box:last-child {
 
-.img-partner{
-    margin-top: var(--spacer-xl);
-    grid-column: 5 / span 4;
+    margin-bottom: 0;
 }
 
 /*4*/
-.pers-white-1{
+.pers-white-1 {
     background: #fff;
     border-top: solid 2px #D5D5D5;
     border-bottom: solid 2px #D5D5D5;
@@ -157,796 +694,1678 @@
 
 
 /*5*/
+/*==================================================
+=            TESTIMONIOS
+==================================================*/
+
+.testimo-con{
+
+    background:#202022;
+}
+
+
+/*==================================================
+=            TITULO
+==================================================*/
+
 .testimo-title{
-    margin-top: var(--spacer-xl);
-    text-align: center;
-    font-size: var(--text-title);
-    font-family: var(--font-1);
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: var(--spacer-xl);
+
+    grid-column:2 / span 10;
+
+    margin-top:var(--spacer-xl);
+
+    margin-bottom:var(--spacer-xl);
+
+    text-align:center;
+}
+
+.testimo-title h1{
+
+    color:#fff;
+
+    font-family:var(--font-1);
+
+    font-size:var(--text-title);
+
+    font-weight:bold;
 }
 
 
-.testimo-1{
-    grid-column: 2 / span 3;
+/*==================================================
+=            TARJETAS
+==================================================*/
+
+.testimo-card{
+
+    grid-column:span 4;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    border:3px solid #39B54A;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+    margin-bottom:var(--spacer-l);
 }
 
-.testimo-2{
-    grid-column: span 3;
-    position: relative;
-    left: 18%;
+.testimo-card:hover{
+
+    transform:translateY(-8px);
 }
 
-.testimo-3{
-    grid-column: 9 / span 3;
+
+/*==================================================
+=            IMAGEN
+==================================================*/
+
+.testimo-card img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.45s;
 }
 
-.testimo-img{
-    border: solid 7px #247D0D;
-    border-radius: 4px;
+.testimo-card:hover img{
+
+    transform:scale(1.06);
 }
 
-.testimo-space{
-    margin-bottom: var(--spacer-l);
+
+/*==================================================
+=            OVERLAY
+==================================================*/
+
+.testimo-overlay{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    padding:24px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(7,28,51,.95)
+    );
+}
+
+.testimo-overlay i{
+
+    color:#39B54A;
+
+    font-size:32px;
+
+    margin-bottom:12px;
+}
+
+.testimo-overlay p{
+
+    color:#fff;
+
+    font-family:var(--font-2);
+
+    font-size:15px;
+
+    line-height:1.7;
 }
 
 
 
 /* Size: md */
-@media (max-width: 900px) {
-    /*.pers-white{
-        background: #fff;
-    }*/
-    
-    .perso-title, .perso-title-1{
-        /*margin-top: var(--spacer-2xl);
-        margin-bottom: var(--spacer-xl);*/
-        font-size: var(--text-title-1);
-    }
-    
-    .per-1, .per-1-1{
-        grid-column:   span 3;
-    }
-    
-    .per-2, .per-2-2{
-        grid-column: span 3;
-        position: relative;
-        left: 18%;
-    }
-    
-    .per-3, .per-3-3{
-        grid-column: 8 / span 3;
-    }
-    
-    /*.per-1, .per-2, .per-3{
-        background: #F2F5F5;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*
-    .per-title img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
-    
-    /*.per-title h2{
-        padding-top: var(--spacer-l);
-        font-size: var(--text-subheader);
-    }*/
-    
-    /*.per-ul{
-        padding: 12px;
-    }*/
-    
-    .price-pack-1, .price-pack-2, .price-pack-3{
-        padding: 3px;
-        font-size: var(--text-note);
-    }
-    
-    .price-pack-black{
-        /*border-radius: 10px;*/
-        padding: 10px;
-    }
-    
-    .price-money-white{
-        /*margin-top: var(--spacer-s);
-        border-radius: 10px;
-        width: 60%;
-        position: relative;
-        left: 18%;
-        margin-bottom: var(--spacer-m);*/
-        padding: 8px;
-    }
-    
-    
-    
-    /*2*/
-    /*.pers-black{
-        background: #F2F5F5;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    /*.per-1-1, .per-2-2, .per-3-3{
-        background: #fff;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*3*/
-    .partner-1{
-        /*text-align: center;
-        background: #F2F5F5;*/
-        grid-column: span 5;
-        border: solid 2px #D5D5D5;
-    
-    }
-    
-    .partner-1 h2, .partner-2 h2{
-        font-family: var(--font-1);
-        font-weight: bold;
-        font-size: var(--text-subheader-1);
-        padding-top: var(--spacer-l);
-        padding-bottom: var(--spacer-m);
-    }
-    
-    .partner-1-inline{
-        /*display: inline-flex;*/
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .partner-2{
-        /*text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        grid-column: span 5;       
-    }
-    
-    .parter-span-1, .parter-span-2, .parter-span-3{
-        padding: 14px;
-        border-radius: 10px;
-        /*margin-bottom: var(--spacer-l);*/
-    }
-    
-    /*.parter-span-1{
-        background: #4c70e8;      
-    }
-    
-    .parter-span-2{
-        background: #4e9721;
-    }
-    
-    .parter-span-3{
-        background: #5024b9;
-    }*/
-    
-    .img-partner{
-        margin-top: var(--spacer-xl);
-        grid-column: 4  / span 4;
-    }
-    
-    /*4*/
-    /*.pers-white-1{
-        background: #fff;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    
-    /*5*/
-    .testimo-title{
-        /*margin-top: var(--spacer-xl);
-        margin-bottom: var(--spacer-xl);*/
-        font-size: var(--text-title-1);
-    }
-    
-    
-    .testimo-1{
-        grid-column:  span 3;
-    }
-    
-    .testimo-2{
-        grid-column: span 3;
-        position: relative;
-        left: 18%;
-    }
-    
-    .testimo-3{
-        grid-column: 8 / span 3;
-    }
-    
-    /*.testimo-img{
-        border: solid 7px #D5D5D5;
-        border-radius: 4px;
-    }*/
-    
-    /*.testimo-space{
+@media (max-width:900px) {
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .perso-title {
+        grid-column: 1 / span 10;
+        margin-top: var(--spacer-l);
         margin-bottom: var(--spacer-l);
-    }*/
+    }
+
+    .perso-title h1 {
+        font-size: 2.6rem;
+    }
+
+    /*=========================
+      TARJETA
+    =========================*/
+
+    .pers-card {
+        grid-column: 1 / span 10;
+        border-radius: 18px;
+        margin-bottom: var(--spacer-l);
+    }
+
+    /*=========================
+      IMAGEN
+    =========================*/
+
+    .pers-img {
+        width: 36%;
+    }
+
+    /*=========================
+      INFORMACION
+    =========================*/
+
+    .pers-info {
+        width: 64%;
+        padding: 30px;
+    }
+
+    /*=========================
+      ICONO
+    =========================*/
+
+    .pers-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .pers-info h2 {
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+
+    .pers-description {
+        font-size: .92rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    /*=========================
+      DETALLES
+    =========================*/
+
+    .pers-details {
+        gap: 16px;
+        padding: 20px 0;
+        margin-bottom: 24px;
+    }
+
+    .pers-detail {
+        gap: 10px;
+    }
+
+    .pers-detail i {
+        font-size: 18px;
+    }
+
+    .pers-detail h3 {
+        font-size: .9rem;
+    }
+
+    .pers-detail p {
+        font-size: .8rem;
+    }
+
+    /*=========================
+      PRECIO
+    =========================*/
+
+    .pers-price small {
+        font-size: .8rem;
+    }
+
+    .pers-price span {
+        font-size: 1.7rem;
+    }
+
+    /*=========================
+      BOTON
+    =========================*/
+
+    .pers-btn {
+        padding: 13px;
+        font-size: .9rem;
+    }
+
+    /*=========================
+      MODAL PLANES
+    =========================*/
+
+    .training-price-box {
+        padding: 24px;
+    }
+
+    .training-price-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .training-plan {
+        padding: 16px 18px;
+    }
+
+    .training-plan strong {
+        font-size: .95rem;
+    }
+
+    .training-plan span {
+        font-size: .82rem;
+    }
+
+    .training-plan h4 {
+        font-size: 1.7rem;
+    }
+
+    .space-ant-1 {
+        grid-column: 1 / span 10;
+    }
+
+    /*=========================================
+=            MODAL
+=========================================*/
+
+    .training-modal {
+        padding: 20px;
+    }
+
+    .training-modal-content {
+        max-width: 900px;
+        padding: 32px;
+    }
+
+    .training-modal-title {
+        gap: 18px;
+    }
+
+    .training-modal-circle {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .training-modal-title h2 {
+        font-size: 2rem;
+    }
+
+    .training-modal-title p {
+        font-size: .95rem;
+    }
+
+    .training-modal-card {
+        padding: 26px;
+    }
+
+    .training-modal-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .training-modal-card p,
+    .training-modal-card li {
+        font-size: .92rem;
+    }
+
+    .training-price-box {
+        padding: 26px;
+    }
+
+    .training-price-box span {
+        font-size: 2rem;
+    }
+
+    .training-close {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    /*=========================================
+=            PARTNER 900
+=========================================*/
+
+    .partner-card {
+        grid-column: 1 / span 10;
+
+        border-radius: 18px;
+
+        margin-bottom: var(--spacer-l);
+    }
+
+    .partner-img {
+        flex: 0 0 36%;
+    }
+
+    .partner-info {
+        padding: 30px;
+    }
+
+    .partner-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .partner-info h2 {
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+
+    .partner-description {
+        font-size: .92rem;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .partner-box {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .partner-box h3 {
+        font-size: 1.15rem;
+    }
+
+    .partner-item {
+        padding: 12px 0;
+    }
+
+    .partner-item span {
+        font-size: .9rem;
+    }
+
+    .partner-item strong {
+        font-size: 1.15rem;
+    }
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .testimo-title{
+
+        grid-column:1 / span 10;
+
+        margin-top:var(--spacer-l);
+        margin-bottom:var(--spacer-l);
+    }
+
+    .testimo-title h1{
+
+        font-size:2.6rem;
+    }
+
+    /*=========================
+      TARJETAS
+    =========================*/
+
+    .testimo-card{
+
+        grid-column:span 5;
+
+        border-radius:16px;
+
+        margin-bottom:var(--spacer-l);
+    }
+
+    .testimo-card img{
+
+        height:430px;
+    }
+
+    /*=========================
+      OVERLAY
+    =========================*/
+
+    .testimo-overlay{
+
+        padding:20px;
+    }
+
+    .testimo-overlay i{
+
+        font-size:28px;
+
+        margin-bottom:10px;
+    }
+
+    .testimo-overlay p{
+
+        font-size:.92rem;
+
+        line-height:1.6;
+    }
+
+
+    
 }
 
 /* Size: sm */
-@media (max-width: 700px) {
-    /*.pers-white{
-        background: #fff;
-    }*/
-    
+@media (max-width:700px) {
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
     .perso-title {
+        grid-column: 1 / span 8;
+
         margin-top: var(--spacer-2xl);
-        /*margin-bottom: var(--spacer-xl);
-        font-size: var(--text-title-1);*/
+        margin-bottom: var(--spacer-l);
     }
 
-    .perso-title-1{
-        margin-top: var(--spacer-xl);
+    .perso-title h1 {
+        font-size: 2rem;
     }
-    
-    .per-1, .per-1-1{
-        grid-column:  3 / span 4;
-    }
-    
-    .per-2, .per-2-2{
-        margin-top: var(--spacer-l);
-        grid-column: 3 / span 4;
-        position: relative;
-        left: 0%;
-    }
-    
-    .per-3, .per-3-3{
-        margin-top: var(--spacer-l);
-        grid-column: 3 / span 4;
-    }
-    
-    /*.per-1, .per-2, .per-3{
-        background: #F2F5F5;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*
-    .per-title img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
-    
-    /*.per-title h2{
-        padding-top: var(--spacer-l);
-        font-size: var(--text-subheader);
-    }*/
-    
-    /*.per-ul{
-        padding: 12px;
-    }*/
-    
-    /*.price-pack-1, .price-pack-2, .price-pack-3{
-        padding: 3px;
-        font-size: var(--text-note);
-    }*/
-    
-    .price-pack-black{
-        /*border-radius: 10px;*/
-        /*padding: 10px;*/
-    }
-    
-    .price-money-white{
-        /*margin-top: var(--spacer-s);
-        border-radius: 10px;
-        width: 60%;
-        position: relative;
-        left: 18%;
-        margin-bottom: var(--spacer-m);*/
-        /*padding: 8px;*/
-    }
-    
-    
-    
-    /*2*/
-    /*.pers-black{
-        background: #F2F5F5;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    /*.per-1-1, .per-2-2, .per-3-3{
-        background: #fff;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*3*/
-    .partner-1{
-        /*text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        grid-column: 2 / span 6;
-    }
-    
-    /*.partner-1 h2, .partner-2 h2{
-        font-family: var(--font-1);
-        font-weight: bold;
-        font-size: var(--text-subheader-1);
-        padding-top: var(--spacer-l);
-        padding-bottom: var(--spacer-m);
-    }*/
-    
-    .partner-1-inline{
-        /*display: inline-flex;
-        display: flex;
-        justify-content: space-around;*/
-    }
-    
-    .partner-2{
-        margin-top: var(--spacer-l);
-        /*text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        grid-column: 2 / span 6;       
-    }
-    
-    .parter-span-1, .parter-span-2, .parter-span-3{
-        /*padding: 14px;
-        border-radius: 10px;*/
-        /*margin-bottom: var(--spacer-l);*/
-    }
-    
-    /*.parter-span-1{
-        background: #4c70e8;      
-    }
-    
-    .parter-span-2{
-        background: #4e9721;
-    }
-    
-    .parter-span-3{
-        background: #5024b9;
-    }*/
-    
-    .img-partner{
-        margin-top: var(--spacer-l);
-        grid-column: 3  / span 4;
-    }
-    
-    /*4*/
-    /*.pers-white-1{
-        background: #fff;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    
-    /*5*/
-    .testimo-title{
-        /*margin-top: var(--spacer-xl);
-        margin-bottom: var(--spacer-xl);
-        font-size: var(--text-title-1);*/
-    }
-    
-    
-    .testimo-1{
-        grid-column: span 4;
-    }
-    
-    .testimo-2{
-        /*margin-top: var(--spacer-xl);*/
-        grid-column:  span 4;
-        /*position: relative;*/
-        left: 0%;
-    }
-    
-    .testimo-3{
-        margin-top: var(--spacer-xl);
-        grid-column:  3 / span 4;
-    }
-    
-    /*.testimo-img{
-        border: solid 7px #D5D5D5;
-        border-radius: 4px;
-    }*/
-    
-    /*.testimo-space{
+
+
+    /*=========================================
+    =            TARJETA
+    =========================================*/
+
+    .pers-card {
+
+        grid-column: 1 / span 8;
+
+        flex-direction: column;
+
+        border-radius: 16px;
+
         margin-bottom: var(--spacer-l);
-    }*/
-   
+    }
+
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .pers-img {
+
+        width: 100%;
+
+        min-height: 340px;
+
+        clip-path: none;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    .pers-img img {
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+    }
+
+
+    /*=========================================
+    =            INFORMACION
+    =========================================*/
+
+    .pers-info {
+
+        width: 100%;
+
+        padding: 25px;
+    }
+
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .pers-icon {
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+
+        margin-bottom: 18px;
+    }
+
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .pers-info h2 {
+
+        font-size: 1.6rem;
+    }
+
+    .pers-description {
+
+        font-size: .95rem;
+
+        line-height: 1.6;
+    }
+
+
+    /*=========================================
+    =            DETALLES
+    =========================================*/
+
+    .pers-details {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+    .pers-price {
+
+        grid-column: span 2;
+
+        text-align: center;
+    }
+
+    .pers-price span {
+
+        font-size: 1.7rem;
+    }
+
+
+    /*=========================================
+    =            BOTON
+    =========================================*/
+
+    .pers-btn {
+
+        padding: 14px;
+
+        font-size: .95rem;
+    }
+
+
+    /*=========================================
+    =            MODAL
+    =========================================*/
+
+    .training-modal {
+
+        padding: 18px;
+    }
+
+    .training-modal-content {
+
+        padding: 26px;
+    }
+
+    .training-modal-title {
+
+        gap: 16px;
+    }
+
+    .training-modal-circle {
+
+        width: 58px;
+        height: 58px;
+
+        font-size: 24px;
+    }
+
+    .training-modal-title h2 {
+
+        font-size: 1.6rem;
+    }
+
+    .training-modal-title p {
+
+        font-size: .9rem;
+    }
+
+    .training-modal-card {
+
+        padding: 22px;
+    }
+
+    .training-modal-card h3 {
+
+        font-size: 1.1rem;
+    }
+
+    .training-modal-card p,
+    .training-modal-card li {
+
+        font-size: .9rem;
+    }
+
+    .training-price-box {
+
+        padding: 22px;
+    }
+
+    .training-price-box span {
+
+        font-size: 1.9rem;
+    }
+
+    .training-close {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+
+    /*=========================================
+    =            ESPACIO
+    =========================================*/
+
+    .space-ant-1 {
+
+        grid-column: 1 / span 8;
+    }
+
+    /*=========================================
+    =            PARTNER
+    =========================================*/
+
+    .partner-card {
+
+        grid-column: 1 / span 8;
+
+        flex-direction: column;
+
+        border-radius: 18px;
+
+        margin-bottom: var(--spacer-l);
+    }
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .partner-img {
+
+        flex: none;
+
+        width: 100%;
+
+        min-height: 340px;
+
+        clip-path: none;
+
+        overflow: hidden;
+    }
+
+    .partner-img img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+    }
+
+    /*=========================================
+    =            INFORMACIÓN
+    =========================================*/
+
+    .partner-info {
+
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .partner-icon {
+
+        width: 58px;
+        height: 58px;
+
+        font-size: 22px;
+
+        margin-bottom: 18px;
+    }
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .partner-info h2 {
+
+        font-size: 1.6rem;
+
+        margin-bottom: 16px;
+    }
+
+    .partner-description {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+
+        margin-bottom: 22px;
+    }
+
+    /*=========================================
+    =            BLOQUES
+    =========================================*/
+
+    .partner-box {
+
+        padding: 18px;
+
+        margin-bottom: 18px;
+    }
+
+    .partner-box h3 {
+
+        font-size: 1.1rem;
+
+        margin-bottom: 16px;
+    }
+
+    /*=========================================
+    =            ITEMS
+    =========================================*/
+
+    .partner-item {
+
+        padding: 12px 0;
+    }
+
+    .partner-item span {
+
+        font-size: .9rem;
+
+        gap: 10px;
+    }
+
+    .partner-item i {
+
+        width: 20px;
+    }
+
+    .partner-item strong {
+
+        font-size: 1.1rem;
+    }
+
+
+    /*=========================
+      TITULO
+    =========================*/
+
+    .testimo-title{
+
+        grid-column:1 / span 8;
+
+        margin-top:var(--spacer-l);
+
+        margin-bottom:var(--spacer-l);
+    }
+
+    .testimo-title h1{
+
+        font-size:2rem;
+    }
+
+    /*=========================
+      TARJETA
+    =========================*/
+
+    .testimo-card{
+
+        grid-column:span 4;
+
+        border-radius:14px;
+
+        margin-bottom:var(--spacer-l);
+    }
+
+    /*=========================
+      IMAGEN
+    =========================*/
+
+    .testimo-card img{
+
+        height:500px;
+    }
+
+    /*=========================
+      OVERLAY
+    =========================*/
+
+    .testimo-overlay{
+
+        padding:18px;
+    }
+
+    .testimo-overlay i{
+
+        font-size:24px;
+    }
+
+    .testimo-overlay p{
+
+        font-size:.88rem;
+
+        line-height:1.6;
+    }
+
+
 }
 
 /* Size: xs */
-@media (max-width: 500px) {
-        /*.pers-white{
-        background: #fff;
-    }*/
-    
+@media (max-width:500px) {
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
     .perso-title {
-        margin-bottom: var(--spacer-l);
-        /*
-        margin-top: var(--spacer-2xl);
-        font-size: var(--text-title-1);*/
+        grid-column: 1 / span 6;
+        margin-bottom: var(--spacer-m);
     }
 
-    .perso-title-1{
-        margin-bottom: var(--spacer-l);
-        /*margin-top: var(--spacer-xl);*/
+    .perso-title h1 {
+        font-size: 1.6rem;
     }
-    
-    .per-1, .per-1-1{
-        grid-column:  2 / span 4;
+
+
+    /*=========================================
+    =            TARJETA
+    =========================================*/
+
+    .pers-card {
+        grid-column: 1 / span 6;
+        border-radius: 14px;
     }
-    
-    .per-2, .per-2-2{
-        /*margin-top: var(--spacer-l);
-        position: relative;
-        left: 0%;*/
-        grid-column: 2 / span 4;
+
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .pers-img {
+        min-height: 260px;
     }
-    
-    .per-3, .per-3-3{
-        /*margin-top: var(--spacer-l);*/
-        grid-column: 2 / span 4;
+
+
+    /*=========================================
+    =            INFORMACION
+    =========================================*/
+
+    .pers-info {
+        padding: 20px;
     }
-    
-    /*.per-1, .per-2, .per-3{
-        background: #F2F5F5;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*
-    .per-title img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
-    
-    /*.per-title h2{
-        padding-top: var(--spacer-l);
-        font-size: var(--text-subheader);
-    }*/
-    
-    /*.per-ul{
-        padding: 12px;
-    }*/
-    
-    /*.price-pack-1, .price-pack-2, .price-pack-3{
-        padding: 3px;
-        font-size: var(--text-note);
-    }*/
-    
-    .price-pack-black{
-        /*border-radius: 10px;*/
-        /*padding: 10px;*/
+
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .pers-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+        margin-bottom: 16px;
     }
-    
-    .price-money-white{
-        /*margin-top: var(--spacer-s);
-        border-radius: 10px;
-        width: 60%;
-        position: relative;
-        left: 18%;
-        margin-bottom: var(--spacer-m);*/
-        /*padding: 8px;*/
+
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .pers-info h2 {
+        font-size: 1.35rem;
+        margin-bottom: 14px;
     }
-    
-    
-    
-    /*2*/
-    /*.pers-black{
-        background: #F2F5F5;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    /*.per-1-1, .per-2-2, .per-3-3{
-        background: #fff;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*3*/
-    .partner-1{
-        /*text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        grid-column:  span 6;
+
+    .pers-description {
+        font-size: .88rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
     }
-    
-    /*.partner-1 h2, .partner-2 h2{
-        font-family: var(--font-1);
-        font-weight: bold;
-        font-size: var(--text-subheader-1);
-        padding-top: var(--spacer-l);
-        padding-bottom: var(--spacer-m);
-    }*/
-    
-    .partner-1-inline{
-        /*display: inline-flex;
-        display: flex;
-        justify-content: space-around;*/
+
+
+    /*=========================================
+    =            DETALLES
+    =========================================*/
+
+    .pers-details {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 18px 0;
     }
-    
-    .partner-2{
-        /*margin-top: var(--spacer-l);
+
+    .pers-detail {
+        gap: 12px;
+    }
+
+    .pers-detail i {
+        font-size: 17px;
+    }
+
+    .pers-detail h3 {
+        font-size: .85rem;
+    }
+
+    .pers-detail p {
+        font-size: .78rem;
+    }
+
+
+    /*=========================================
+    =            PRECIO
+    =========================================*/
+
+    .pers-price {
+        grid-column: auto;
         text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        grid-column:  span 6;       
     }
-    
-    .parter-span-1, .parter-span-2, .parter-span-3{
-        /*padding: 14px;
-        border-radius: 10px;*/
-        /*margin-bottom: var(--spacer-l);*/
+
+    .pers-price small {
+        font-size: .75rem;
     }
-    
-    /*.parter-span-1{
-        background: #4c70e8;      
+
+    .pers-price span {
+        font-size: 1.5rem;
     }
-    
-    .parter-span-2{
-        background: #4e9721;
+
+
+    /*=========================================
+    =            BOTON
+    =========================================*/
+
+    .pers-btn {
+        width: 100%;
+        padding: 13px;
+        font-size: .9rem;
     }
-    
-    .parter-span-3{
-        background: #5024b9;
-    }*/
-    
-    .img-partner{
-        margin-top: var(--spacer-l);
-        grid-column: 2 / span 4;
+
+
+    /*=========================================
+    =            MODAL
+    =========================================*/
+
+    .training-modal {
+        padding: 14px;
     }
-    
-    /*4*/
-    /*.pers-white-1{
-        background: #fff;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;
-    }*/
-    
-    
-    /*5*/
+
+    .training-modal-content {
+        padding: 22px;
+    }
+
+    .training-modal-title {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .training-modal-circle {
+        width: 54px;
+        height: 54px;
+        font-size: 22px;
+    }
+
+    .training-modal-title h2 {
+        font-size: 1.35rem;
+    }
+
+    .training-modal-title p {
+        font-size: .85rem;
+    }
+
+    .training-modal-card {
+        padding: 18px;
+    }
+
+    .training-modal-card h3 {
+        font-size: 1rem;
+    }
+
+    .training-modal-card p,
+    .training-modal-card li {
+        font-size: .82rem;
+    }
+
+    .training-price-box {
+        padding: 18px;
+    }
+
+    .training-price-box h3 {
+        font-size: 1rem;
+    }
+
+    .training-plan {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .training-plan h4 {
+        font-size: 1.5rem;
+    }
+
+    .training-close {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+
+    /*=========================================
+    =            ESPACIO
+    =========================================*/
+
+    .space-ant-1 {
+        grid-column: 1 / span 6;
+    }
+
+    /*=========================================
+    =            PARTNER
+    =========================================*/
+
+    .partner-card {
+
+        grid-column: 1 / span 6;
+
+        border-radius: 16px;
+
+        margin-bottom: var(--spacer-m);
+    }
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .partner-img {
+
+        min-height: 260px;
+    }
+
+    /*=========================================
+    =            INFORMACIÓN
+    =========================================*/
+
+    .partner-info {
+
+        padding: 20px;
+    }
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .partner-icon {
+
+        width: 52px;
+        height: 52px;
+
+        font-size: 20px;
+
+        margin-bottom: 16px;
+    }
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .partner-info h2 {
+
+        font-size: 1.35rem;
+
+        margin-bottom: 14px;
+    }
+
+    .partner-description {
+
+        font-size: .85rem;
+
+        line-height: 1.6;
+
+        margin-bottom: 18px;
+    }
+
+    /*=========================================
+    =            BLOQUES
+    =========================================*/
+
+    .partner-box {
+
+        padding: 16px;
+
+        margin-bottom: 16px;
+    }
+
+    .partner-box h3 {
+
+        font-size: 1rem;
+
+        margin-bottom: 14px;
+    }
+
+    /*=========================================
+    =            ITEMS
+    =========================================*/
+
+    .partner-item {
+
+        padding: 10px 0;
+    }
+
+    .partner-item span {
+
+        gap: 8px;
+
+        font-size: .82rem;
+    }
+
+    .partner-item i {
+
+        width: 18px;
+
+        font-size: .9rem;
+    }
+
+    .partner-item strong {
+
+        font-size: 1rem;
+    }
+
+     /*=========================
+      TESTIMONIOS
+    =========================*/
+
+    /*=========================
+      TITULO
+    =========================*/
+
     .testimo-title{
-        margin-bottom: var(--spacer-l);
-        /*margin-top: var(--spacer-xl);
-        font-size: var(--text-title-1);*/
+
+        grid-column:1 / span 6;
+
+        margin-top:var(--spacer-l);
+
+        margin-bottom:var(--spacer-l);
     }
-    
-    
-    .testimo-1{
-        grid-column: 2 / span 4;
+
+    .testimo-title h1{
+
+        font-size:1.8rem;
     }
-    
-    .testimo-2{
-        margin-top: var(--spacer-xl);
-        grid-column: 2 / span 4;
-        /*position: relative;*/
-        left: 0%;
+
+    /*=========================
+      TARJETA
+    =========================*/
+
+    .testimo-card{
+
+        grid-column:1 / span 6;
+
+        border-radius:12px;
+
+        margin-bottom:var(--spacer-l);
     }
-    
-    .testimo-3{
-        margin-top: var(--spacer-xl);
-        grid-column:  2 / span 4;
+
+    /*=========================
+      IMAGEN
+    =========================*/
+
+    .testimo-card img{
+
+        height:480px;
+
+        object-fit:cover;
+
+        object-position:center;
     }
-    
-    /*.testimo-img{
-        border: solid 7px #D5D5D5;
-        border-radius: 4px;
-    }*/
-    
-    /*.testimo-space{
-        margin-bottom: var(--spacer-l);
-    }*/
+
+    /*=========================
+      OVERLAY
+    =========================*/
+
+    .testimo-overlay{
+
+        padding:16px;
+    }
+
+    .testimo-overlay i{
+
+        font-size:22px;
+
+        margin-bottom:8px;
+    }
+
+    .testimo-overlay p{
+
+        font-size:.85rem;
+
+        line-height:1.6;
+    }
+
+
 }
 
 /* Size: xxs */
-@media (max-width: 320px) {
-    .pers-white{
-        padding: 15px;
-    }
-    
+@media (max-width:320px) {
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
     .perso-title {
-        word-wrap: break-word;
-        font-size: var(--text-title);
-        /*margin-bottom: var(--spacer-l);
-        margin-top: var(--spacer-2xl);*/
+        grid-column: 1 / span 4;
+        margin-bottom: var(--spacer-l);
     }
 
-    .perso-title-1{
-        word-wrap: break-word;
-        font-size: var(--text-title);
-        /*margin-bottom: var(--spacer-l);
-        margin-top: var(--spacer-xl);*/
+    .perso-title h1 {
+        font-size: 1.35rem;
+        line-height: 1.35;
     }
-    
-    .per-1, .per-1-1{
-        grid-column: span 4;
-    }
-    
-    .per-2, .per-2-2{
-        /*margin-top: var(--spacer-l);
-        position: relative;
-        left: 0%;*/
-        grid-column: span 4;
-    }
-    
-    .per-3, .per-3-3{
-        /*margin-top: var(--spacer-l);*/
-        grid-column:  span 4;
-    }
-    
-    /*.per-1, .per-2, .per-3{
-        background: #F2F5F5;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
-    /*
-    .per-title img{
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }*/
-    
-    .per-title h2{
-        /*padding-top: var(--spacer-l);
-        font-size: var(--text-subheader);*/
-        word-wrap: break-word;
-    }
-    
-    .per-ul{
-        /*padding: 12px;*/
-        word-wrap: break-word;
-    }
-    
-    /*.price-pack-1, .price-pack-2, .price-pack-3{
-        padding: 3px;
-        font-size: var(--text-note);
-    }*/
-    
-    .price-pack-black{
-        word-wrap: break-word;
-        /*border-radius: 10px;*/
-        /*padding: 10px;*/
-    }
-    
-    .price-money-white{ 
-        word-wrap: break-word;
-        /*margin-top: var(--spacer-s);
-        border-radius: 10px;
-        width: 60%;
-        position: relative;
-        left: 18%;
-        margin-bottom: var(--spacer-m);*/
-        /*padding: 8px;*/
-    }
-    
-    
-    
-    /*2*/
-    .pers-black{
-        word-wrap: break-word;
-        /*background: #F2F5F5;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;*/
-        padding: 15px;
-    }
-    
-    /*.per-1-1, .per-2-2, .per-3-3{
-        background: #fff;
-        border: #000 2px solid;
-        border-radius: 15px;
-    }*/
-    
 
+    /*=========================================
+    =            TARJETA
+    =========================================*/
 
-    /*3*/
-    .partner-1{
-        /*text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        border-radius: 10px;
-        grid-column:  span 4;
+    .pers-card {
+        grid-column: 1 / span 4;
+        border-radius: 12px;
+        margin-bottom: var(--spacer-m);
     }
-    
-    .partner-1 h2, .partner-2 h2{
-        word-wrap: break-word;
-        /*font-family: var(--font-1);
-        font-weight: bold;
-        font-size: var(--text-subheader-1);
-        padding-top: var(--spacer-l);
-        padding-bottom: var(--spacer-m);*/
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .pers-img {
+        min-height: 210px;
     }
-    
-    .partner-1-inline{
-        word-wrap: break-word;
-        display: inline-block ;
-        justify-content: baseline;
-        /*display: inline-flex;
-        
-        */
+
+    /*=========================================
+    =            INFORMACION
+    =========================================*/
+
+    .pers-info {
+        padding: 16px;
     }
-    
-    .partner-2{
-        word-wrap: break-word;
-        /*margin-top: var(--spacer-l);
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .pers-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .pers-info h2 {
+        font-size: 1.15rem;
+        margin-bottom: 12px;
+    }
+
+    .pers-description {
+        font-size: .8rem;
+        line-height: 1.55;
+        margin-bottom: 18px;
+    }
+
+    /*=========================================
+    =            DETALLES
+    =========================================*/
+
+    .pers-details {
+        gap: 14px;
+        padding: 16px 0;
+    }
+
+    .pers-detail {
+        gap: 10px;
+    }
+
+    .pers-detail i {
+        font-size: 15px;
+    }
+
+    .pers-detail h3 {
+        font-size: .75rem;
+    }
+
+    .pers-detail p {
+        font-size: .72rem;
+    }
+
+    /*=========================================
+    =            PRECIO
+    =========================================*/
+
+    .pers-price {
         text-align: center;
-        background: #F2F5F5;
-        border: solid 2px #D5D5D5;*/
-        border-radius: 10px;
-        grid-column:  span 4;       
     }
-    
-    .parter-span-1, .parter-span-2, .parter-span-3{
-        /*padding: 14px;
-        border-radius: 10px;*/
-        /*margin-bottom: var(--spacer-l);*/
+
+    .pers-price small {
+        font-size: .7rem;
     }
-    
-    .parter-span-1{
-        /*background: #4c70e8;*/
-        word-wrap: break-word;
+
+    .pers-price span {
+        font-size: 1.35rem;
     }
-    
-    .parter-span-2{
-        /*background: #4e9721;*/
-        word-wrap: break-word;
+
+    /*=========================================
+    =            BOTON
+    =========================================*/
+
+    .pers-btn {
+        width: 100%;
+        padding: 11px;
+        font-size: .82rem;
     }
-    
-    .parter-span-3{
-        /*background: #5024b9;*/
-        word-wrap: break-word;
+
+    /*=========================================
+    =            MODAL
+    =========================================*/
+
+    .training-modal {
+        padding: 10px;
     }
-    
-    .img-partner{
-        /*margin-top: var(--spacer-l);*/
-        border-radius: 10px;
-        grid-column:  span 4;
+
+    .training-modal-content {
+        padding: 16px;
     }
-    
-    /*4*/
-    .pers-white-1{
-        /*background: #fff;
-        border-top: solid 2px #D5D5D5;
-        border-bottom: solid 2px #D5D5D5;*/
-        padding: 15px;
+
+    .training-modal-title {
+        gap: 12px;
     }
-    
-    
-    /*5*/
-    .testimo-con{
-        padding: 15px;
+
+    .training-modal-circle {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
     }
+
+    .training-modal-title h2 {
+        font-size: 1.15rem;
+    }
+
+    .training-modal-title p {
+        font-size: .78rem;
+    }
+
+    .training-modal-card {
+        padding: 16px;
+    }
+
+    .training-modal-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .training-modal-card h3 {
+        font-size: .95rem;
+    }
+
+    .training-modal-card p,
+    .training-modal-card li {
+        font-size: .75rem;
+        line-height: 1.55;
+    }
+
+    .training-price-box {
+        padding: 16px;
+    }
+
+    .training-price-box h3 {
+        font-size: .95rem;
+        margin-bottom: 16px;
+    }
+
+    .training-plan {
+        padding: 14px;
+        gap: 8px;
+    }
+
+    .training-plan strong {
+        font-size: .82rem;
+    }
+
+    .training-plan span {
+        font-size: .72rem;
+    }
+
+    .training-plan h4 {
+        font-size: 1.3rem;
+    }
+
+    .training-close {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /*=========================================
+    =            ESPACIO
+    =========================================*/
+
+    .space-ant-1 {
+        grid-column: 1 / span 4;
+    }
+
+    /*=========================================
+    =            PARTNER
+    =========================================*/
+
+    .partner-card {
+
+        grid-column: 1 / span 4;
+
+        border-radius: 12px;
+    }
+
+    /*=========================================
+    =            IMAGEN
+    =========================================*/
+
+    .partner-img {
+
+        min-height: 220px;
+    }
+
+    /*=========================================
+    =            INFORMACIÓN
+    =========================================*/
+
+    .partner-info {
+
+        padding: 16px 14px;
+    }
+
+    /*=========================================
+    =            ICONO
+    =========================================*/
+
+    .partner-icon {
+
+        width: 46px;
+        height: 46px;
+
+        font-size: 18px;
+
+        margin-bottom: 14px;
+    }
+
+    /*=========================================
+    =            TITULO
+    =========================================*/
+
+    .partner-info h2 {
+
+        font-size: 1.15rem;
+
+        margin-bottom: 12px;
+    }
+
+    .partner-description {
+
+        font-size: .8rem;
+
+        line-height: 1.55;
+
+        margin-bottom: 16px;
+    }
+
+    /*=========================================
+    =            BLOQUES
+    =========================================*/
+
+    .partner-box {
+
+        padding: 14px;
+
+        margin-bottom: 14px;
+    }
+
+    .partner-box h3 {
+
+        font-size: .9rem;
+
+        margin-bottom: 12px;
+    }
+
+    /*=========================================
+    =            ITEMS
+    =========================================*/
+
+    .partner-item {
+
+        gap: 8px;
+
+        padding: 8px 0;
+    }
+
+    .partner-item span {
+
+        gap: 6px;
+
+        font-size: .75rem;
+    }
+
+    .partner-item i {
+
+        width: 16px;
+
+        font-size: .8rem;
+    }
+
+    .partner-item strong {
+
+        font-size: .9rem;
+    }
+
+    /*=========================
+      TESTIMONIOS
+    =========================*/
+
+    /*=========================
+      TITULO
+    =========================*/
 
     .testimo-title{
-        word-wrap: break-word;
-        margin-bottom: var(--spacer-l);
-        /*margin-top: var(--spacer-xl);
-        font-size: var(--text-title-1);*/
+
+        grid-column:1 / span 4;
+
+        margin-top:var(--spacer-l);
+
+        margin-bottom:var(--spacer-l);
     }
-    
-    
-    .testimo-1{
-        grid-column: span 4;
+
+    .testimo-title h1{
+
+        font-size:1.5rem;
     }
-    
-    .testimo-2{
-        margin-top: var(--spacer-xl);
-        grid-column: span 4;
-        /*position: relative;*/
-        left: 0%;
+
+    /*=========================
+      TARJETA
+    =========================*/
+
+    .testimo-card{
+
+        grid-column:1 / span 4;
+
+        border-radius:10px;
+
+        margin-bottom:var(--spacer-l);
     }
-    
-    .testimo-3{
-        margin-top: var(--spacer-xl);
-        grid-column:     span 4;
+
+    /*=========================
+      IMAGEN
+    =========================*/
+
+    .testimo-card img{
+
+        height:400px;
+
+        object-fit:cover;
+
+        object-position:center;
     }
-    
-    /*.testimo-img{
-        border: solid 7px #D5D5D5;
-        border-radius: 4px;
-    }*/
-    
-    /*.testimo-space{
-        margin-bottom: var(--spacer-l);
-    }*/
+
+    /*=========================
+      OVERLAY
+    =========================*/
+
+    .testimo-overlay{
+
+        padding:14px;
+    }
+
+    .testimo-overlay i{
+
+        font-size:20px;
+
+        margin-bottom:8px;
+    }
+
+    .testimo-overlay p{
+
+        font-size:.8rem;
+
+        line-height:1.5;
+    }
+
+
 }
-
-
