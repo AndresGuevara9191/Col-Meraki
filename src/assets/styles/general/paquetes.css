@@ -1,0 +1,590 @@
+/*==================================================
+=            PAQUETES GENERAL
+==================================================*/
+
+.package-card {
+
+    grid-column: 2 / span 10;
+
+    display: flex;
+
+    background: #071C33;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+
+    margin-top: var(--spacer-xl);
+
+    margin-bottom: var(--spacer-xl);
+
+    transition: .35s;
+}
+
+.package-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+/*==================================================
+=            IMAGEN
+==================================================*/
+
+.package-image {
+
+    width: 40%;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0,
+            82% 0,
+            100% 100%,
+            0 100%);
+}
+
+.package-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s;
+}
+
+.package-card:hover img {
+
+    transform: scale(1.08);
+}
+
+
+/*==================================================
+=            INFORMACIÓN
+==================================================*/
+
+.package-info {
+
+    width: 60%;
+
+    padding: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: #fff;
+}
+
+
+/*==================================================
+=            TITULO
+==================================================*/
+
+.package-info h2 {
+
+    color: #39B54A;
+
+    font-family: var(--font-1);
+
+    font-size: 2.8rem;
+
+    margin-bottom: 15px;
+}
+
+
+/*==================================================
+=            SUBTITULO
+==================================================*/
+
+.package-subtitle {
+
+    font-family: var(--font-2);
+
+    font-size: 1.2rem;
+
+    margin-bottom: 35px;
+}
+
+.package-subtitle span {
+
+    color: #39B54A;
+
+    font-weight: bold;
+}
+
+
+/*==================================================
+=            ITEM
+==================================================*/
+
+.package-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 22px;
+
+    padding: 26px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    transition: .3s;
+}
+
+.package-item:first-child {
+
+    border-top: none;
+}
+
+.package-item:hover {
+
+    transform: translateX(8px);
+}
+
+
+/*==================================================
+=            ICONO
+==================================================*/
+
+.package-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 2px solid #39B54A;
+
+    color: #39B54A;
+
+    font-size: 26px;
+
+    flex-shrink: 0;
+}
+
+
+/*==================================================
+=            TEXTO
+==================================================*/
+
+.package-text {
+
+    flex: 1;
+}
+
+.package-text h3 {
+
+    color: #FB5B21;
+
+    font-family: var(--font-1);
+
+    font-size: 1.8rem;
+
+    margin-bottom: 8px;
+}
+
+.package-text p {
+
+    color: #D8D8D8;
+
+    font-family: var(--font-2);
+
+    line-height: 1.6;
+}
+
+
+/*==================================================
+=            PRECIO
+==================================================*/
+
+.package-price {
+
+    border: 2px solid #39B54A;
+
+    border-radius: 14px;
+
+    padding: 16px 24px;
+
+    color: #39B54A;
+
+    font-family: var(--font-3);
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+/* Size: md */
+@media (max-width: 900px) {
+    /*=========================
+  PAQUETES
+=========================*/
+
+    .package-card {
+
+        grid-column: 1 / span 10;
+    }
+
+    .package-image {
+
+        width: 42%;
+    }
+
+    .package-info {
+
+        width: 58%;
+
+        padding: 35px;
+    }
+
+    .package-info h2 {
+
+        font-size: 2.4rem;
+    }
+
+    .package-subtitle {
+
+        font-size: 1.2rem;
+
+        margin-bottom: 30px;
+    }
+
+    .package-item {
+
+        padding: 22px 0;
+    }
+
+    .package-icon {
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+    }
+
+    .package-text {
+
+        margin-left: 18px;
+    }
+
+    .package-text h3 {
+
+        font-size: 1.4rem;
+    }
+
+    .package-text p {
+
+        font-size: .95rem;
+    }
+
+    .package-price {
+
+        padding: 14px 20px;
+
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media (max-width:700px) {
+
+    /*=========================
+  PAQUETES GENERAL
+=========================*/
+
+    .package-card {
+
+        grid-column: 1 / span 8;
+
+        flex-direction: column;
+
+        border-radius: 20px;
+    }
+
+    /*-------------------------
+  Imagen
+--------------------------*/
+
+    .package-image {
+
+        width: 100%;
+
+        height: 280px;
+
+        clip-path: none;
+    }
+
+    .package-image img {
+
+        object-fit: cover;
+
+        object-position: center top;
+    }
+
+    /*-------------------------
+  Información
+--------------------------*/
+
+    .package-info {
+
+        width: 100%;
+
+        padding: 35px 30px;
+    }
+
+    .package-info h2 {
+
+        font-size: 2.2rem;
+    }
+
+    .package-subtitle {
+
+        font-size: 1.2rem;
+
+        margin-bottom: 30px;
+    }
+
+    /*-------------------------
+  Item
+--------------------------*/
+
+    .package-item {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 18px;
+
+        padding: 20px 0;
+    }
+
+    .package-icon {
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 22px;
+    }
+
+    .package-text {
+
+        flex: 1;
+
+        margin-left: 18px;
+
+        text-align: left;
+    }
+
+    .package-text h3 {
+
+        font-size: 1.4rem;
+    }
+
+    .package-text p {
+
+        font-size: .9rem;
+    }
+
+    .package-price {
+
+        font-size: 1.4rem;
+
+        padding: 12px 18px;
+    }
+
+}
+
+/* Size: xs */
+@media (max-width: 500px) {
+
+    /*=========================
+  PAQUETES GENERAL
+=========================*/
+
+    .package-card {
+
+        grid-column: 1 / span 6;
+
+        flex-direction: column;
+
+        border-radius: 20px;
+    }
+
+    .package-image {
+
+        height: 280px;
+    }
+
+    .package-image img {
+
+        object-fit: cover;
+
+        object-position: center top;
+    }
+
+    .package-info {
+
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .package-info h2 {
+
+        font-size: 2rem;
+    }
+
+    .package-subtitle {
+
+        font-size: 1rem;
+
+        margin-bottom: 25px;
+    }
+
+    .package-item {
+
+        gap: 15px;
+
+        padding: 20px 0;
+    }
+
+    .package-icon {
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 22px;
+    }
+
+    .package-text {
+
+        margin-left: 15px;
+    }
+
+    .package-text h3 {
+
+        font-size: 1.1rem;
+    }
+
+    .package-text p {
+
+        font-size: .9rem;
+    }
+
+    .package-price {
+
+        padding: 10px 14px;
+
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* Size: xxs */
+@media (max-width: 320px) {
+
+    /*=========================
+  PAQUETES GENERAL
+=========================*/
+
+    .package-card {
+
+        grid-column: 1 / span 4;
+
+        flex-direction: column;
+
+        border-radius: 20px;
+    }
+
+    .package-image {
+
+        height: 210px;
+    }
+
+    .package-image img {
+
+        object-fit: cover;
+
+        object-position: center top;
+    }
+
+    .package-info {
+
+        width: 100%;
+
+        padding: 18px;
+    }
+
+    .package-info h2 {
+
+        font-size: 1.6rem;
+    }
+
+    .package-subtitle {
+
+        font-size: .9rem;
+
+        margin-bottom: 20px;
+    }
+
+    .package-item {
+
+        gap: 12px;
+
+        padding: 16px 0;
+    }
+
+    .package-icon {
+
+        width: 46px;
+        height: 46px;
+
+        font-size: 18px;
+    }
+
+    .package-text {
+
+        margin-left: 12px;
+    }
+
+    .package-text h3 {
+
+        font-size: 1rem;
+    }
+
+    .package-text p {
+
+        font-size: .8rem;
+    }
+
+    .package-price {
+
+        padding: 8px 12px;
+
+        font-size: 1rem;
+    }
+
+}
