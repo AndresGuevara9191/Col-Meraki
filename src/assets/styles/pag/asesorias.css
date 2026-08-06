@@ -4,6 +4,7 @@
 
 .asesorias {
     color: #000;
+    margin-bottom: var(--spacer-xl);
 }
 
 .asesorias h1 {
@@ -115,165 +116,9 @@
 =            PAQUETES
 ==================================================*/
 
-
-
-.asesorias-text-2 {
-    position: relative;
-
-    grid-column: 1 / -1;
-
-    display: flex;
-
-    margin-top: var(--spacer-xl);
-    margin-bottom: var(--spacer-xl);
-
-    background: #031A30;
-
-    border-radius: 2rem;
-
-    overflow: hidden;
+.asesorias-paquetes{
+    background: #222222
 }
-
-
-.paquete-img {
-    width: 45%;
-    overflow: hidden;
-
-    clip-path: polygon(0 0,
-            82% 0,
-            100% 100%,
-            0 100%);
-}
-
-.paquete-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.paquete-info {
-    width: 55%;
-
-    padding: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    color: white;
-}
-
-.paquete-subtitle {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: #39B54A;
-    font-size: var(--text-title);
-    font-weight: bold;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.paquete-subtitle::after {
-    content: "";
-
-    display: block;
-
-    width: 300px;
-    height: 2px;
-
-    margin-top: .5rem;
-
-    background: #39B54A;
-}
-
-.paquete-info h2 {
-    margin-bottom: 30px;
-
-    color: #fff;
-
-    font-family: var(--font-1);
-    font-size: var(--text-subheader);
-    line-height: 1.1;
-}
-
-.paquete-info h2 span {
-    color: #39B54A;
-}
-
-
-/*==================================================
-=            PLANES
-==================================================*/
-
-.plan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 2rem 0;
-
-    border-bottom: 2px solid rgba(255, 255, 255, .25);
-}
-
-.plan-left {
-    display: flex;
-}
-
-.plan-icon {
-    width: 100px;
-    height: 100px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 2px solid rgba(255, 255, 255, .4);
-    border-radius: 50%;
-
-    color: white;
-    font-size: 44px;
-
-    flex-shrink: 0;
-}
-
-.plan-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0 2rem;
-    text-align: left;
-}
-
-.plan-text h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.plan-text p {
-    font-size: 15px;
-    color: #bdbdbd;
-}
-
-.precio {
-    padding: 12px 24px;
-
-    border: 2px solid #39B54A;
-    border-radius: 10px;
-
-    color: #39B54A;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.plan strong {
-    color: white;
-    font-size: 22px;
-}
-
 
 
 @media (max-width:1100px) {
@@ -335,62 +180,6 @@
         font-size: var(--text-base-1);
         margin-top: 1rem;
     }
-
-
-
-    .asesorias-text-2 {
-        grid-column: 1 / -1;
-    }
-
-    .paquete-img {
-        width: 40%;
-    }
-
-    .paquete-info {
-        width: 60%;
-        padding: 30px;
-    }
-
-    .paquete-subtitle {
-        font-size: var(--text-title-1);
-        letter-spacing: 5px;
-    }
-
-    .paquete-subtitle::after {
-        width: 180px;
-    }
-
-    .paquete-info h2 {
-        font-size: var(--text-header);
-        margin-bottom: 20px;
-    }
-
-    .plan {
-        padding: 1.5rem 0;
-    }
-
-    .plan-icon {
-        width: 75px;
-        height: 75px;
-        font-size: 32px;
-    }
-
-    .plan-text {
-        padding: 0 1rem;
-    }
-
-    .plan-text h3 {
-        font-size: 18px;
-    }
-
-    .plan-text p {
-        font-size: 13px;
-    }
-
-    .precio {
-        padding: 10px 18px;
-        font-size: 28px;
-    }
 }
 
 /* Size: sm */
@@ -411,58 +200,6 @@
 
     .asesoria-3 {
         grid-column: 2 / span 6;
-    }
-
-    .asesorias-text-2 {
-        grid-column: 2 / span 6;
-        margin-bottom: var(--spacer-l);
-    }
-
-    .asesorias-text-2 {
-        grid-column: 2 / span 6;
-
-        display: flex;
-        flex-direction: column;
-
-        margin-bottom: var(--spacer-l);
-    }
-
-    .paquete-img {
-        width: 100%;
-        height: 300px;
-
-        clip-path: none;
-    }
-
-    .paquete-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .paquete-info {
-        width: 100%;
-        padding: 30px;
-    }
-
-    .plan-icon {
-        width: 65px;
-        height: 65px;
-        font-size: 28px;
-    }
-
-    .plan-text h3 {
-        font-size: 18px;
-    }
-
-    .plan-text p {
-        font-size: 14px;
-    }
-
-    .precio {
-        font-size: 24px;
-        padding: 8px 16px;
     }
 
 }
@@ -510,80 +247,6 @@
         font-size: var(--text-subheader);
         margin-top: var(--spacer-s);
     }
-
-    .asesorias-text-2 {
-        grid-column: 1 / -1;
-
-        flex-direction: column;
-    }
-
-    .paquete-img {
-        height: 300px;
-    }
-
-    .paquete-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .paquete-info {
-        width: 100%;
-        padding: 25px;
-    }
-
-    .paquete-subtitle {
-        font-size: var(--text-header);
-        letter-spacing: 4px;
-    }
-
-    .paquete-subtitle::after {
-        width: 140px;
-    }
-
-    .paquete-info h2 {
-        font-size: var(--text-base-1);
-        margin-bottom: 20px;
-    }
-
-    .plan {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-
-    .plan-left {
-        display: flex;
-        align-items: center;
-        flex: 1;
-    }
-
-    .plan-icon {
-        width: 55px;
-        height: 55px;
-        font-size: 22px;
-        flex-shrink: 0;
-    }
-
-    .plan-text {
-        padding-left: 1rem;
-        text-align: left;
-    }
-
-    .plan-text h3 {
-        font-size: 16px;
-    }
-
-    .plan-text p {
-        font-size: 12px;
-    }
-
-    .precio {
-        font-size: 20px;
-        padding: 6px 12px;
-        flex-shrink: 0;
-    }
 }
 
 /* Size: xxs */
@@ -601,9 +264,8 @@
 
     .asesoria-1,
     .asesoria-2,
-    .asesoria-3,
-    .asesorias-text-2{
-        grid-column: 1 / -1;
+    .asesoria-3{
+        grid-column: 1 / span 4;
     }
 
     .asesoria-1,
@@ -627,54 +289,5 @@
         padding: 8px;
     }
 
-    .paquete-img{
-        height: 220px;
-    }
-
-    .paquete-info{
-        padding: 18px;
-    }
-
-    .paquete-subtitle{
-        font-size: var(--text-base);
-        letter-spacing: 2px;
-    }
-
-    .paquete-subtitle::after{
-        width: 90px;
-    }
-
-    .paquete-info h2{
-        font-size: var(--text-base);
-        margin-bottom: 15px;
-    }
-
-    .plan{
-        gap: .8rem;
-        padding: .8rem 0;
-    }
-
-    .plan-icon{
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
-    }
-
-    .plan-text{
-        padding-left: .8rem;
-    }
-
-    .plan-text h3{
-        font-size: 14px;
-    }
-
-    .plan-text p{
-        font-size: 11px;
-    }
-
-    .precio{
-        font-size: 16px;
-        padding: 5px 8px;
-    }
-
+    
 }

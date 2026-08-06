@@ -1,5 +1,6 @@
 .antropometria {
     background: #fff;
+    padding-bottom: var(--spacer-xl);
 }
 
 /*==================================================
@@ -223,60 +224,6 @@
 }
 
 
-/*==================================================
-=            PAQUETES (SIN MODIFICAR)
-==================================================*/
-
-.antopo-paquetes {
-
-    grid-column: 1 / -1;
-
-    display: flex;
-
-    margin-top: var(--spacer-xl);
-    margin-bottom: var(--spacer-xl);
-
-    background: #031A30;
-
-    border-radius: 2rem;
-
-    overflow: hidden;
-}
-
-.antopo-paquete-img {
-
-    width: 45%;
-
-    overflow: hidden;
-
-    clip-path: polygon(0 0,
-            82% 0,
-            100% 100%,
-            0 100%);
-}
-
-.antopo-paquete-img img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-.antopo-paquete-info {
-
-    width: 55%;
-
-    padding: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    color: white;
-}
-
-
 /* Size: md */
 @media (max-width: 900px) {
     /*----------- Título -----------*/
@@ -379,21 +326,6 @@
         font-size: 13px;
     }
 
-
-    /*----------- Paquetes -----------*/
-
-    .antopo-paquete-img {
-
-        width: 40%;
-    }
-
-    .antopo-paquete-info {
-
-        width: 60%;
-        padding: 35px;
-    }
-
-
 }
 
 /* Size: sm */
@@ -490,31 +422,6 @@
     .antopo-precio::before {
 
         font-size: 13px;
-    }
-
-    /*=========================================
-    =            PAQUETES
-    =========================================*/
-
-    .antopo-paquetes {
-
-        flex-direction: column;
-    }
-
-    .antopo-paquete-img {
-
-        width: 100%;
-
-        height: 260px;
-
-        clip-path: none;
-    }
-
-    .antopo-paquete-info {
-
-        width: 100%;
-
-        padding: 35px 30px;
     }
 }
 
@@ -617,31 +524,6 @@
         font-size:12px;
     }
 
-
-    /*=========================
-      PAQUETES
-    =========================*/
-
-    .antopo-paquetes{
-
-        flex-direction:column;
-    }
-
-    .antopo-paquete-img{
-
-        width:100%;
-        height:240px;
-
-        clip-path:none;
-    }
-
-    .antopo-paquete-info{
-
-        width:100%;
-
-        padding:25px;
-    }
-
 }
 
 /* Size: xxs */
@@ -653,8 +535,6 @@
     .antopo-title h1{
 
         font-size:var(--text-title);
-        margin-top:var(--spacer-xl);
-        margin-bottom:var(--spacer-m);
     }
 
 
@@ -752,21 +632,6 @@
     .antopo-precio::before{
 
         font-size:11px;
-    }
-
-
-    /*=========================
-      PAQUETES
-    =========================*/
-
-    .antopo-paquete-img{
-
-        height:180px;
-    }
-
-    .antopo-paquete-info{
-
-        padding:18px;
     }
 
 }
