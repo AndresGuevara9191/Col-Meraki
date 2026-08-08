@@ -2,18 +2,6 @@
     background-color: #fff;
 }
 
-.container-feeding h1{
-
-    margin-top:var(--spacer-xl);
-    margin-bottom:var(--spacer-xl);
-
-    text-align:center;
-
-    font-family:var(--font-1);
-    font-size:var(--text-title);
-    font-weight:bold;
-}
-
 .feeding-re{
     grid-column:1 / span 6;
 }
@@ -158,14 +146,6 @@
 
 /* Size: md */
 @media (max-width: 900px) {
-     /*-------------------------
-      Título
-    --------------------------*/
-    .container-feeding h1{
-        font-size:var(--text-title-1);
-        margin-bottom:var(--spacer-l);
-    }
-
     /*-------------------------
       Grid (10 columnas)
     --------------------------*/
@@ -227,15 +207,6 @@
 
 /* Size: sm */
 @media (max-width: 700px) {
-     /*-------------------------
-      Título
-    --------------------------*/
-    .container-feeding h1{
-        font-size:var(--text-title-1);
-        margin-top:var(--spacer-2xl);
-        margin-bottom:var(--spacer-l);
-    }
-
     /*-------------------------
       Grid (8 columnas)
     --------------------------*/
@@ -326,19 +297,6 @@
 /* Size: xs */
 @media (max-width: 500px) {
     /*=========================
-      TÍTULO
-    =========================*/
-
-    .container-feeding h1{
-
-        font-size:var(--text-title-1);
-
-        margin-top:var(--spacer-2xl);
-        margin-bottom:var(--spacer-l);
-    }
-
-
-    /*=========================
       TARJETAS
     =========================*/
 
@@ -400,15 +358,6 @@
 
 /* Size: xxs */
 @media (max-width: 320px) {
-    
-.container-feeding h1{
-
-        font-size:var(--text-title);
-
-        line-height:1.2;
-    }
-
-
     /*=========================
       TARJETAS
     =========================*/

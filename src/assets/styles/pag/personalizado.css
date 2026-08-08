@@ -2,32 +2,6 @@
     background: #fff;
 }
 
-
-/*==================================================
-=            TITULO
-==================================================*/
-
-.perso-title {
-
-    grid-column: 2 / span 10;
-
-    margin-top: var(--spacer-xl);
-
-    margin-bottom: var(--spacer-xl);
-
-    text-align: center;
-}
-
-.perso-title h1 {
-
-    font-family: var(--font-1);
-
-    font-size: var(--text-title);
-
-    font-weight: bold;
-}
-
-
 /*==================================================
 =            TARJETAS
 ==================================================*/
@@ -698,9 +672,9 @@
 =            TESTIMONIOS
 ==================================================*/
 
-.testimo-con{
+.testimo-con {
 
-    background:#202022;
+    background: #202022;
 }
 
 
@@ -708,26 +682,26 @@
 =            TITULO
 ==================================================*/
 
-.testimo-title{
+.testimo-title {
 
-    grid-column:2 / span 10;
+    grid-column: 1 / span 12;
 
-    margin-top:var(--spacer-xl);
+    margin-top: var(--spacer-xl);
 
-    margin-bottom:var(--spacer-xl);
+    margin-bottom: var(--spacer-xl);
 
-    text-align:center;
+    text-align: center;
 }
 
-.testimo-title h1{
+.testimo-title h1 {
 
-    color:#fff;
+    color: #fff;
 
-    font-family:var(--font-1);
+    font-family: var(--font-1);
 
-    font-size:var(--text-title);
+    font-size: var(--text-title);
 
-    font-weight:bold;
+    font-weight: bold;
 }
 
 
@@ -735,28 +709,28 @@
 =            TARJETAS
 ==================================================*/
 
-.testimo-card{
+.testimo-card {
 
-    grid-column:span 4;
+    grid-column: span 4;
 
-    position:relative;
+    position: relative;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    border-radius:18px;
+    border-radius: 18px;
 
-    border:3px solid #39B54A;
+    border: 3px solid #39B54A;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .35);
 
-    transition:.35s;
+    transition: .35s;
 
-    margin-bottom:var(--spacer-l);
+    margin-bottom: var(--spacer-l);
 }
 
-.testimo-card:hover{
+.testimo-card:hover {
 
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 }
 
 
@@ -764,22 +738,22 @@
 =            IMAGEN
 ==================================================*/
 
-.testimo-card img{
+.testimo-card img {
 
-    width:100%;
+    width: 100%;
 
-    height:520px;
+    height: 520px;
 
-    object-fit:cover;
+    object-fit: cover;
 
-    display:block;
+    display: block;
 
-    transition:.45s;
+    transition: .45s;
 }
 
-.testimo-card:hover img{
+.testimo-card:hover img {
 
-    transform:scale(1.06);
+    transform: scale(1.06);
 }
 
 
@@ -787,63 +761,46 @@
 =            OVERLAY
 ==================================================*/
 
-.testimo-overlay{
+.testimo-overlay {
 
-    position:absolute;
+    position: absolute;
 
-    left:0;
+    left: 0;
 
-    right:0;
+    right: 0;
 
-    bottom:0;
+    bottom: 0;
 
-    padding:24px;
+    padding: 24px;
 
-    background:linear-gradient(
-        transparent,
-        rgba(7,28,51,.95)
-    );
+    background: linear-gradient(transparent,
+            rgba(7, 28, 51, .95));
 }
 
-.testimo-overlay i{
+.testimo-overlay i {
 
-    color:#39B54A;
+    color: #39B54A;
 
-    font-size:32px;
+    font-size: 32px;
 
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
 
-.testimo-overlay p{
+.testimo-overlay p {
 
-    color:#fff;
+    color: #fff;
 
-    font-family:var(--font-2);
+    font-family: var(--font-2);
 
-    font-size:15px;
+    font-size: 15px;
 
-    line-height:1.7;
+    line-height: 1.7;
 }
 
 
 
 /* Size: md */
 @media (max-width:900px) {
-
-    /*=========================
-      TITULO
-    =========================*/
-
-    .perso-title {
-        grid-column: 1 / span 10;
-        margin-top: var(--spacer-l);
-        margin-bottom: var(--spacer-l);
-    }
-
-    .perso-title h1 {
-        font-size: 2.6rem;
-    }
-
     /*=========================
       TARJETA
     =========================*/
@@ -1097,83 +1054,59 @@
       TITULO
     =========================*/
 
-    .testimo-title{
+    .testimo-title {
 
-        grid-column:1 / span 10;
-
-        margin-top:var(--spacer-l);
-        margin-bottom:var(--spacer-l);
+        grid-column: 1 / span 10;
     }
 
-    .testimo-title h1{
-
-        font-size:2.6rem;
+    .testimo-title h1 {
+        font-size: var(--text-title-1);
     }
 
     /*=========================
       TARJETAS
     =========================*/
 
-    .testimo-card{
+    .testimo-card {
 
-        grid-column:span 5;
+        grid-column: span 5;
 
-        border-radius:16px;
+        border-radius: 16px;
 
-        margin-bottom:var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
-    .testimo-card img{
+    .testimo-card img {
 
-        height:430px;
+        height: 430px;
     }
 
     /*=========================
       OVERLAY
     =========================*/
 
-    .testimo-overlay{
+    .testimo-overlay {
 
-        padding:20px;
+        padding: 20px;
     }
 
-    .testimo-overlay i{
+    .testimo-overlay i {
 
-        font-size:28px;
+        font-size: 28px;
 
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
-    .testimo-overlay p{
+    .testimo-overlay p {
 
-        font-size:.92rem;
+        font-size: .92rem;
 
-        line-height:1.6;
+        line-height: 1.6;
     }
-
-
-    
 }
 
 /* Size: sm */
 @media (max-width:700px) {
-
-    /*=========================================
-    =            TITULO
-    =========================================*/
-
-    .perso-title {
-        grid-column: 1 / span 8;
-
-        margin-top: var(--spacer-2xl);
-        margin-bottom: var(--spacer-l);
-    }
-
-    .perso-title h1 {
-        font-size: 2rem;
-    }
-
-
     /*=========================================
     =            TARJETA
     =========================================*/
@@ -1520,61 +1453,52 @@
       TITULO
     =========================*/
 
-    .testimo-title{
-
-        grid-column:1 / span 8;
-
-        margin-top:var(--spacer-l);
-
-        margin-bottom:var(--spacer-l);
-    }
-
-    .testimo-title h1{
-
-        font-size:2rem;
+    .testimo-title {
+        grid-column: 1 / span 8;
+        margin-top: var(--spacer-xl);
     }
 
     /*=========================
       TARJETA
     =========================*/
 
-    .testimo-card{
+    .testimo-card {
 
-        grid-column:span 4;
+        grid-column: span 4;
 
-        border-radius:14px;
+        border-radius: 14px;
 
-        margin-bottom:var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
     /*=========================
       IMAGEN
     =========================*/
 
-    .testimo-card img{
+    .testimo-card img {
 
-        height:500px;
+        height: 500px;
     }
 
     /*=========================
       OVERLAY
     =========================*/
 
-    .testimo-overlay{
+    .testimo-overlay {
 
-        padding:18px;
+        padding: 18px;
     }
 
-    .testimo-overlay i{
+    .testimo-overlay i {
 
-        font-size:24px;
+        font-size: 24px;
     }
 
-    .testimo-overlay p{
+    .testimo-overlay p {
 
-        font-size:.88rem;
+        font-size: .88rem;
 
-        line-height:1.6;
+        line-height: 1.6;
     }
 
 
@@ -1582,21 +1506,6 @@
 
 /* Size: xs */
 @media (max-width:500px) {
-
-    /*=========================================
-    =            TITULO
-    =========================================*/
-
-    .perso-title {
-        grid-column: 1 / span 6;
-        margin-bottom: var(--spacer-m);
-    }
-
-    .perso-title h1 {
-        font-size: 1.6rem;
-    }
-
-
     /*=========================================
     =            TARJETA
     =========================================*/
@@ -1899,7 +1808,7 @@
         font-size: 1rem;
     }
 
-     /*=========================
+    /*=========================
       TESTIMONIOS
     =========================*/
 
@@ -1907,67 +1816,65 @@
       TITULO
     =========================*/
 
-    .testimo-title{
+    .testimo-title {
+        grid-column: 1 / span 6;
 
-        grid-column:1 / span 6;
+        /*margin-top: var(--spacer-2xl);*/
 
-        margin-top:var(--spacer-l);
-
-        margin-bottom:var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
-    .testimo-title h1{
-
-        font-size:1.8rem;
+    .testimo-title h1 {
+            font-size: var(--text-title-1);
     }
 
     /*=========================
       TARJETA
     =========================*/
 
-    .testimo-card{
+    .testimo-card {
 
-        grid-column:1 / span 6;
+        grid-column: 1 / span 6;
 
-        border-radius:12px;
+        border-radius: 12px;
 
-        margin-bottom:var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
     /*=========================
       IMAGEN
     =========================*/
 
-    .testimo-card img{
+    .testimo-card img {
 
-        height:480px;
+        height: 480px;
 
-        object-fit:cover;
+        object-fit: cover;
 
-        object-position:center;
+        object-position: center;
     }
 
     /*=========================
       OVERLAY
     =========================*/
 
-    .testimo-overlay{
+    .testimo-overlay {
 
-        padding:16px;
+        padding: 16px;
     }
 
-    .testimo-overlay i{
+    .testimo-overlay i {
 
-        font-size:22px;
+        font-size: 22px;
 
-        margin-bottom:8px;
+        margin-bottom: 8px;
     }
 
-    .testimo-overlay p{
+    .testimo-overlay p {
 
-        font-size:.85rem;
+        font-size: .85rem;
 
-        line-height:1.6;
+        line-height: 1.6;
     }
 
 
@@ -1975,21 +1882,6 @@
 
 /* Size: xxs */
 @media (max-width:320px) {
-
-    /*=========================================
-    =            TITULO
-    =========================================*/
-
-    .perso-title {
-        grid-column: 1 / span 4;
-        margin-bottom: var(--spacer-l);
-    }
-
-    .perso-title h1 {
-        font-size: 1.35rem;
-        line-height: 1.35;
-    }
-
     /*=========================================
     =            TARJETA
     =========================================*/
@@ -2304,67 +2196,61 @@
       TITULO
     =========================*/
 
-    .testimo-title{
-
-        grid-column:1 / span 4;
-
-        margin-top:var(--spacer-l);
-
-        margin-bottom:var(--spacer-l);
+    .testimo-title {
+        grid-column: 1 / span 4;
     }
 
-    .testimo-title h1{
-
-        font-size:1.5rem;
+    .testimo-title h1 {
+        font-size: var(--text-subheader-1);
     }
 
     /*=========================
       TARJETA
     =========================*/
 
-    .testimo-card{
+    .testimo-card {
 
-        grid-column:1 / span 4;
+        grid-column: 1 / span 4;
 
-        border-radius:10px;
+        border-radius: 10px;
 
-        margin-bottom:var(--spacer-l);
+        margin-bottom: var(--spacer-l);
     }
 
     /*=========================
       IMAGEN
     =========================*/
 
-    .testimo-card img{
+    .testimo-card img {
 
-        height:400px;
+        height: 400px;
 
-        object-fit:cover;
+        object-fit: cover;
 
-        object-position:center;
+        object-position: center;
     }
 
     /*=========================
       OVERLAY
     =========================*/
 
-    .testimo-overlay{
+    .testimo-overlay {
 
-        padding:14px;
+        padding: 14px;
     }
 
-    .testimo-overlay i{
+    .testimo-overlay i {
 
-        font-size:20px;
+        font-size: 20px;
 
-        margin-bottom:8px;
+        margin-bottom: 8px;
     }
 
-    .testimo-overlay p{
+    .testimo-overlay p {
 
-        font-size:.8rem;
+        font-size: .8rem;
 
-        line-height:1.5;
+        line-height: 1.5;
     }
 
 
