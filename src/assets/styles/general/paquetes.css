@@ -1,4 +1,35 @@
 /*==================================================
+=            TITULO PAGINAS 
+==================================================*/
+.title-box-h1 {
+    grid-column: 1 / span 12;
+
+    margin-top: var(--spacer-xl);
+
+    margin-bottom: var(--spacer-xl);
+
+    text-align: center;
+}
+
+
+.title-box-h1 h1 {
+
+    font-family: var(--font-1);
+
+    font-size: var(--text-title);
+
+    font-weight: bold;
+}
+
+.h1-green {
+    color: #247D0D;
+}
+
+.h1-orange {
+    color: #FB5B21;
+}
+
+/*==================================================
 =            PAQUETES GENERAL
 ==================================================*/
 
@@ -232,6 +263,24 @@
 
 /* Size: md */
 @media (max-width: 900px) {
+
+    /*=========================
+    TITULOS
+=========================*/
+    .title-box-h1 {
+        grid-column: 1 / span 10;
+
+        /*margin-top: var(--spacer-xl);
+
+        margin-bottom: var(--spacer-xl);
+
+        text-align: center;*/
+    }
+
+    .title-box-h1 h1 {
+        font-size: var(--text-title-1);
+    }
+
     /*=========================
   PAQUETES
 =========================*/
@@ -304,6 +353,20 @@
 
 
 @media (max-width:700px) {
+     /*=========================
+    TITULOS
+=========================*/
+    .title-box-h1 {
+        grid-column: 1 / span 8;
+
+        margin-top: var(--spacer-2xl);
+
+        /*margin-bottom: var(--spacer-xl);*/
+    }
+
+    .title-box-h1 h1 {
+        /*font-size: var(--text-title-1);*/
+    }
 
     /*=========================
   PAQUETES GENERAL
@@ -419,6 +482,23 @@
 /* Size: xs */
 @media (max-width: 500px) {
 
+     /*=========================
+    TITULOS
+=========================*/
+    .title-box-h1 {
+        grid-column: 1 / span 6;
+
+        /*margin-top: var(--spacer-2xl);*/
+
+        margin-bottom: var(--spacer-l);
+    }
+
+    .title-box-h1 h1 {
+        font-size: var(--text-title-1);
+    }
+
+
+
     /*=========================
   PAQUETES GENERAL
 =========================*/
@@ -505,6 +585,17 @@
 
 /* Size: xxs */
 @media (max-width: 320px) {
+
+     /*=========================
+    TITULOS
+=========================*/
+    .title-box-h1 {
+        grid-column: 1 / span 4;
+    }
+
+    .title-box-h1 h1 {
+        font-size: var(--text-subheader-1);
+    }
 
     /*=========================
   PAQUETES GENERAL
