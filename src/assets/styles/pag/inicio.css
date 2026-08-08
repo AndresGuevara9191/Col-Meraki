@@ -14,6 +14,7 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     overflow: hidden;
+    
 }
 
 .video-container {
@@ -22,6 +23,7 @@
 }
 
 .video-container video {
+    
     display: block;
     width: 100%;
     height: auto;
@@ -38,7 +40,7 @@
 }
 
 .logo-meraki-black {
-    margin-top: var(--spacer-xl);
+    margin-top: var(--spacer-2xl);
     width: 100%;
     margin-bottom: var(--spacer-xl);
 }
@@ -195,7 +197,7 @@
     color: #555;
 }
 
-.space-inicio {
+.space-bottom {
     margin-bottom: var(--spacer-xl);
 }
 
@@ -230,15 +232,6 @@
 
     .inicio-imagen {
         grid-column: 3 / span 6;
-        /*text-align: center;
-        margin-bottom: var(--spacer-xl);*/
-    }
-
-    .logo-meraki-black {
-        /*
-        margin-top: var(--spacer-xl);
-        width: 100%;
-        margin-bottom: var(--spacer-xl);*/
     }
 
     .inicio-text-1 {
@@ -308,8 +301,6 @@
 
     .inicio-imagen {
         grid-column: 1 / span 8;
-        /*text-align: center;
-        margin-bottom: var(--spacer-xl);*/
     }
 
     .logo-meraki-black {
@@ -325,7 +316,7 @@
 
     .inicio-text-1,
     .inicio-text-2,
-    .inicio-text-3 {
+    .inicio-text-3{
 
         grid-column: 1 / span 8;
 
@@ -333,6 +324,7 @@
 
         padding: 30px 24px;
     }
+
 
 
     /*=========================
@@ -395,8 +387,6 @@
 
     .inicio-imagen {
         grid-column: 1 / span 6;
-        /*text-align: center;
-        margin-bottom: var(--spacer-xl);*/
     }
 
     .logo-meraki-black {
@@ -477,7 +467,6 @@
     .logo-meraki-black {
         margin-top: var(--spacer-m);
         grid-column: span 4;
-        /*width: 100%;*/
         margin-bottom: var(--spacer-m);
     }
 
@@ -524,7 +513,7 @@
 
         font-size:1.15rem;
 
-        margin-bottom:12px;
+        margin-bottom:var(--spacer-m);
     }
 
     /*=========================
